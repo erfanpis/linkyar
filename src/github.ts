@@ -63,30 +63,47 @@ function encodeRepoPath(pathInRepo: string): string {
     .join("/");
 }
 
+const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
+
 async function gh<T>(
   path: string,
   init: RequestInit = {},
+  retries = 4,
 ): Promise<T> {
   const token = config.github.token;
   if (!token) {
     throw new Error("GITHUB_TOKEN تنظیم نشده.");
   }
 
-  const headers = new Headers(init.headers);
-  headers.set("Accept", "application/vnd.github+json");
-  headers.set("Authorization", `Bearer ${token}`);
-  headers.set("X-GitHub-Api-Version", "2022-11-28");
-  if (init.body && !headers.has("Content-Type") && !(init.body instanceof ReadableStream)) {
-    headers.set("Content-Type", "application/json");
-  }
+  let lastErr: Error | null = null;
+  for (let attempt = 0; attempt <= retries; attempt++) {
+    const headers = new Headers(init.headers);
+    headers.set("Accept", "application/vnd.github+json");
+    headers.set("Authorization", `Bearer ${token}`);
+    headers.set("X-GitHub-Api-Version", "2022-11-28");
+    if (
+      init.body &&
+      !headers.has("Content-Type") &&
+      !(init.body instanceof ReadableStream)
+    ) {
+      headers.set("Content-Type", "application/json");
+    }
 
-  const res = await fetch(repoApi(path), { ...init, headers });
-  if (!res.ok) {
+    const res = await fetch(repoApi(path), { ...init, headers });
+    if (res.ok) {
+      if (res.status === 204) return undefined as T;
+      return (await res.json()) as T;
+    }
+
     const text = await res.text();
-    throw new Error(`GitHub API ${res.status}: ${text.slice(0, 400)}`);
+    lastErr = new Error(`GitHub API ${res.status}: ${text.slice(0, 400)}`);
+    const retryable = res.status === 502 || res.status === 503 || res.status === 504 || res.status === 429;
+    if (!retryable || attempt === retries) break;
+    const wait = 1000 * 2 ** attempt;
+    console.warn(`[github] ${res.status}, retry in ${wait}ms…`);
+    await sleep(wait);
   }
-  if (res.status === 204) return undefined as T;
-  return (await res.json()) as T;
+  throw lastErr ?? new Error("GitHub API failed");
 }
 
 export function isGithubConfigured(): boolean {
@@ -203,28 +220,53 @@ export async function uploadFileToGithubRelease(opts: {
   const uploadBase = release.upload_url.replace(/\{.*\}$/, "");
   const uploadUrl = `${uploadBase}?name=${encodeURIComponent(safeName)}`;
 
-  const stream = createReadStream(opts.filePath);
-  const res = await fetch(uploadUrl, {
-    method: "POST",
-    headers: {
-      Accept: "application/vnd.github+json",
-      Authorization: `Bearer ${token}`,
-      "Content-Type": opts.mimeType || "application/octet-stream",
-      "Content-Length": String(size),
-      "X-GitHub-Api-Version": "2022-11-28",
-    },
-    body: stream as unknown as BodyInit,
-    duplex: "half",
-  } as RequestInit);
+  let asset: { browser_download_url: string; name: string } | null = null;
+  let uploadErr: Error | null = null;
+  for (let attempt = 0; attempt < 4; attempt++) {
+    try {
+      const stream = createReadStream(opts.filePath);
+      const res = await fetch(uploadUrl, {
+        method: "POST",
+        headers: {
+          Accept: "application/vnd.github+json",
+          Authorization: `Bearer ${token}`,
+          "Content-Type": opts.mimeType || "application/octet-stream",
+          "Content-Length": String(size),
+          "X-GitHub-Api-Version": "2022-11-28",
+        },
+        body: stream as unknown as BodyInit,
+        duplex: "half",
+      } as RequestInit);
 
-  if (!res.ok) {
-    const text = await res.text();
-    // سعی کن ریلیز نیمه‌کاره پاک شود
-    await gh(`/releases/${release.id}`, { method: "DELETE" }).catch(() => undefined);
-    throw new Error(`GitHub release upload ${res.status}: ${text.slice(0, 400)}`);
+      if (!res.ok) {
+        const text = await res.text();
+        throw new Error(
+          `GitHub release upload ${res.status}: ${text.slice(0, 400)}`,
+        );
+      }
+      asset = (await res.json()) as {
+        browser_download_url: string;
+        name: string;
+      };
+      uploadErr = null;
+      break;
+    } catch (err) {
+      uploadErr = err instanceof Error ? err : new Error(String(err));
+      const msg = uploadErr.message;
+      const retryable = /\b(502|503|504|429)\b/.test(msg);
+      if (!retryable || attempt === 3) break;
+      const wait = 1500 * 2 ** attempt;
+      console.warn(`[github] release upload failed, retry in ${wait}ms…`);
+      await sleep(wait);
+    }
   }
 
-  const asset = (await res.json()) as { browser_download_url: string; name: string };
+  if (!asset) {
+    await gh(`/releases/${release.id}`, { method: "DELETE" }).catch(
+      () => undefined,
+    );
+    throw uploadErr ?? new Error("GitHub release upload failed");
+  }
 
   const meta: UploadMeta = {
     id: opts.id,

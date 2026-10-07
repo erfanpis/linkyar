@@ -59,32 +59,73 @@ export async function storeUpload(opts: {
   const id = nanoid(12);
 
   if (backend === "github") {
-    // فایل بزرگ → Release استریم؛ کوچک → Contents
-    if (opts.filePath && resolvedSize > config.githubContentsMaxBytes) {
-      const uploaded = await uploadFileToGithubRelease({
-        filePath: opts.filePath,
-        originalName: opts.originalName,
-        id,
-        mimeType: opts.mimeType,
-        telegramUserId: opts.telegramUserId,
-      });
-      return {
-        id,
-        originalName: opts.originalName,
-        mimeType: opts.mimeType,
-        size: resolvedSize,
-        createdAt: uploaded.meta.createdAt,
-        telegramUserId: opts.telegramUserId,
-        url: uploaded.url,
-        backend: "github",
-        expiresAt: uploaded.meta.expiresAt,
-      };
+    // از روی دیسک (MTProto) یا بالای سقف کوچک → همیشه Release استریم
+    // Contents API برای ده‌ها مگ base64 می‌ترکاند / 502 می‌دهد
+    const useRelease =
+      Boolean(opts.filePath) &&
+      (resolvedSize > config.githubContentsMaxBytes || resolvedSize > 5 * 1024 * 1024);
+
+    if (opts.filePath && (useRelease || !opts.buffer)) {
+      if (resolvedSize > config.githubContentsMaxBytes || opts.filePath) {
+        // برای هر فایل MTProto از Release استفاده کن (پایدارتر از Contents)
+        const uploaded = await uploadFileToGithubRelease({
+          filePath: opts.filePath,
+          originalName: opts.originalName,
+          id,
+          mimeType: opts.mimeType,
+          telegramUserId: opts.telegramUserId,
+        });
+        return {
+          id,
+          originalName: opts.originalName,
+          mimeType: opts.mimeType,
+          size: resolvedSize,
+          createdAt: uploaded.meta.createdAt,
+          telegramUserId: opts.telegramUserId,
+          url: uploaded.url,
+          backend: "github",
+          expiresAt: uploaded.meta.expiresAt,
+        };
+      }
     }
 
     const buffer =
       opts.buffer ??
       (opts.filePath ? await readFile(opts.filePath) : null);
     if (!buffer) throw new Error("فایل خالی است.");
+
+    // بافرهای بزرگ را هم به فایل موقت + Release بفرست
+    if (buffer.byteLength > config.githubContentsMaxBytes) {
+      const { writeFile, unlink } = await import("node:fs/promises");
+      const { join } = await import("node:path");
+      const tmp = join(config.tmpDir, `buf-${id}`);
+      await (await import("node:fs/promises")).mkdir(config.tmpDir, {
+        recursive: true,
+      });
+      await writeFile(tmp, buffer);
+      try {
+        const uploaded = await uploadFileToGithubRelease({
+          filePath: tmp,
+          originalName: opts.originalName,
+          id,
+          mimeType: opts.mimeType,
+          telegramUserId: opts.telegramUserId,
+        });
+        return {
+          id,
+          originalName: opts.originalName,
+          mimeType: opts.mimeType,
+          size: buffer.byteLength,
+          createdAt: uploaded.meta.createdAt,
+          telegramUserId: opts.telegramUserId,
+          url: uploaded.url,
+          backend: "github",
+          expiresAt: uploaded.meta.expiresAt,
+        };
+      } finally {
+        await unlink(tmp).catch(() => undefined);
+      }
+    }
 
     const uploaded = await uploadToGithub({
       buffer,
