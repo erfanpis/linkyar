@@ -1,3 +1,5 @@
+import { createReadStream } from "node:fs";
+import { stat } from "node:fs/promises";
 import { config } from "./config.js";
 
 type ContentPutResponse = {
@@ -20,6 +22,19 @@ type ContentGetResponse = {
   download_url?: string | null;
 };
 
+type GhRelease = {
+  id: number;
+  tag_name: string;
+  upload_url: string;
+  html_url: string;
+  assets: Array<{
+    id: number;
+    name: string;
+    size: number;
+    browser_download_url: string;
+  }>;
+};
+
 export type UploadMeta = {
   id: string;
   originalName: string;
@@ -27,7 +42,9 @@ export type UploadMeta = {
   size: number;
   createdAt: string;
   expiresAt: string;
-  filePath: string;
+  filePath?: string;
+  releaseId?: number;
+  releaseTag?: string;
   telegramUserId?: number;
 };
 
@@ -59,7 +76,7 @@ async function gh<T>(
   headers.set("Accept", "application/vnd.github+json");
   headers.set("Authorization", `Bearer ${token}`);
   headers.set("X-GitHub-Api-Version", "2022-11-28");
-  if (init.body && !headers.has("Content-Type")) {
+  if (init.body && !headers.has("Content-Type") && !(init.body instanceof ReadableStream)) {
     headers.set("Content-Type", "application/json");
   }
 
@@ -90,6 +107,7 @@ export function expiryIso(from = new Date()): string {
   ).toISOString();
 }
 
+/** آپلود کوچک (< ~۸۰MB) داخل درخت ریپو — سریع‌تر برای فایل‌های سبک. */
 export async function uploadToGithub(opts: {
   buffer: Buffer;
   originalName: string;
@@ -143,6 +161,90 @@ export async function uploadToGithub(opts: {
     htmlUrl: result.content.html_url,
     meta,
   };
+}
+
+/**
+ * آپلود تا ۲ گیگ از روی دیسک به GitHub Release (استریم، بدون base64 در RAM).
+ */
+export async function uploadFileToGithubRelease(opts: {
+  filePath: string;
+  originalName: string;
+  id: string;
+  mimeType: string;
+  telegramUserId?: number;
+}): Promise<{ url: string; meta: UploadMeta }> {
+  const token = config.github.token;
+  if (!token) throw new Error("GITHUB_TOKEN تنظیم نشده.");
+
+  const safeName =
+    opts.originalName
+      .replace(/[^\w.\-()\u0600-\u06FF ]+/g, "_")
+      .slice(0, 160) || "file.bin";
+  const createdAt = new Date().toISOString();
+  const expiresAt = expiryIso(new Date(createdAt));
+  const tag = `file-${opts.id}`;
+  const size = (await stat(opts.filePath)).size;
+
+  const release = await gh<GhRelease>("/releases", {
+    method: "POST",
+    body: JSON.stringify({
+      tag_name: tag,
+      name: opts.originalName,
+      body: [
+        `id: ${opts.id}`,
+        `expires: ${expiresAt}`,
+        `size: ${size}`,
+      ].join("\n"),
+      draft: false,
+      prerelease: false,
+    }),
+  });
+
+  const uploadBase = release.upload_url.replace(/\{.*\}$/, "");
+  const uploadUrl = `${uploadBase}?name=${encodeURIComponent(safeName)}`;
+
+  const stream = createReadStream(opts.filePath);
+  const res = await fetch(uploadUrl, {
+    method: "POST",
+    headers: {
+      Accept: "application/vnd.github+json",
+      Authorization: `Bearer ${token}`,
+      "Content-Type": opts.mimeType || "application/octet-stream",
+      "Content-Length": String(size),
+      "X-GitHub-Api-Version": "2022-11-28",
+    },
+    body: stream as unknown as BodyInit,
+    duplex: "half",
+  } as RequestInit);
+
+  if (!res.ok) {
+    const text = await res.text();
+    // سعی کن ریلیز نیمه‌کاره پاک شود
+    await gh(`/releases/${release.id}`, { method: "DELETE" }).catch(() => undefined);
+    throw new Error(`GitHub release upload ${res.status}: ${text.slice(0, 400)}`);
+  }
+
+  const asset = (await res.json()) as { browser_download_url: string; name: string };
+
+  const meta: UploadMeta = {
+    id: opts.id,
+    originalName: opts.originalName,
+    mimeType: opts.mimeType,
+    size,
+    createdAt,
+    expiresAt,
+    releaseId: release.id,
+    releaseTag: tag,
+    telegramUserId: opts.telegramUserId,
+  };
+
+  await writeGithubJson(
+    `${config.github.uploadDir}/${opts.id}/meta.json`,
+    meta,
+    `meta: release ${tag} expires ${expiresAt}`,
+  );
+
+  return { url: asset.browser_download_url, meta };
 }
 
 export async function readGithubJson<T>(pathInRepo: string): Promise<T | null> {
@@ -215,7 +317,11 @@ async function listDir(pathInRepo: string): Promise<ContentGetResponse[]> {
   }
 }
 
-/** فایل‌های منقضی‌شده (بیش از FILE_TTL_HOURS) را از ریپو پاک می‌کند. */
+async function deleteRelease(releaseId: number): Promise<void> {
+  await gh(`/releases/${releaseId}`, { method: "DELETE" });
+}
+
+/** فایل‌ها و ریلیزهای منقضی‌شده را پاک می‌کند تا لینک بمیرد. */
 export async function cleanupExpiredUploads(): Promise<{
   deleted: string[];
   kept: number;
@@ -237,7 +343,6 @@ export async function cleanupExpiredUploads(): Promise<{
       `${config.github.uploadDir}/${id}/meta.json`,
     );
 
-    // فایل قدیمی بدون meta: از همین الان ۱۲ ساعت مهلت بده
     if (!meta) {
       const file = files.find((f) => f.name !== "meta.json" && f.type !== "dir");
       if (!file) continue;
@@ -270,6 +375,15 @@ export async function cleanupExpiredUploads(): Promise<{
     }
 
     console.log(`[cleanup] deleting expired upload ${id}`);
+
+    if (meta.releaseId) {
+      try {
+        await deleteRelease(meta.releaseId);
+      } catch (err) {
+        console.error(`[cleanup] release delete failed ${meta.releaseId}`, err);
+      }
+    }
+
     for (const file of files) {
       if (file.type === "dir") continue;
       try {

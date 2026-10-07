@@ -22,7 +22,8 @@ concurrency:
 jobs:
   poll:
     runs-on: ubuntu-latest
-    timeout-minutes: 6
+    # فایل‌های چند صد مگ / گیگ ممکنه طول بکشه
+    timeout-minutes: 180
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -45,9 +46,10 @@ jobs:
           STORAGE_BACKEND: github
           ALLOWED_USER_IDS: ${{ vars.ALLOWED_USER_IDS }}
           FILE_TTL_HOURS: "12"
-          MAX_FILE_BYTES: "104857600"
-          TELEGRAM_MAX_FILE_BYTES: "20971520"
-          # ~۴ دقیقه و ۴۵ ثانیه حلقه
-          POLL_LOOP_MS: "285000"
+          MAX_FILE_BYTES: "2147483648"
+          TELEGRAM_API_ID: ${{ secrets.TELEGRAM_API_ID }}
+          TELEGRAM_API_HASH: ${{ secrets.TELEGRAM_API_HASH }}
+          # حلقه کوتاه‌تر تا جاب برای فایل بزرگ جا داشته باشد؛ schedule هر ۵ دقیقه دوباره می‌آید
+          POLL_LOOP_MS: "120000"
           POLL_INTERVAL_MS: "2500"
         run: npm run poll

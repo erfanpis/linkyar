@@ -10,6 +10,7 @@ import {
   readGithubJson,
   writeGithubJson,
 } from "./github.js";
+import { disconnectMtproto } from "./mtproto.js";
 import { chooseBackend } from "./store.js";
 
 type OffsetState = { offset: number };
@@ -122,10 +123,12 @@ async function main() {
     }
   }
 
+  await disconnectMtproto().catch(() => undefined);
   console.log("[poll] done.");
 }
 
-main().catch((err) => {
+main().catch(async (err) => {
   console.error(err);
+  await disconnectMtproto().catch(() => undefined);
   process.exit(1);
 });

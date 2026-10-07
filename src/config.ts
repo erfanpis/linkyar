@@ -43,19 +43,28 @@ export const config = {
     process.env.PUBLIC_BASE_URL || `http://127.0.0.1:${process.env.PORT || 38471}`
   ).replace(/\/$/, ""),
   telegramToken: requiredInProd("TELEGRAM_BOT_TOKEN"),
+  telegramApiId: Number(process.env.TELEGRAM_API_ID || 0),
+  telegramApiHash: process.env.TELEGRAM_API_HASH?.trim() || "",
+  telegramSession: process.env.TELEGRAM_SESSION?.trim() || "",
   allowedUserIds: (process.env.ALLOWED_USER_IDS || "")
     .split(",")
     .map((s) => s.trim())
     .filter(Boolean)
     .map((s) => Number(s))
     .filter((n) => Number.isFinite(n)),
-  // سقف ذخیره روی GitHub (API تا ۱۰۰MB). تلگرام برای دانلود ربات معمولاً ۲۰MB است.
-  maxFileBytes: Number(process.env.MAX_FILE_BYTES || 100 * 1024 * 1024),
-  telegramMaxFileBytes: Number(
-    process.env.TELEGRAM_MAX_FILE_BYTES || 20 * 1024 * 1024,
+  // تا ۲ گیگ — مثل خود تلگرام
+  maxFileBytes: Number(process.env.MAX_FILE_BYTES || 2 * 1024 * 1024 * 1024),
+  // اگر MTProto نباشد، مسیر HTTP Bot API هنوز ~۲۰MB است
+  telegramHttpMaxBytes: Number(
+    process.env.TELEGRAM_HTTP_MAX_BYTES || 20 * 1024 * 1024,
+  ),
+  // زیر این حجم از Release استریم می‌شود (نه Contents API)
+  githubContentsMaxBytes: Number(
+    process.env.GITHUB_CONTENTS_MAX_BYTES || 80 * 1024 * 1024,
   ),
   fileTtlHours: Number(process.env.FILE_TTL_HOURS || 12),
   storageDir: path.join(rootDir, "storage"),
+  tmpDir: path.join(rootDir, "tmp"),
   storageBackend,
   github: {
     token:

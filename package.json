@@ -18,7 +18,8 @@
     "dotenv": "^16.5.0",
     "grammy": "^1.36.1",
     "hono": "^4.7.11",
-    "nanoid": "^5.1.5"
+    "nanoid": "^5.1.5",
+    "teleproto": "^1.229.3"
   },
   "devDependencies": {
     "@types/node": "^22.15.30",

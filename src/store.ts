@@ -1,6 +1,11 @@
+import { readFile } from "node:fs/promises";
 import { nanoid } from "nanoid";
 import { config } from "./config.js";
-import { isGithubConfigured, uploadToGithub } from "./github.js";
+import {
+  isGithubConfigured,
+  uploadFileToGithubRelease,
+  uploadToGithub,
+} from "./github.js";
 import {
   downloadUrl as localDownloadUrl,
   formatBytes,
@@ -29,12 +34,22 @@ function chooseBackend(): "github" | "local" {
 }
 
 export async function storeUpload(opts: {
-  buffer: Buffer;
+  buffer?: Buffer;
+  filePath?: string;
   originalName: string;
   mimeType: string;
   telegramUserId?: number;
+  size?: number;
 }): Promise<StoredResult> {
-  if (opts.buffer.byteLength > config.maxFileBytes) {
+  const size =
+    opts.size ??
+    opts.buffer?.byteLength ??
+    (opts.filePath
+      ? (await import("node:fs/promises")).stat(opts.filePath).then((s) => s.size)
+      : 0);
+  const resolvedSize = typeof size === "number" ? size : await size;
+
+  if (resolvedSize > config.maxFileBytes) {
     throw new Error(
       `حجم فایل بیشتر از حد مجاز است (${formatBytes(config.maxFileBytes)}).`,
     );
@@ -44,8 +59,35 @@ export async function storeUpload(opts: {
   const id = nanoid(12);
 
   if (backend === "github") {
+    // فایل بزرگ → Release استریم؛ کوچک → Contents
+    if (opts.filePath && resolvedSize > config.githubContentsMaxBytes) {
+      const uploaded = await uploadFileToGithubRelease({
+        filePath: opts.filePath,
+        originalName: opts.originalName,
+        id,
+        mimeType: opts.mimeType,
+        telegramUserId: opts.telegramUserId,
+      });
+      return {
+        id,
+        originalName: opts.originalName,
+        mimeType: opts.mimeType,
+        size: resolvedSize,
+        createdAt: uploaded.meta.createdAt,
+        telegramUserId: opts.telegramUserId,
+        url: uploaded.url,
+        backend: "github",
+        expiresAt: uploaded.meta.expiresAt,
+      };
+    }
+
+    const buffer =
+      opts.buffer ??
+      (opts.filePath ? await readFile(opts.filePath) : null);
+    if (!buffer) throw new Error("فایل خالی است.");
+
     const uploaded = await uploadToGithub({
-      buffer: opts.buffer,
+      buffer,
       originalName: opts.originalName,
       id,
       mimeType: opts.mimeType,
@@ -55,7 +97,7 @@ export async function storeUpload(opts: {
       id,
       originalName: opts.originalName,
       mimeType: opts.mimeType,
-      size: opts.buffer.byteLength,
+      size: buffer.byteLength,
       createdAt: uploaded.meta.createdAt,
       telegramUserId: opts.telegramUserId,
       url: uploaded.url,
@@ -65,10 +107,15 @@ export async function storeUpload(opts: {
     };
   }
 
+  const buffer =
+    opts.buffer ?? (opts.filePath ? await readFile(opts.filePath) : null);
+  if (!buffer) throw new Error("فایل خالی است.");
   const saved = await saveBuffer({
-    ...opts,
+    buffer,
+    originalName: opts.originalName,
+    mimeType: opts.mimeType,
+    telegramUserId: opts.telegramUserId,
   });
-  // saveBuffer می‌سازد id خودش؛ برای یکنواختی همان را استفاده می‌کنیم
   return {
     ...saved,
     url: localDownloadUrl(saved.id),
