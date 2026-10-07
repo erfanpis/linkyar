@@ -1,14 +1,10 @@
-# ربات بدون VPS: هر ۵ دقیقه یک جاب ~۴.۵ دقیقه‌ای اجرا می‌شود
-# و هر ۲.۵ ثانیه تلگرام را چک می‌کند (پاسخ نزدیک به زنده).
-#
-# نیازها:
-# - ریپو Public (لینک دانلود + Actions رایگان)
-# - Secret: TELEGRAM_BOT_TOKEN
+# ربات بدون VPS روی GitHub Actions
+# فایل را می‌گیرد، تا ۲ گیگ با MTProto دانلود می‌کند، لینک می‌دهد.
 name: Telegram poll
 
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "*/2 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -16,13 +12,12 @@ permissions:
 
 concurrency:
   group: telegram-poll
-  # فقط یک poller؛ در غیر این صورت تلگرام خطای 409 می‌دهد
-  cancel-in-progress: true
+  # هرگز جاب قبلی را وسط دانلود فایل بزرگ نکش
+  cancel-in-progress: false
 
 jobs:
   poll:
     runs-on: ubuntu-latest
-    # فایل‌های چند صد مگ / گیگ ممکنه طول بکشه
     timeout-minutes: 180
     steps:
       - name: Checkout
@@ -49,7 +44,6 @@ jobs:
           MAX_FILE_BYTES: "2147483648"
           TELEGRAM_API_ID: ${{ secrets.TELEGRAM_API_ID }}
           TELEGRAM_API_HASH: ${{ secrets.TELEGRAM_API_HASH }}
-          # حلقه کوتاه‌تر تا جاب برای فایل بزرگ جا داشته باشد؛ schedule هر ۵ دقیقه دوباره می‌آید
-          POLL_LOOP_MS: "120000"
-          POLL_INTERVAL_MS: "2500"
+          POLL_LOOP_MS: "110000"
+          POLL_INTERVAL_MS: "2000"
         run: npm run poll
