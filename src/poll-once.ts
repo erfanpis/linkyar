@@ -45,6 +45,7 @@ async function main() {
 
   const bot = createBot();
   if (!bot) throw new Error("ربات ساخته نشد.");
+  await bot.init();
 
   const offset = await loadOffset();
   console.log(`[poll] getUpdates offset=${offset}`);
