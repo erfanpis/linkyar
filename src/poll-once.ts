@@ -1,5 +1,6 @@
 /**
  * یک دور getUpdates — مناسب GitHub Actions (بدون سرور دائمی).
+ * اگر POLL_LOOP_MS ست باشد، تا همان مدت هر چند ثانیه یک‌بار تکرار می‌کند.
  */
 import { config } from "./config.js";
 import { createBot } from "./bot.js";
@@ -11,6 +12,8 @@ import {
 import { chooseBackend } from "./store.js";
 
 type OffsetState = { offset: number };
+
+const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
 async function loadOffset(): Promise<number> {
   if (isGithubConfigured()) {
@@ -32,6 +35,38 @@ async function saveOffset(offset: number): Promise<void> {
   );
 }
 
+async function drainOnce(
+  bot: NonNullable<ReturnType<typeof createBot>>,
+  offset: number,
+): Promise<number> {
+  const updates = await bot.api.getUpdates({
+    offset,
+    timeout: 0,
+    allowed_updates: ["message"],
+    limit: 50,
+  });
+
+  if (updates.length === 0) {
+    return offset;
+  }
+
+  let nextOffset = offset;
+  for (const update of updates) {
+    console.log(`[poll] handling update_id=${update.update_id}`);
+    try {
+      await bot.handleUpdate(update);
+    } catch (err) {
+      console.error(`[poll] handleUpdate failed for ${update.update_id}`, err);
+      // حتی اگر یک آپدیت خراب شد، offset را جلو ببر تا گیر نکند
+    }
+    nextOffset = update.update_id + 1;
+  }
+
+  await saveOffset(nextOffset);
+  console.log(`[poll] saved offset=${nextOffset}`);
+  return nextOffset;
+}
+
 async function main() {
   if (!config.telegramToken) {
     throw new Error("TELEGRAM_BOT_TOKEN لازم است.");
@@ -46,30 +81,23 @@ async function main() {
   const bot = createBot();
   if (!bot) throw new Error("ربات ساخته نشد.");
   await bot.init();
+  console.log(`[poll] bot=@${bot.botInfo.username}`);
 
-  const offset = await loadOffset();
-  console.log(`[poll] getUpdates offset=${offset}`);
+  let offset = await loadOffset();
+  console.log(`[poll] start offset=${offset}`);
 
-  const updates = await bot.api.getUpdates({
-    offset,
-    timeout: 0,
-    allowed_updates: ["message"],
-  });
+  const loopMs = Number(process.env.POLL_LOOP_MS || 0);
+  const intervalMs = Number(process.env.POLL_INTERVAL_MS || 2500);
+  const deadline = loopMs > 0 ? Date.now() + loopMs : Date.now();
 
-  if (updates.length === 0) {
-    console.log("[poll] آپدیت جدیدی نبود.");
-    return;
+  offset = await drainOnce(bot, offset);
+
+  while (Date.now() < deadline) {
+    await sleep(intervalMs);
+    offset = await drainOnce(bot, offset);
   }
 
-  let nextOffset = offset;
-  for (const update of updates) {
-    console.log(`[poll] handling update_id=${update.update_id}`);
-    await bot.handleUpdate(update);
-    nextOffset = update.update_id + 1;
-  }
-
-  await saveOffset(nextOffset);
-  console.log(`[poll] done. saved offset=${nextOffset}`);
+  console.log("[poll] done.");
 }
 
 main().catch((err) => {

@@ -164,6 +164,9 @@ export function createBot(): Bot | null {
         return;
       }
 
+      console.log(
+        `[bot] file from chat=${ctx.chat.id} user=${userId} name=${media.fileName}`,
+      );
       const status = await ctx.reply("دارم روی GitHub آپلود می‌کنم…");
 
       try {
@@ -175,26 +178,34 @@ export function createBot(): Bot | null {
           telegramUserId: userId,
         });
 
-        await ctx.api.editMessageText(
-          ctx.chat.id,
-          status.message_id,
-          [
-            "✅ لینک دانلود آماده شد",
-            "",
-            `📄 ${stored.originalName}`,
-            `📦 ${formatBytes(stored.size)}`,
-            `☁️ ${stored.backend === "github" ? "GitHub" : "لوکال"}`,
-            "",
-            stored.url,
-          ].join("\n"),
-        );
+        const text = [
+          "✅ لینک دانلود آماده شد",
+          "",
+          `📄 ${stored.originalName}`,
+          `📦 ${formatBytes(stored.size)}`,
+          `☁️ ${stored.backend === "github" ? "GitHub" : "لوکال"}`,
+          "",
+          stored.url,
+        ].join("\n");
+
+        try {
+          await ctx.api.editMessageText(ctx.chat.id, status.message_id, text);
+        } catch {
+          await ctx.reply(text);
+        }
+        console.log(`[bot] sent link ${stored.url}`);
       } catch (err) {
         const message = err instanceof Error ? err.message : "خطای ناشناخته";
-        await ctx.api.editMessageText(
-          ctx.chat.id,
-          status.message_id,
-          `❌ نشد آپلود کنم:\n${message}`,
-        );
+        console.error("[bot] upload failed", err);
+        try {
+          await ctx.api.editMessageText(
+            ctx.chat.id,
+            status.message_id,
+            `❌ نشد آپلود کنم:\n${message}`,
+          );
+        } catch {
+          await ctx.reply(`❌ نشد آپلود کنم:\n${message}`);
+        }
       }
     },
   );
