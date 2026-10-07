@@ -12,16 +12,19 @@
 
 ## اجرا
 
+ربات روی GitHub Actions با جاب‌های چندساعته تقریباً ۲۴ساعته می‌ماند
+(هر جاب حدود ۵ ساعت تلگرام را مدام چک می‌کند).
+
 ```bash
 cp .env.example .env
 npm install
 npm run poll
 ```
 
-Secrets لازم در GitHub Actions:
+Secrets:
 
 - `TELEGRAM_BOT_TOKEN`
 - `TELEGRAM_API_ID`
 - `TELEGRAM_API_HASH`
 
-مدیر پیش‌فرض با `ADMIN_USER_IDS` تنظیم می‌شود.
+مدیر: `ADMIN_USER_IDS`

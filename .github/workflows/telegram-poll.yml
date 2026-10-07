@@ -1,10 +1,14 @@
-# ربات بدون VPS روی GitHub Actions
-# فایل را می‌گیرد، تا ۲ گیگ با MTProto دانلود می‌کند، لینک می‌دهد.
+# لینک‌یار — polling تقریباً ۲۴ساعته روی GitHub Actions
+# هر جاب حدود ۵ ساعت زنده می‌ماند و مدام تلگرام را چک می‌کند.
+# هر ۴ ساعت یک جاب تازه می‌آید تا اگر قبلی قطع شد دوباره بالا بیاید.
 name: Telegram poll
 
 on:
   schedule:
-    - cron: "*/2 * * * *"
+    # هر ۴ ساعت؛ خودِ cron گیت‌هاب دقیق نیست، برای همین جاب طولانی می‌ماند
+    - cron: "0 */4 * * *"
+    # پشتیبان وسط روز/شب
+    - cron: "30 */4 * * *"
   workflow_dispatch:
 
 permissions:
@@ -12,13 +16,13 @@ permissions:
 
 concurrency:
   group: telegram-poll
-  # هرگز جاب قبلی را وسط دانلود فایل بزرگ نکش
+  # جاب قبلی را وسط کار نکش (مخصوصاً دانلود فایل بزرگ)
   cancel-in-progress: false
 
 jobs:
   poll:
     runs-on: ubuntu-latest
-    timeout-minutes: 180
+    timeout-minutes: 360
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -32,7 +36,7 @@ jobs:
       - name: Install
         run: npm ci
 
-      - name: Poll Telegram (loop)
+      - name: Poll Telegram (keep-alive)
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -45,6 +49,8 @@ jobs:
           MAX_FILE_BYTES: "2147483648"
           TELEGRAM_API_ID: ${{ secrets.TELEGRAM_API_ID }}
           TELEGRAM_API_HASH: ${{ secrets.TELEGRAM_API_HASH }}
-          POLL_LOOP_MS: "110000"
+          # ~۵ ساعت حلقه مداوم
+          POLL_LOOP_MS: "18000000"
           POLL_INTERVAL_MS: "2000"
+          CLEANUP_INTERVAL_MS: "300000"
         run: npm run poll
