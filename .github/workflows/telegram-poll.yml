@@ -1,0 +1,47 @@
+# ربات بدون VPS: هر ۱–۲ دقیقه آپدیت‌های تلگرام را می‌گیرد،
+# فایل را در همین ریپو (uploads/) می‌گذارد و لینک raw برمی‌گرداند.
+#
+# نیازها:
+# - ریپو Public (لینک دانلود + Actions رایگان)
+# - Secret: TELEGRAM_BOT_TOKEN
+name: Telegram poll
+
+on:
+  schedule:
+    # روی ریپوی Public رایگان است؛ تأخیر cron گیت‌هاب گاهی ۱–۵ دقیقه است
+    - cron: "* * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: telegram-poll
+  cancel-in-progress: false
+
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Poll Telegram once
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_BRANCH: ${{ github.event.repository.default_branch }}
+          STORAGE_BACKEND: github
+          ALLOWED_USER_IDS: ${{ vars.ALLOWED_USER_IDS }}
+        run: npm run poll

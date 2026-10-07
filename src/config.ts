@@ -8,6 +8,35 @@ function requiredInProd(name: string, fallback = ""): string {
 
 const rootDir = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
 
+function parseGithubRepo(): { owner: string; repo: string } {
+  const explicitOwner = process.env.GITHUB_OWNER?.trim() || "";
+  const explicitRepo = process.env.GITHUB_REPO?.trim() || "";
+  if (explicitOwner && explicitRepo) {
+    return { owner: explicitOwner, repo: explicitRepo };
+  }
+
+  const combined =
+    process.env.GITHUB_REPOSITORY?.trim() ||
+    process.env.GITHUB_REPO?.trim() ||
+    "";
+  if (combined.includes("/")) {
+    const [owner, repo] = combined.split("/");
+    if (owner && repo) return { owner, repo };
+  }
+  return { owner: explicitOwner, repo: explicitRepo };
+}
+
+const githubIds = parseGithubRepo();
+
+export type StorageBackend = "github" | "local" | "auto";
+
+const backendEnv = (process.env.STORAGE_BACKEND || "auto").toLowerCase();
+const storageBackend = (
+  backendEnv === "github" || backendEnv === "local" || backendEnv === "auto"
+    ? backendEnv
+    : "auto"
+) as StorageBackend;
+
 export const config = {
   port: Number(process.env.PORT || 38471),
   publicBaseUrl: (
@@ -22,6 +51,21 @@ export const config = {
     .filter((n) => Number.isFinite(n)),
   maxFileBytes: Number(process.env.MAX_FILE_BYTES || 20 * 1024 * 1024),
   storageDir: path.join(rootDir, "storage"),
+  storageBackend,
+  github: {
+    token:
+      process.env.GITHUB_TOKEN?.trim() ||
+      process.env.GH_TOKEN?.trim() ||
+      "",
+    owner: githubIds.owner,
+    repo: githubIds.repo,
+    branch: process.env.GITHUB_BRANCH?.trim() || "main",
+    uploadDir: (process.env.GITHUB_UPLOAD_DIR || "uploads").replace(
+      /^\/+|\/+$/g,
+      "",
+    ),
+    offsetPath: process.env.GITHUB_OFFSET_PATH || "state/telegram-offset.json",
+  },
 };
 
 export function isUserAllowed(userId: number | undefined): boolean {

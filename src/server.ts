@@ -3,24 +3,31 @@ import { stat } from "node:fs/promises";
 import { Hono } from "hono";
 import { stream } from "hono/streaming";
 import { config } from "./config.js";
+import { isGithubConfigured } from "./github.js";
+import { chooseBackend, formatBytes, storeUpload } from "./store.js";
 import {
   deleteStoredFile,
   downloadUrl,
-  formatBytes,
   getStoredFile,
   listRecent,
-  saveBuffer,
   storageStats,
 } from "./storage.js";
 
 function landingHtml(opts: {
   botReady: boolean;
   stats: { count: number; bytes: number };
+  backend: string;
+  githubReady: boolean;
 }): string {
   const status = opts.botReady
-    ? "ربات تلگرام وصل است"
-    : "ربات خاموش است — TELEGRAM_BOT_TOKEN را در .env بگذار";
+    ? "ربات تلگرام آماده است"
+    : "توکن تلگرام نیست — برای Actions فقط Secret بگذار";
   const statusClass = opts.botReady ? "ok" : "warn";
+  const storageLabel = opts.githubReady
+    ? `فضا: GitHub (${config.github.owner}/${config.github.repo})`
+    : opts.backend === "local"
+      ? "فضا: لوکال (برای GitHub توکن/ریپو بگذار)"
+      : `فضا: ${opts.backend}`;
 
   return `<!DOCTYPE html>
 <html lang="fa" dir="rtl">
@@ -154,26 +161,26 @@ function landingHtml(opts: {
 <body>
   <main class="wrap">
     <h1 class="brand">لینک‌یار</h1>
-    <p class="lead">فایل را در تلگرام بفرست؛ لینک دانلود مستقیم بگیر. بدون نیاز به هاست DirectAdmin جداگانه.</p>
+    <p class="lead">فایل را در تلگرام بفرست؛ روی فضای رایگان GitHub ذخیره می‌شود و لینک دانلود می‌گیری — بدون VPS.</p>
     <div class="status ${statusClass}"><span class="dot"></span>${status}</div>
     <div class="meta">
-      <span>فایل‌ها: ${opts.stats.count}</span>
-      <span>حجم کل: ${formatBytes(opts.stats.bytes)}</span>
+      <span>${storageLabel}</span>
+      <span>فایل لوکال: ${opts.stats.count}</span>
       <span>حداکثر: ${formatBytes(config.maxFileBytes)}</span>
     </div>
 
     <section>
-      <h2>در تلگرام</h2>
+      <h2>بدون سرور (GitHub Actions)</h2>
       <ol>
-        <li>از <code>@BotFather</code> یک ربات بساز و توکن را در <code>.env</code> بگذار.</li>
-        <li><code>PUBLIC_BASE_URL</code> را روی آدرس عمومی همین سرور تنظیم کن.</li>
-        <li>به ربات فایل بفرست — لینک <code>/d/…</code> برمی‌گردد.</li>
+        <li>این پروژه را روی یک ریپوی <strong>Public</strong> گیت‌هاب بگذار.</li>
+        <li>توکن <code>@BotFather</code> را در Secrets با نام <code>TELEGRAM_BOT_TOKEN</code> ذخیره کن.</li>
+        <li>Workflow هر دقیقه تلگرام را چک می‌کند، فایل را در <code>uploads/</code> می‌گذارد و لینک <code>raw.githubusercontent.com</code> می‌فرستد.</li>
       </ol>
     </section>
 
     <section>
       <h2>آپلود آزمایشی از وب</h2>
-      <p>اگر هنوز توکن نداری، از اینجا فایل بفرست و لینک را تست کن.</p>
+      <p>اگر GitHub تنظیم باشد همین‌جا هم روی ریپو آپلود می‌شود.</p>
       <div class="drop">
         <label for="file">انتخاب فایل</label>
         <input id="file" type="file" />
@@ -217,7 +224,20 @@ export function createApp(opts: { botReady: boolean }) {
 
   app.get("/", async (c) => {
     const stats = await storageStats();
-    return c.html(landingHtml({ botReady: opts.botReady, stats }));
+    let backend = "local";
+    try {
+      backend = chooseBackend();
+    } catch {
+      backend = "local";
+    }
+    return c.html(
+      landingHtml({
+        botReady: opts.botReady,
+        stats,
+        backend,
+        githubReady: isGithubConfigured(),
+      }),
+    );
   });
 
   app.get("/health", (c) =>
@@ -225,6 +245,18 @@ export function createApp(opts: { botReady: boolean }) {
       ok: true,
       botReady: opts.botReady,
       publicBaseUrl: config.publicBaseUrl,
+      githubReady: isGithubConfigured(),
+      storageBackend: (() => {
+        try {
+          return chooseBackend();
+        } catch {
+          return "local";
+        }
+      })(),
+      githubRepo:
+        config.github.owner && config.github.repo
+          ? `${config.github.owner}/${config.github.repo}`
+          : null,
     }),
   );
 
@@ -245,7 +277,7 @@ export function createApp(opts: { botReady: boolean }) {
       const uploaded = file as File;
       const ab = await uploaded.arrayBuffer();
       const buffer = Buffer.from(ab);
-      const stored = await saveBuffer({
+      const stored = await storeUpload({
         buffer,
         originalName: uploaded.name || "upload.bin",
         mimeType: uploaded.type || "application/octet-stream",
@@ -254,7 +286,8 @@ export function createApp(opts: { botReady: boolean }) {
         id: stored.id,
         name: stored.originalName,
         size: stored.size,
-        url: downloadUrl(stored.id),
+        url: stored.url,
+        backend: stored.backend,
       });
     } catch (err) {
       const message = err instanceof Error ? err.message : "خطا";

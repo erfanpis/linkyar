@@ -1,12 +1,15 @@
 import { Bot, Context } from "grammy";
 import { config, isUserAllowed } from "./config.js";
-import {
-  downloadUrl,
-  formatBytes,
-  saveBuffer,
-} from "./storage.js";
+import { formatBytes, storeUpload } from "./store.js";
 
-type MediaKind = "document" | "photo" | "video" | "audio" | "voice" | "animation" | "video_note";
+type MediaKind =
+  | "document"
+  | "photo"
+  | "video"
+  | "audio"
+  | "voice"
+  | "animation"
+  | "video_note";
 
 function pickMedia(ctx: Context): {
   kind: MediaKind;
@@ -53,7 +56,9 @@ function pickMedia(ctx: Context): {
     return {
       kind: "animation",
       fileId: msg.animation.file_id,
-      fileName: msg.animation.file_name || `animation-${msg.animation.file_unique_id}.mp4`,
+      fileName:
+        msg.animation.file_name ||
+        `animation-${msg.animation.file_unique_id}.mp4`,
       mimeType: msg.animation.mime_type || "video/mp4",
     };
   }
@@ -99,7 +104,7 @@ async function downloadTelegramFile(bot: Bot, fileId: string): Promise<Buffer> {
 export function createBot(): Bot | null {
   if (!config.telegramToken) {
     console.warn(
-      "[bot] TELEGRAM_BOT_TOKEN تنظیم نشده — فقط سرور وب/دانلود فعال است. برای ربات، توکن را در .env بگذار.",
+      "[bot] TELEGRAM_BOT_TOKEN تنظیم نشده — ربات تلگرام خاموش است.",
     );
     return null;
   }
@@ -111,14 +116,15 @@ export function createBot(): Bot | null {
       [
         "سلام 👋",
         "",
-        "هر فایلی بفرست (سند، عکس، ویدیو، صوت…) تا لینک دانلود مستقیم برات بسازم.",
+        "هر فایلی بفرست تا روی GitHub آپلود کنم و لینک دانلود بدم.",
         "",
         `حداکثر حجم: ${formatBytes(config.maxFileBytes)}`,
+        "فضا: GitHub (ریپوی عمومی)",
         "",
         "دستورها:",
         "/start — راهنما",
-        "/id — دیدن یوزرآیدی خودت",
-        "/ping — وضعیت ربات",
+        "/id — یوزرآیدی",
+        "/ping — وضعیت",
       ].join("\n"),
     );
   });
@@ -130,7 +136,7 @@ export function createBot(): Bot | null {
   });
 
   bot.command("ping", async (ctx) => {
-    await ctx.reply("آنلاینم ✅ لینک‌ها از همین سرور سرو می‌شن.");
+    await ctx.reply("آنلاینم ✅ فایل‌ها روی GitHub ذخیره می‌شن.");
   });
 
   bot.on(
@@ -146,7 +152,9 @@ export function createBot(): Bot | null {
     async (ctx) => {
       const userId = ctx.from?.id;
       if (!isUserAllowed(userId)) {
-        await ctx.reply("دسترسی نداری. ادمین باید یوزرآیدیت رو به ALLOWED_USER_IDS اضافه کنه.");
+        await ctx.reply(
+          "دسترسی نداری. ادمین باید یوزرآیدیت رو به ALLOWED_USER_IDS اضافه کنه.",
+        );
         return;
       }
 
@@ -156,17 +164,16 @@ export function createBot(): Bot | null {
         return;
       }
 
-      const status = await ctx.reply("دارم فایل رو ذخیره می‌کنم…");
+      const status = await ctx.reply("دارم روی GitHub آپلود می‌کنم…");
 
       try {
         const buffer = await downloadTelegramFile(bot, media.fileId);
-        const stored = await saveBuffer({
+        const stored = await storeUpload({
           buffer,
           originalName: media.fileName,
           mimeType: media.mimeType,
           telegramUserId: userId,
         });
-        const url = downloadUrl(stored.id);
 
         await ctx.api.editMessageText(
           ctx.chat.id,
@@ -176,8 +183,9 @@ export function createBot(): Bot | null {
             "",
             `📄 ${stored.originalName}`,
             `📦 ${formatBytes(stored.size)}`,
+            `☁️ ${stored.backend === "github" ? "GitHub" : "لوکال"}`,
             "",
-            url,
+            stored.url,
           ].join("\n"),
         );
       } catch (err) {
@@ -185,7 +193,7 @@ export function createBot(): Bot | null {
         await ctx.api.editMessageText(
           ctx.chat.id,
           status.message_id,
-          `❌ نشد ذخیره کنم:\n${message}`,
+          `❌ نشد آپلود کنم:\n${message}`,
         );
       }
     },
