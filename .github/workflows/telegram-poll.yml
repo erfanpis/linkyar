@@ -16,7 +16,8 @@ permissions:
 
 concurrency:
   group: telegram-poll
-  cancel-in-progress: false
+  # فقط یک poller؛ در غیر این صورت تلگرام خطای 409 می‌دهد
+  cancel-in-progress: true
 
 jobs:
   poll:
