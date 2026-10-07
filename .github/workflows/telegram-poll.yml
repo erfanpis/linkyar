@@ -1,11 +1,12 @@
-# لینک‌یار — polling تقریباً ۲۴ساعته روی GitHub Actions
-# هر جاب حدود ۵ ساعت زنده می‌ماند و مدام تلگرام را چک می‌کند.
-# هر ۴ ساعت یک جاب تازه می‌آید تا اگر قبلی قطع شد دوباره بالا بیاید.
+# لینک‌یار ۲۴ساعته:
+# - long-polling فوری (جواب چندثانیه‌ای)
+# - هر جاب ~۵ ساعت زنده است
+# - آخر کار با RESPAWN_PAT خودش جاب بعدی را روشن می‌کند (زنجیره بی‌نهایت)
 name: Telegram poll
 
 on:
   schedule:
-    # هر ساعت یک جاب تازه صف می‌شود؛ وقتی قبلی تمام شد همان لحظه بعدی بالا می‌آید
+    # پشتیبان اگر زنجیره یک‌بار قطع شد
     - cron: "0 * * * *"
     - cron: "30 * * * *"
   workflow_dispatch:
@@ -15,7 +16,6 @@ permissions:
 
 concurrency:
   group: telegram-poll
-  # جاب قبلی را وسط کار نکش (مخصوصاً دانلود فایل بزرگ)
   cancel-in-progress: false
 
 jobs:
@@ -35,7 +35,7 @@ jobs:
       - name: Install
         run: npm ci
 
-      - name: Poll Telegram (keep-alive)
+      - name: Run bot (instant long-polling, ~5 hours)
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -48,8 +48,24 @@ jobs:
           MAX_FILE_BYTES: "2147483648"
           TELEGRAM_API_ID: ${{ secrets.TELEGRAM_API_ID }}
           TELEGRAM_API_HASH: ${{ secrets.TELEGRAM_API_HASH }}
-          # ~۵ ساعت حلقه مداوم
-          POLL_LOOP_MS: "18000000"
-          POLL_INTERVAL_MS: "2000"
-          CLEANUP_INTERVAL_MS: "300000"
-        run: npm run poll
+          PORT: "38471"
+        run: |
+          # بعد از ۵ ساعت با SIGINT خاموش می‌شود تا جاب بعدی بیاید
+          timeout --signal=SIGINT 18000 npm start || code=$?
+          # 124 = timeout معمولی
+          if [ "${code:-0}" = "124" ] || [ "${code:-0}" = "0" ]; then
+            exit 0
+          fi
+          exit "${code:-1}"
+
+      - name: Respawn next keep-alive job
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.RESPAWN_PAT }}
+        run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo "RESPAWN_PAT missing — نمی‌توانم خودم را دوباره روشن کنم"
+            exit 0
+          fi
+          gh workflow run "telegram-poll.yml" --repo "$GITHUB_REPOSITORY"
+          echo "respawn requested"
