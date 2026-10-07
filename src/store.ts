@@ -12,6 +12,7 @@ export type StoredResult = StoredFile & {
   url: string;
   backend: "github" | "local";
   githubPath?: string;
+  expiresAt?: string;
 };
 
 function chooseBackend(): "github" | "local" {
@@ -48,17 +49,19 @@ export async function storeUpload(opts: {
       originalName: opts.originalName,
       id,
       mimeType: opts.mimeType,
+      telegramUserId: opts.telegramUserId,
     });
     return {
       id,
       originalName: opts.originalName,
       mimeType: opts.mimeType,
       size: opts.buffer.byteLength,
-      createdAt: new Date().toISOString(),
+      createdAt: uploaded.meta.createdAt,
       telegramUserId: opts.telegramUserId,
       url: uploaded.url,
       backend: "github",
       githubPath: uploaded.path,
+      expiresAt: uploaded.meta.expiresAt,
     };
   }
 

@@ -43,6 +43,9 @@ jobs:
           GITHUB_BRANCH: ${{ github.event.repository.default_branch }}
           STORAGE_BACKEND: github
           ALLOWED_USER_IDS: ${{ vars.ALLOWED_USER_IDS }}
+          FILE_TTL_HOURS: "12"
+          MAX_FILE_BYTES: "104857600"
+          TELEGRAM_MAX_FILE_BYTES: "20971520"
           # ~۴ دقیقه و ۴۵ ثانیه حلقه
           POLL_LOOP_MS: "285000"
           POLL_INTERVAL_MS: "2500"

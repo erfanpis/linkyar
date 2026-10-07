@@ -49,7 +49,12 @@ export const config = {
     .filter(Boolean)
     .map((s) => Number(s))
     .filter((n) => Number.isFinite(n)),
-  maxFileBytes: Number(process.env.MAX_FILE_BYTES || 20 * 1024 * 1024),
+  // سقف ذخیره روی GitHub (API تا ۱۰۰MB). تلگرام برای دانلود ربات معمولاً ۲۰MB است.
+  maxFileBytes: Number(process.env.MAX_FILE_BYTES || 100 * 1024 * 1024),
+  telegramMaxFileBytes: Number(
+    process.env.TELEGRAM_MAX_FILE_BYTES || 20 * 1024 * 1024,
+  ),
+  fileTtlHours: Number(process.env.FILE_TTL_HOURS || 12),
   storageDir: path.join(rootDir, "storage"),
   storageBackend,
   github: {

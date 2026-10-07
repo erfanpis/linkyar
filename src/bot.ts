@@ -2,6 +2,14 @@ import { Bot, Context } from "grammy";
 import { config, isUserAllowed } from "./config.js";
 import { formatBytes, storeUpload } from "./store.js";
 
+function formatExpiryFa(iso: string): string {
+  try {
+    return new Date(iso).toLocaleString("fa-IR", { hour12: false });
+  } catch {
+    return iso;
+  }
+}
+
 type MediaKind =
   | "document"
   | "photo"
@@ -87,6 +95,12 @@ async function downloadTelegramFile(bot: Bot, fileId: string): Promise<Buffer> {
   if (!file.file_path) {
     throw new Error("تلگرام مسیر فایل را برنگرداند.");
   }
+  // محدودیت سخت Bot API تلگرام برای دانلود فایل توسط ربات
+  if (file.file_size && file.file_size > config.telegramMaxFileBytes) {
+    throw new Error(
+      `از تلگرام حداکثر ${formatBytes(config.telegramMaxFileBytes)} می‌توان گرفت (محدودیت خود تلگرام برای ربات‌ها). فایل کوچک‌تر بفرست.`,
+    );
+  }
   if (file.file_size && file.file_size > config.maxFileBytes) {
     throw new Error(
       `حجم فایل بیشتر از حد مجاز است (${formatBytes(config.maxFileBytes)}).`,
@@ -116,10 +130,10 @@ export function createBot(): Bot | null {
       [
         "سلام 👋",
         "",
-        "هر فایلی بفرست تا روی GitHub آپلود کنم و لینک دانلود بدم.",
+        "هر فایلی بفرست تا لینک دانلود بدم.",
         "",
-        `حداکثر حجم: ${formatBytes(config.maxFileBytes)}`,
-        "فضا: GitHub (ریپوی عمومی)",
+        `⏱ لینک و فایل بعد از ${config.fileTtlHours} ساعت خودکار پاک می‌شود`,
+        `📦 از تلگرام: حداکثر ${formatBytes(config.telegramMaxFileBytes)} (محدودیت تلگرام)`,
         "",
         "دستورها:",
         "/start — راهنما",
@@ -183,7 +197,9 @@ export function createBot(): Bot | null {
           "",
           `📄 ${stored.originalName}`,
           `📦 ${formatBytes(stored.size)}`,
-          `☁️ ${stored.backend === "github" ? "GitHub" : "لوکال"}`,
+          stored.expiresAt
+            ? `⏱ انقضا: ${formatExpiryFa(stored.expiresAt)} (حداکثر ${config.fileTtlHours} ساعت)`
+            : `⏱ انقضا: ${config.fileTtlHours} ساعت`,
           "",
           stored.url,
         ].join("\n");

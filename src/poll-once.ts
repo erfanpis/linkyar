@@ -5,6 +5,7 @@
 import { config } from "./config.js";
 import { createBot } from "./bot.js";
 import {
+  cleanupExpiredUploads,
   isGithubConfigured,
   readGithubJson,
   writeGithubJson,
@@ -78,6 +79,17 @@ async function main() {
     throw new Error("برای حالت GitHub باید GITHUB_TOKEN و ریپو تنظیم باشد.");
   }
 
+  if (backend === "github") {
+    try {
+      const cleaned = await cleanupExpiredUploads();
+      console.log(
+        `[cleanup] deleted=${cleaned.deleted.length} kept=${cleaned.kept}`,
+      );
+    } catch (err) {
+      console.error("[cleanup] failed", err);
+    }
+  }
+
   const bot = createBot();
   if (!bot) throw new Error("ربات ساخته نشد.");
   await bot.init();
@@ -88,13 +100,26 @@ async function main() {
 
   const loopMs = Number(process.env.POLL_LOOP_MS || 0);
   const intervalMs = Number(process.env.POLL_INTERVAL_MS || 2500);
+  const cleanupEveryMs = Number(process.env.CLEANUP_INTERVAL_MS || 60_000);
   const deadline = loopMs > 0 ? Date.now() + loopMs : Date.now();
+  let lastCleanup = Date.now();
 
   offset = await drainOnce(bot, offset);
 
   while (Date.now() < deadline) {
     await sleep(intervalMs);
     offset = await drainOnce(bot, offset);
+    if (backend === "github" && Date.now() - lastCleanup >= cleanupEveryMs) {
+      try {
+        const cleaned = await cleanupExpiredUploads();
+        if (cleaned.deleted.length) {
+          console.log(`[cleanup] deleted=${cleaned.deleted.join(",")}`);
+        }
+      } catch (err) {
+        console.error("[cleanup] failed", err);
+      }
+      lastCleanup = Date.now();
+    }
   }
 
   console.log("[poll] done.");
