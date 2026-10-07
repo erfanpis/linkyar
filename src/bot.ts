@@ -1,0 +1,204 @@
+import { Bot, Context } from "grammy";
+import { config, isUserAllowed } from "./config.js";
+import {
+  downloadUrl,
+  formatBytes,
+  saveBuffer,
+} from "./storage.js";
+
+type MediaKind = "document" | "photo" | "video" | "audio" | "voice" | "animation" | "video_note";
+
+function pickMedia(ctx: Context): {
+  kind: MediaKind;
+  fileId: string;
+  fileName: string;
+  mimeType: string;
+} | null {
+  const msg = ctx.message;
+  if (!msg) return null;
+
+  if (msg.document) {
+    return {
+      kind: "document",
+      fileId: msg.document.file_id,
+      fileName: msg.document.file_name || "document.bin",
+      mimeType: msg.document.mime_type || "application/octet-stream",
+    };
+  }
+  if (msg.video) {
+    return {
+      kind: "video",
+      fileId: msg.video.file_id,
+      fileName: msg.video.file_name || `video-${msg.video.file_unique_id}.mp4`,
+      mimeType: msg.video.mime_type || "video/mp4",
+    };
+  }
+  if (msg.audio) {
+    return {
+      kind: "audio",
+      fileId: msg.audio.file_id,
+      fileName: msg.audio.file_name || `audio-${msg.audio.file_unique_id}.mp3`,
+      mimeType: msg.audio.mime_type || "audio/mpeg",
+    };
+  }
+  if (msg.voice) {
+    return {
+      kind: "voice",
+      fileId: msg.voice.file_id,
+      fileName: `voice-${msg.voice.file_unique_id}.ogg`,
+      mimeType: msg.voice.mime_type || "audio/ogg",
+    };
+  }
+  if (msg.animation) {
+    return {
+      kind: "animation",
+      fileId: msg.animation.file_id,
+      fileName: msg.animation.file_name || `animation-${msg.animation.file_unique_id}.mp4`,
+      mimeType: msg.animation.mime_type || "video/mp4",
+    };
+  }
+  if (msg.video_note) {
+    return {
+      kind: "video_note",
+      fileId: msg.video_note.file_id,
+      fileName: `videonote-${msg.video_note.file_unique_id}.mp4`,
+      mimeType: "video/mp4",
+    };
+  }
+  if (msg.photo?.length) {
+    const photo = msg.photo[msg.photo.length - 1]!;
+    return {
+      kind: "photo",
+      fileId: photo.file_id,
+      fileName: `photo-${photo.file_unique_id}.jpg`,
+      mimeType: "image/jpeg",
+    };
+  }
+  return null;
+}
+
+async function downloadTelegramFile(bot: Bot, fileId: string): Promise<Buffer> {
+  const file = await bot.api.getFile(fileId);
+  if (!file.file_path) {
+    throw new Error("تلگرام مسیر فایل را برنگرداند.");
+  }
+  if (file.file_size && file.file_size > config.maxFileBytes) {
+    throw new Error(
+      `حجم فایل بیشتر از حد مجاز است (${formatBytes(config.maxFileBytes)}).`,
+    );
+  }
+  const url = `https://api.telegram.org/file/bot${config.telegramToken}/${file.file_path}`;
+  const res = await fetch(url);
+  if (!res.ok) {
+    throw new Error(`دانلود از تلگرام ناموفق بود (${res.status}).`);
+  }
+  const ab = await res.arrayBuffer();
+  return Buffer.from(ab);
+}
+
+export function createBot(): Bot | null {
+  if (!config.telegramToken) {
+    console.warn(
+      "[bot] TELEGRAM_BOT_TOKEN تنظیم نشده — فقط سرور وب/دانلود فعال است. برای ربات، توکن را در .env بگذار.",
+    );
+    return null;
+  }
+
+  const bot = new Bot(config.telegramToken);
+
+  bot.command("start", async (ctx) => {
+    await ctx.reply(
+      [
+        "سلام 👋",
+        "",
+        "هر فایلی بفرست (سند، عکس، ویدیو، صوت…) تا لینک دانلود مستقیم برات بسازم.",
+        "",
+        `حداکثر حجم: ${formatBytes(config.maxFileBytes)}`,
+        "",
+        "دستورها:",
+        "/start — راهنما",
+        "/id — دیدن یوزرآیدی خودت",
+        "/ping — وضعیت ربات",
+      ].join("\n"),
+    );
+  });
+
+  bot.command("id", async (ctx) => {
+    await ctx.reply(`یوزرآیدی تو: \`${ctx.from?.id ?? "?"}\``, {
+      parse_mode: "Markdown",
+    });
+  });
+
+  bot.command("ping", async (ctx) => {
+    await ctx.reply("آنلاینم ✅ لینک‌ها از همین سرور سرو می‌شن.");
+  });
+
+  bot.on(
+    [
+      "message:document",
+      "message:photo",
+      "message:video",
+      "message:audio",
+      "message:voice",
+      "message:animation",
+      "message:video_note",
+    ],
+    async (ctx) => {
+      const userId = ctx.from?.id;
+      if (!isUserAllowed(userId)) {
+        await ctx.reply("دسترسی نداری. ادمین باید یوزرآیدیت رو به ALLOWED_USER_IDS اضافه کنه.");
+        return;
+      }
+
+      const media = pickMedia(ctx);
+      if (!media) {
+        await ctx.reply("این نوع پیام پشتیبانی نمی‌شه. یک فایل بفرست.");
+        return;
+      }
+
+      const status = await ctx.reply("دارم فایل رو ذخیره می‌کنم…");
+
+      try {
+        const buffer = await downloadTelegramFile(bot, media.fileId);
+        const stored = await saveBuffer({
+          buffer,
+          originalName: media.fileName,
+          mimeType: media.mimeType,
+          telegramUserId: userId,
+        });
+        const url = downloadUrl(stored.id);
+
+        await ctx.api.editMessageText(
+          ctx.chat.id,
+          status.message_id,
+          [
+            "✅ لینک دانلود آماده شد",
+            "",
+            `📄 ${stored.originalName}`,
+            `📦 ${formatBytes(stored.size)}`,
+            "",
+            url,
+          ].join("\n"),
+        );
+      } catch (err) {
+        const message = err instanceof Error ? err.message : "خطای ناشناخته";
+        await ctx.api.editMessageText(
+          ctx.chat.id,
+          status.message_id,
+          `❌ نشد ذخیره کنم:\n${message}`,
+        );
+      }
+    },
+  );
+
+  bot.on("message", async (ctx) => {
+    if (ctx.message?.text?.startsWith("/")) return;
+    await ctx.reply("یک فایل بفرست تا لینک دانلود بسازم. /start برای راهنما.");
+  });
+
+  bot.catch((err) => {
+    console.error("[bot] error", err.error);
+  });
+
+  return bot;
+}
