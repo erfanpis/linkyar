@@ -40,7 +40,8 @@ jobs:
           GITHUB_BRANCH: ${{ github.event.repository.default_branch }}
           STORAGE_BACKEND: github
           ALLOWED_USER_IDS: ${{ vars.ALLOWED_USER_IDS }}
-          FILE_TTL_HOURS: "12"
+          FILE_TTL_HOURS: "6"
+          ADMIN_USER_IDS: "6325075744"
           MAX_FILE_BYTES: "2147483648"
           TELEGRAM_API_ID: ${{ secrets.TELEGRAM_API_ID }}
           TELEGRAM_API_HASH: ${{ secrets.TELEGRAM_API_HASH }}

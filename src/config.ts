@@ -26,6 +26,15 @@ function parseGithubRepo(): { owner: string; repo: string } {
   return { owner: explicitOwner, repo: explicitRepo };
 }
 
+function parseIdList(raw: string | undefined): number[] {
+  return (raw || "")
+    .split(",")
+    .map((s) => s.trim())
+    .filter(Boolean)
+    .map((s) => Number(s))
+    .filter((n) => Number.isFinite(n));
+}
+
 const githubIds = parseGithubRepo();
 
 export type StorageBackend = "github" | "local" | "auto";
@@ -37,6 +46,9 @@ const storageBackend = (
     : "auto"
 ) as StorageBackend;
 
+// مالک پیش‌فرض: @erfanitt
+const defaultAdminIds = [6325075744];
+
 export const config = {
   port: Number(process.env.PORT || 38471),
   publicBaseUrl: (
@@ -46,23 +58,19 @@ export const config = {
   telegramApiId: Number(process.env.TELEGRAM_API_ID || 0),
   telegramApiHash: process.env.TELEGRAM_API_HASH?.trim() || "",
   telegramSession: process.env.TELEGRAM_SESSION?.trim() || "",
-  allowedUserIds: (process.env.ALLOWED_USER_IDS || "")
-    .split(",")
-    .map((s) => s.trim())
-    .filter(Boolean)
-    .map((s) => Number(s))
-    .filter((n) => Number.isFinite(n)),
-  // تا ۲ گیگ — مثل خود تلگرام
+  adminUserIds: Array.from(
+    new Set([...defaultAdminIds, ...parseIdList(process.env.ADMIN_USER_IDS)]),
+  ),
+  adminUsername: (process.env.ADMIN_USERNAME || "erfanitt").replace(/^@/, ""),
+  allowedUserIds: parseIdList(process.env.ALLOWED_USER_IDS),
   maxFileBytes: Number(process.env.MAX_FILE_BYTES || 2 * 1024 * 1024 * 1024),
-  // اگر MTProto نباشد، مسیر HTTP Bot API هنوز ~۲۰MB است
   telegramHttpMaxBytes: Number(
     process.env.TELEGRAM_HTTP_MAX_BYTES || 20 * 1024 * 1024,
   ),
-  // زیر این حجم از Release استریم می‌شود (نه Contents API)
   githubContentsMaxBytes: Number(
     process.env.GITHUB_CONTENTS_MAX_BYTES || 5 * 1024 * 1024,
   ),
-  fileTtlHours: Number(process.env.FILE_TTL_HOURS || 12),
+  fileTtlHours: Number(process.env.FILE_TTL_HOURS || 6),
   storageDir: path.join(rootDir, "storage"),
   tmpDir: path.join(rootDir, "tmp"),
   storageBackend,
@@ -79,11 +87,7 @@ export const config = {
       "",
     ),
     offsetPath: process.env.GITHUB_OFFSET_PATH || "state/telegram-offset.json",
+    accessPath: process.env.GITHUB_ACCESS_PATH || "state/access.json",
+    pendingPath: process.env.GITHUB_PENDING_PATH || "state/pending-files.json",
   },
 };
-
-export function isUserAllowed(userId: number | undefined): boolean {
-  if (config.allowedUserIds.length === 0) return true;
-  if (userId == null) return false;
-  return config.allowedUserIds.includes(userId);
-}

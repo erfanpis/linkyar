@@ -44,7 +44,7 @@ async function drainOnce(
   const updates = await bot.api.getUpdates({
     offset,
     timeout: 0,
-    allowed_updates: ["message"],
+    allowed_updates: ["message", "callback_query"],
     limit: 50,
   });
 

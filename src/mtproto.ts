@@ -17,7 +17,7 @@ export function isMtprotoConfigured(): boolean {
 export async function getMtprotoClient(): Promise<TelegramClient> {
   if (!isMtprotoConfigured()) {
     throw new Error(
-      "برای فایل‌های بزرگ باید TELEGRAM_API_ID و TELEGRAM_API_HASH تنظیم شود (از my.telegram.org).",
+      "برای فایل‌های بزرگ باید TELEGRAM_API_ID و TELEGRAM_API_HASH تنظیم شود.",
     );
   }
   if (!clientPromise) {
@@ -56,6 +56,7 @@ export async function downloadMessageToFile(opts: {
   chatId: number;
   messageId: number;
   destPath: string;
+  onProgress?: (pct: number, received: number, total: number) => void | Promise<void>;
 }): Promise<{ size: number }> {
   const client = await getMtprotoClient();
   await mkdir(path.dirname(opts.destPath), { recursive: true });
@@ -65,22 +66,26 @@ export async function downloadMessageToFile(opts: {
   });
   const message = messages[0];
   if (!message?.media) {
-    throw new Error("پیام/فایل در تلگرام پیدا نشد (MTProto).");
+    throw new Error("پیام/فایل در تلگرام پیدا نشد.");
   }
 
+  let lastEmit = 0;
   const result = await client.downloadMedia(message, {
     outputFile: opts.destPath,
     progressCallback: (received, total) => {
       const r = Number(received);
       const t = Number(total);
-      if (t > 0 && r > 0 && r % (64 * 1024 * 1024) < 1024 * 1024) {
-        console.log(`[mtproto] download ${((r / t) * 100).toFixed(1)}%`);
-      }
+      if (!t || t <= 0) return;
+      const pct = (r / t) * 100;
+      const now = Date.now();
+      if (now - lastEmit < 2000 && pct < 99) return;
+      lastEmit = now;
+      void opts.onProgress?.(pct, r, t);
     },
   });
 
   if (!result) {
-    throw new Error("دانلود MTProto چیزی برنگرداند.");
+    throw new Error("دانلود چیزی برنگرداند.");
   }
 
   if (Buffer.isBuffer(result)) {

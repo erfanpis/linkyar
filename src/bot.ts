@@ -1,93 +1,99 @@
 import { mkdir, unlink } from "node:fs/promises";
 import path from "node:path";
-import { Bot, Context } from "grammy";
-import { config, isUserAllowed } from "./config.js";
+import { Bot, Context, InlineKeyboard } from "grammy";
+import {
+  approveUser,
+  canUseBot,
+  denyUser,
+  getAccessStatus,
+  isAdmin,
+  listAccessSummary,
+  requestAccess,
+} from "./access.js";
+import { config } from "./config.js";
+import { msg } from "./messages.js";
 import { downloadMessageToFile, isMtprotoConfigured } from "./mtproto.js";
+import { savePending, takePending, type PendingFile } from "./pending.js";
 import { formatBytes, storeUpload } from "./store.js";
 
-function formatExpiryFa(iso: string): string {
-  try {
-    return new Date(iso).toLocaleString("fa-IR", { hour12: false });
-  } catch {
-    return iso;
-  }
-}
-
-type MediaInfo = {
-  fileId: string;
-  fileName: string;
-  mimeType: string;
-  fileSize?: number;
-  messageId: number;
-  chatId: number;
-};
+type MediaInfo = PendingFile;
 
 function pickMedia(ctx: Context): MediaInfo | null {
-  const msg = ctx.message;
-  if (!msg || !ctx.chat) return null;
+  const m = ctx.message;
+  if (!m || !ctx.chat || !ctx.from) return null;
+  const base = {
+    messageId: m.message_id,
+    chatId: ctx.chat.id,
+    userId: ctx.from.id,
+    createdAt: new Date().toISOString(),
+  };
 
-  const base = { messageId: msg.message_id, chatId: ctx.chat.id };
-
-  if (msg.document) {
+  if (m.document) {
     return {
       ...base,
-      fileId: msg.document.file_id,
-      fileName: msg.document.file_name || "document.bin",
-      mimeType: msg.document.mime_type || "application/octet-stream",
-      fileSize: msg.document.file_size,
+      kind: "سند",
+      fileId: m.document.file_id,
+      fileName: m.document.file_name || "document.bin",
+      mimeType: m.document.mime_type || "application/octet-stream",
+      fileSize: m.document.file_size,
     };
   }
-  if (msg.video) {
+  if (m.video) {
     return {
       ...base,
-      fileId: msg.video.file_id,
-      fileName: msg.video.file_name || `video-${msg.video.file_unique_id}.mp4`,
-      mimeType: msg.video.mime_type || "video/mp4",
-      fileSize: msg.video.file_size,
+      kind: "ویدیو",
+      fileId: m.video.file_id,
+      fileName: m.video.file_name || `video-${m.video.file_unique_id}.mp4`,
+      mimeType: m.video.mime_type || "video/mp4",
+      fileSize: m.video.file_size,
     };
   }
-  if (msg.audio) {
+  if (m.audio) {
     return {
       ...base,
-      fileId: msg.audio.file_id,
-      fileName: msg.audio.file_name || `audio-${msg.audio.file_unique_id}.mp3`,
-      mimeType: msg.audio.mime_type || "audio/mpeg",
-      fileSize: msg.audio.file_size,
+      kind: "صوت",
+      fileId: m.audio.file_id,
+      fileName: m.audio.file_name || `audio-${m.audio.file_unique_id}.mp3`,
+      mimeType: m.audio.mime_type || "audio/mpeg",
+      fileSize: m.audio.file_size,
     };
   }
-  if (msg.voice) {
+  if (m.voice) {
     return {
       ...base,
-      fileId: msg.voice.file_id,
-      fileName: `voice-${msg.voice.file_unique_id}.ogg`,
-      mimeType: msg.voice.mime_type || "audio/ogg",
-      fileSize: msg.voice.file_size,
+      kind: "ویس",
+      fileId: m.voice.file_id,
+      fileName: `voice-${m.voice.file_unique_id}.ogg`,
+      mimeType: m.voice.mime_type || "audio/ogg",
+      fileSize: m.voice.file_size,
     };
   }
-  if (msg.animation) {
+  if (m.animation) {
     return {
       ...base,
-      fileId: msg.animation.file_id,
+      kind: "انیمیشن",
+      fileId: m.animation.file_id,
       fileName:
-        msg.animation.file_name ||
-        `animation-${msg.animation.file_unique_id}.mp4`,
-      mimeType: msg.animation.mime_type || "video/mp4",
-      fileSize: msg.animation.file_size,
+        m.animation.file_name || `animation-${m.animation.file_unique_id}.mp4`,
+      mimeType: m.animation.mime_type || "video/mp4",
+      fileSize: m.animation.file_size,
     };
   }
-  if (msg.video_note) {
+  if (m.video_note) {
     return {
       ...base,
-      fileId: msg.video_note.file_id,
-      fileName: `videonote-${msg.video_note.file_unique_id}.mp4`,
+      kind: "ویدیو نوت",
+      fileId: m.video_note.file_id,
+      fileName: `videonote-${m.video_note.file_unique_id}.mp4`,
       mimeType: "video/mp4",
-      fileSize: msg.video_note.file_size,
+      fileSize: m.video_note.file_size,
     };
   }
-  if (msg.photo?.length) {
-    const photo = msg.photo[msg.photo.length - 1]!;
+  if (m.photo?.length) {
+    const photo = m.photo[m.photo.length - 1]!;
     return {
       ...base,
+      kind: "عکس",
       fileId: photo.file_id,
       fileName: `photo-${photo.file_unique_id}.jpg`,
       mimeType: "image/jpeg",
@@ -97,35 +103,50 @@ function pickMedia(ctx: Context): MediaInfo | null {
   return null;
 }
 
-async function downloadViaHttpBotApi(
-  bot: Bot,
-  fileId: string,
-): Promise<Buffer> {
-  const file = await bot.api.getFile(fileId);
-  if (!file.file_path) {
-    throw new Error("تلگرام مسیر فایل را برنگرداند.");
+async function editHtml(
+  ctx: Context,
+  chatId: number,
+  messageId: number,
+  html: string,
+) {
+  try {
+    await ctx.api.editMessageText(chatId, messageId, html, {
+      parse_mode: "HTML",
+      link_preview_options: { is_disabled: true },
+    });
+  } catch {
+    /* ignore */
   }
+}
+
+async function downloadViaHttpBotApi(bot: Bot, fileId: string): Promise<Buffer> {
+  const file = await bot.api.getFile(fileId);
+  if (!file.file_path) throw new Error("مسیر فایل از تلگرام نیامد.");
   if (file.file_size && file.file_size > config.telegramHttpMaxBytes) {
-    throw new Error(
-      `این فایل بزرگ است. برای تا ۲ گیگ، TELEGRAM_API_ID و TELEGRAM_API_HASH را از my.telegram.org بفرست.`,
-    );
+    throw new Error("فایل بزرگ است؛ MTProto باید فعال باشد.");
   }
   const url = `https://api.telegram.org/file/bot${config.telegramToken}/${file.file_path}`;
   const res = await fetch(url);
-  if (!res.ok) {
-    throw new Error(`دانلود از تلگرام ناموفق بود (${res.status}).`);
-  }
+  if (!res.ok) throw new Error(`دانلود ناموفق (${res.status})`);
   return Buffer.from(await res.arrayBuffer());
 }
 
-async function ingestTelegramMedia(
+async function processConfirmedFile(
   bot: Bot,
+  ctx: Context,
   media: MediaInfo,
-  userId?: number,
+  statusChatId: number,
+  statusMessageId: number,
 ) {
+  const touch = async (stage: string, pct?: number) => {
+    await editHtml(ctx, statusChatId, statusMessageId, msg.working(stage, pct));
+  };
+
+  await touch("شروع دریافت فایل از تلگرام…", 3);
+
   if (media.fileSize && media.fileSize > config.maxFileBytes) {
     throw new Error(
-      `حجم فایل بیشتر از حد مجاز است (${formatBytes(config.maxFileBytes)}).`,
+      `حجم بیشتر از سقف مجاز است (${formatBytes(config.maxFileBytes)}).`,
     );
   }
 
@@ -140,80 +161,250 @@ async function ingestTelegramMedia(
         chatId: media.chatId,
         messageId: media.messageId,
         destPath: dest,
+        onProgress: async (pct) => {
+          await touch("در حال دریافت از تلگرام…", Math.max(5, pct * 0.7));
+        },
       });
-      return await storeUpload({
+      await touch("آپلود و ساخت لینک دانلود…", 78);
+      const stored = await storeUpload({
         filePath: dest,
         originalName: media.fileName,
         mimeType: media.mimeType,
-        telegramUserId: userId,
+        telegramUserId: media.userId,
         size,
       });
+      await touch("نهایی‌سازی…", 96);
+      await editHtml(
+        ctx,
+        statusChatId,
+        statusMessageId,
+        msg.ready({
+          name: stored.originalName,
+          size: stored.size,
+          url: stored.url,
+          expiresAt: stored.expiresAt,
+        }),
+      );
+      return;
     } finally {
       await unlink(dest).catch(() => undefined);
     }
   }
 
-  if (media.fileSize && media.fileSize > config.telegramHttpMaxBytes) {
-    throw new Error(
-      [
-        `فایل ${formatBytes(media.fileSize)} است — اوکیه، تلگرام تا ۲ گیگ ساپورت می‌کنه.`,
-        "فقط برای اینکه ربات بتونه این حجم رو بکشه باید api_id و api_hash بذاری.",
-        "۱) برو https://my.telegram.org",
-        "۲) API development tools",
-        "۳) api_id و api_hash رو اینجا بفرست",
-      ].join("\n"),
-    );
-  }
-
+  await touch("دریافت فایل…", 25);
   const buffer = await downloadViaHttpBotApi(bot, media.fileId);
-  return storeUpload({
+  await touch("آپلود و ساخت لینک…", 75);
+  const stored = await storeUpload({
     buffer,
     originalName: media.fileName,
     mimeType: media.mimeType,
-    telegramUserId: userId,
+    telegramUserId: media.userId,
   });
+  await editHtml(
+    ctx,
+    statusChatId,
+    statusMessageId,
+    msg.ready({
+      name: stored.originalName,
+      size: stored.size,
+      url: stored.url,
+      expiresAt: stored.expiresAt,
+    }),
+  );
+}
+
+async function notifyAdminsNewUser(
+  bot: Bot,
+  user: { id: number; username?: string; firstName?: string },
+) {
+  const keyboard = new InlineKeyboard()
+    .text("✅ تأیید دسترسی", `a:1:${user.id}`)
+    .text("🚫 رد", `a:0:${user.id}`);
+  const text = msg.adminNewUser(user);
+  for (const adminId of config.adminUserIds) {
+    try {
+      await bot.api.sendMessage(adminId, text, {
+        parse_mode: "HTML",
+        reply_markup: keyboard,
+      });
+    } catch (err) {
+      console.error(`[bot] notify admin ${adminId} failed`, err);
+    }
+  }
 }
 
 export function createBot(): Bot | null {
   if (!config.telegramToken) {
-    console.warn(
-      "[bot] TELEGRAM_BOT_TOKEN تنظیم نشده — ربات تلگرام خاموش است.",
-    );
+    console.warn("[bot] TELEGRAM_BOT_TOKEN missing");
     return null;
   }
 
   const bot = new Bot(config.telegramToken);
 
   bot.command("start", async (ctx) => {
-    const mt = isMtprotoConfigured();
-    await ctx.reply(
-      [
-        "سلام 👋",
-        "",
-        "هر فایلی بفرست تا لینک دانلود بدم.",
-        "",
-        `⏱ انقضا: ${config.fileTtlHours} ساعت`,
-        mt
-          ? `📦 سقف: ${formatBytes(config.maxFileBytes)} ✅`
-          : `📦 برای فایل‌های بزرگ (تا ۲ گیگ) api_id/api_hash لازم است`,
-        "",
-        "دستورها: /start /id /ping",
-      ].join("\n"),
-    );
+    const userId = ctx.from?.id;
+    if (!userId) return;
+
+    const status = isAdmin(userId) ? "admin" : await getAccessStatus(userId);
+    if (status === "admin" || status === "approved") {
+      await ctx.reply(msg.startApproved(), { parse_mode: "HTML" });
+      return;
+    }
+    if (status === "denied") {
+      await ctx.reply(msg.startDenied(), { parse_mode: "HTML" });
+      return;
+    }
+    if (status === "pending") {
+      await ctx.reply(msg.startPending(), { parse_mode: "HTML" });
+      return;
+    }
+
+    await requestAccess({
+      id: userId,
+      username: ctx.from?.username,
+      firstName: ctx.from?.first_name,
+      lastName: ctx.from?.last_name,
+      at: new Date().toISOString(),
+    });
+    await ctx.reply(msg.startPending(), { parse_mode: "HTML" });
+    await notifyAdminsNewUser(bot, {
+      id: userId,
+      username: ctx.from?.username,
+      firstName: ctx.from?.first_name,
+    });
   });
 
   bot.command("id", async (ctx) => {
-    await ctx.reply(`یوزرآیدی تو: \`${ctx.from?.id ?? "?"}\``, {
-      parse_mode: "Markdown",
+    await ctx.reply(`شناسه تلگرام تو:\n<code>${ctx.from?.id ?? "?"}</code>`, {
+      parse_mode: "HTML",
     });
   });
 
   bot.command("ping", async (ctx) => {
-    await ctx.reply(
-      isMtprotoConfigured()
-        ? "آنلاینم ✅ تا ۲ گیگ آماده‌ام."
-        : "آنلاینم — برای ۲ گیگ هنوز api_id/api_hash نداریم.",
-    );
+    if (!(await canUseBot(ctx.from?.id))) {
+      await ctx.reply(msg.needAccess(), { parse_mode: "HTML" });
+      return;
+    }
+    await ctx.reply("آنلاینم ✅");
+  });
+
+  bot.command("users", async (ctx) => {
+    if (!isAdmin(ctx.from?.id)) {
+      await ctx.reply(msg.adminOnly());
+      return;
+    }
+    await ctx.reply(await listAccessSummary(), { parse_mode: "HTML" });
+  });
+
+  bot.on("callback_query:data", async (ctx) => {
+    const data = ctx.callbackQuery.data;
+    const fromId = ctx.from?.id;
+    if (!fromId || !data) return;
+
+    const adminMatch = /^a:([01]):(\d+)$/.exec(data);
+    if (adminMatch) {
+      if (!isAdmin(fromId)) {
+        await ctx.answerCallbackQuery({ text: "فقط مدیر", show_alert: true });
+        return;
+      }
+      const allow = adminMatch[1] === "1";
+      const targetId = Number(adminMatch[2]);
+      if (allow) {
+        await approveUser(targetId);
+        try {
+          await bot.api.sendMessage(targetId, msg.accessGranted(), {
+            parse_mode: "HTML",
+          });
+        } catch {
+          /* ignore */
+        }
+        await ctx.answerCallbackQuery({ text: "تأیید شد" });
+        await ctx.editMessageText(
+          `✅ کاربر <code>${targetId}</code> تأیید شد.`,
+          { parse_mode: "HTML" },
+        );
+      } else {
+        await denyUser(targetId);
+        try {
+          await bot.api.sendMessage(targetId, msg.accessRejected(), {
+            parse_mode: "HTML",
+          });
+        } catch {
+          /* ignore */
+        }
+        await ctx.answerCallbackQuery({ text: "رد شد" });
+        await ctx.editMessageText(`🚫 کاربر <code>${targetId}</code> رد شد.`, {
+          parse_mode: "HTML",
+        });
+      }
+      return;
+    }
+
+    const confMatch = /^c:([01]):(\d+):(\d+)$/.exec(data);
+    if (confMatch) {
+      if (!(await canUseBot(fromId))) {
+        await ctx.answerCallbackQuery({
+          text: "دسترسی نداری",
+          show_alert: true,
+        });
+        return;
+      }
+      const yes = confMatch[1] === "1";
+      const originChatId = Number(confMatch[2]);
+      const originMsgId = Number(confMatch[3]);
+      const statusChatId = ctx.callbackQuery.message?.chat.id;
+      const statusMessageId = ctx.callbackQuery.message?.message_id;
+      if (!statusChatId || !statusMessageId) {
+        await ctx.answerCallbackQuery({ text: "پیام پیدا نشد" });
+        return;
+      }
+
+      if (!yes) {
+        await takePending(originChatId, originMsgId);
+        await ctx.answerCallbackQuery({ text: "لغو شد" });
+        await editHtml(ctx, statusChatId, statusMessageId, msg.cancelled());
+        return;
+      }
+
+      const pending = await takePending(originChatId, originMsgId);
+      if (!pending || pending.userId !== fromId) {
+        await ctx.answerCallbackQuery({
+          text: "این درخواست منقضی شده؛ دوباره فایل بفرست",
+          show_alert: true,
+        });
+        return;
+      }
+
+      await ctx.answerCallbackQuery({ text: "شروع شد…" });
+      await editHtml(
+        ctx,
+        statusChatId,
+        statusMessageId,
+        msg.working("در صف آماده‌سازی…", 1),
+      );
+
+      try {
+        await processConfirmedFile(
+          bot,
+          ctx,
+          pending,
+          statusChatId,
+          statusMessageId,
+        );
+      } catch (err) {
+        const message = err instanceof Error ? err.message : "خطای ناشناخته";
+        console.error("[bot] confirm failed", err);
+        await editHtml(
+          ctx,
+          statusChatId,
+          statusMessageId,
+          msg.failed(message),
+        );
+      }
+      return;
+    }
+
+    await ctx.answerCallbackQuery();
   });
 
   bot.on(
@@ -228,68 +419,46 @@ export function createBot(): Bot | null {
     ],
     async (ctx) => {
       const userId = ctx.from?.id;
-      if (!isUserAllowed(userId)) {
-        await ctx.reply(
-          "دسترسی نداری. ادمین باید یوزرآیدیت رو به ALLOWED_USER_IDS اضافه کنه.",
-        );
+      if (!(await canUseBot(userId))) {
+        await ctx.reply(msg.needAccess(), { parse_mode: "HTML" });
         return;
       }
 
       const media = pickMedia(ctx);
       if (!media) {
-        await ctx.reply("این نوع پیام پشتیبانی نمی‌شه. یک فایل بفرست.");
+        await ctx.reply(msg.onlyFile());
         return;
       }
 
-      console.log(
-        `[bot] file chat=${media.chatId} msg=${media.messageId} name=${media.fileName} size=${media.fileSize ?? "?"}`,
+      await savePending(media);
+
+      const keyboard = new InlineKeyboard()
+        .text("✅ بله، لینک بده", `c:1:${media.chatId}:${media.messageId}`)
+        .row()
+        .text("❌ نه، لغو", `c:0:${media.chatId}:${media.messageId}`);
+
+      await ctx.reply(
+        msg.confirmFile({
+          name: media.fileName,
+          size: media.fileSize,
+          kind: media.kind,
+        }),
+        {
+          parse_mode: "HTML",
+          reply_markup: keyboard,
+          reply_parameters: { message_id: media.messageId },
+        },
       );
-      const status = await ctx.reply(
-        media.fileSize && media.fileSize > 50 * 1024 * 1024
-          ? `دارم فایل ${formatBytes(media.fileSize)} رو می‌گیرم… ممکنه چند دقیقه طول بکشه.`
-          : "دارم فایل رو ذخیره می‌کنم…",
-      );
-
-      try {
-        const stored = await ingestTelegramMedia(bot, media, userId);
-
-        const text = [
-          "✅ لینک دانلود آماده شد",
-          "",
-          `📄 ${stored.originalName}`,
-          `📦 ${formatBytes(stored.size)}`,
-          stored.expiresAt
-            ? `⏱ انقضا: ${formatExpiryFa(stored.expiresAt)} (${config.fileTtlHours} ساعت)`
-            : `⏱ انقضا: ${config.fileTtlHours} ساعت`,
-          "",
-          stored.url,
-        ].join("\n");
-
-        try {
-          await ctx.api.editMessageText(ctx.chat.id, status.message_id, text);
-        } catch {
-          await ctx.reply(text);
-        }
-        console.log(`[bot] sent link ${stored.url}`);
-      } catch (err) {
-        const message = err instanceof Error ? err.message : "خطای ناشناخته";
-        console.error("[bot] upload failed", err);
-        try {
-          await ctx.api.editMessageText(
-            ctx.chat.id,
-            status.message_id,
-            `❌ نشد آپلود کنم:\n${message}`,
-          );
-        } catch {
-          await ctx.reply(`❌ نشد آپلود کنم:\n${message}`);
-        }
-      }
     },
   );
 
   bot.on("message", async (ctx) => {
     if (ctx.message?.text?.startsWith("/")) return;
-    await ctx.reply("یک فایل بفرست تا لینک دانلود بسازم. /start برای راهنما.");
+    if (!(await canUseBot(ctx.from?.id))) {
+      await ctx.reply(msg.needAccess(), { parse_mode: "HTML" });
+      return;
+    }
+    await ctx.reply(msg.onlyFile());
   });
 
   bot.catch((err) => {

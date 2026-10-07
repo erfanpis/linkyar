@@ -2,7 +2,7 @@
   "name": "telegram-download-bot",
   "version": "1.0.0",
   "private": true,
-  "description": "ربات تلگرام: فایل بفرست، لینک دانلود بگیر",
+  "description": "Linkyar private Telegram download-link bot",
   "type": "module",
   "scripts": {
     "dev": "tsx watch src/index.ts",
