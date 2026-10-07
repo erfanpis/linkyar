@@ -60,7 +60,7 @@ export const config = {
   ),
   // زیر این حجم از Release استریم می‌شود (نه Contents API)
   githubContentsMaxBytes: Number(
-    process.env.GITHUB_CONTENTS_MAX_BYTES || 80 * 1024 * 1024,
+    process.env.GITHUB_CONTENTS_MAX_BYTES || 5 * 1024 * 1024,
   ),
   fileTtlHours: Number(process.env.FILE_TTL_HOURS || 12),
   storageDir: path.join(rootDir, "storage"),
