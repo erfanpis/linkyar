@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "6325075744:69": {
+      "messageId": 69,
+      "chatId": 6325075744,
+      "userId": 6325075744,
+      "createdAt": "2026-10-08T10:11:38.019Z",
+      "kind": "سند",
+      "fileId": "BQACAgIAAxkBAANFasdsWQKoO4c0ekGpWQJ9vCWli9cAAkWYAAIiXHlJ1vB7Fza5CRM9BA",
+      "fileName": "Stardew Valley [16.15.5] (tg@ipaDuck).ipa",
+      "mimeType": "application/octet-stream",
+      "fileSize": 326737174
+    }
+  }
 }
