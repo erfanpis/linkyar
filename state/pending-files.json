@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:73": {
-      "messageId": 73,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-10-08T15:45:20.071Z",
-      "kind": "سند",
-      "fileId": "BQACAgIAAxkBAANJase6j1tJ7WL-RyKxiQ66jNUpF3gAAtWfAAJ32-lJggg0mLU32kU9BA",
-      "fileName": "‎ AI Logo_v2.6.5_tg@Sa1y0miii.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 195378177
-    }
-  }
+  "items": {}
 }
