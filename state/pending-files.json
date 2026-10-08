@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:77": {
-      "messageId": 77,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-10-08T15:57:27.592Z",
-      "kind": "سند",
-      "fileId": "BQACAgIAAxkBAANNase9ZzThOTAYvUdwOEXVl-xsExoAApGuAAKHZ7hJ83eNAbk8yxs9BA",
-      "fileName": "‎ Shufl FM_v1.3.0_tg@Sa1y0miii.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 21685723
-    }
-  }
+  "items": {}
 }
