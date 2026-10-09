@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "6325075744:83": {
+      "messageId": 83,
+      "chatId": 6325075744,
+      "userId": 6325075744,
+      "createdAt": "2026-10-09T15:24:01.121Z",
+      "kind": "سند",
+      "fileId": "BQACAgIAAxkBAANTaskHEC7J7tsWbDZyLtv7sUvZk7wAAvqrAAInU0BK48r0z3FxnQE9BA",
+      "fileName": "‎Fuji Recipes_v1.20_tg@Sa1y0miii.ipa",
+      "mimeType": "application/octet-stream",
+      "fileSize": 21816443
+    }
+  }
 }
