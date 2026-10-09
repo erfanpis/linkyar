@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:85": {
-      "messageId": 85,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-10-09T15:24:43.474Z",
-      "kind": "سند",
-      "fileId": "BQACAgIAAxkBAANVaskHOwSVKUfBn0If3_YsaR7oRf4AAqarAAInU0BK7V6ScvYXhIw9BA",
-      "fileName": "‎Birthday Countdo…_v1.13.6_tg@Sa1y0miii.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 45725322
-    }
-  }
+  "items": {}
 }
