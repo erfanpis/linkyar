@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:129": {
-      "messageId": 129,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-10T23:55:52.188Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAOBasrQiD4u64X-AAEbCB28CGYoypi5AAJICAACU_lIRo8LLm3_fJRPPQQ",
-      "fileName": "VSCO_Photo_&_Video_Editor_v461_9_3_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 208752612
-    }
-  }
+  "items": {}
 }
