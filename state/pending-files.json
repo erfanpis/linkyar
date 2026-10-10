@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:117": {
-      "messageId": 117,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-10T23:41:52.477Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAN1asrNQLqUr5HByX0OCKXnU6HYTAoAAnkJAAJrQlFG_CelZpuX3FI9BA",
-      "fileName": "Video Lite v6.24.500 Pro Unlocked blatant Patched.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 45533555
-    }
-  }
+  "items": {}
 }
