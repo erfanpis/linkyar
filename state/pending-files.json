@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:123": {
-      "messageId": 123,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-10T23:48:56.686Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAN7asrO6Je9neR1rAY5M2tKcIHpmCcAAsoIAAJrQlFGcAkCwTFtLsc9BA",
-      "fileName": "Clarity_CBT_Self_Help_Journal_v5_5_27_Pro_Unlocked_blatant_Patched.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 165245331
-    }
-  }
+  "items": {}
 }
