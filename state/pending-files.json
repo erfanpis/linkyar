@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:94": {
-      "messageId": 94,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-10-10T16:38:41.829Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAANeaspqEJ3A4sRRak5vgOF7t7ApGBEAAtIOAAKJIUBG6gcdmXHisG09BA",
-      "fileName": "Turrit 1.5.5 (MxGram) [@ipavault].ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 107363861
-    }
-  }
+  "items": {}
 }
