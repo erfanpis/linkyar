@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:105": {
-      "messageId": 105,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-10-10T20:28:07.579Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAANpasqf12foIluRcMk-ny8vmneK_L8AApMcAALYm1hSiA_JwKzlWP09BA",
-      "fileName": "the-tiny-bang-story-IPAOMTK.COM.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 120773023
-    }
-  }
+  "items": {}
 }
