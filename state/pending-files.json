@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:109": {
-      "messageId": 109,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-10T23:07:43.919Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAANtasrFP46WYiE26JbXhIUVKWqf4xAAAt0JAAIpeFhG0PwgM5mKtu49BA",
-      "fileName": "‎DWG FastView_CAD…-v5.21.1_AppAssassin.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 185349460
-    }
-  }
+  "items": {}
 }
