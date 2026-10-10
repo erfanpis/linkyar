@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:125": {
-      "messageId": 125,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-10T23:51:18.257Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAN9asrPdkLulkFVVCgV2ICS--N7814AArcIAAJT-UhGMyag1KuVS0A9BA",
-      "fileName": "Mercury Weather v3.8.1 Premium Unlocked blatant Patched.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 79986643
-    }
-  }
+  "items": {}
 }
