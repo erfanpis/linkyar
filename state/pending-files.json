@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:115": {
-      "messageId": 115,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-10T23:39:35.448Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAANzasrMt3od9IhJHi7gsv9RziMfqPUAAnsJAAJrQlFGceFlLPUq7Dg9BA",
-      "fileName": "PureStatus_ByeBye_Blur_Status_v2026_09_Pro_Unlocked_blatant_Patched.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 68579364
-    }
-  }
+  "items": {}
 }
