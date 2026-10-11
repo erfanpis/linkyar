@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:155": {
-      "messageId": 155,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-11T01:23:15.305Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAObasrlAyzs8xm7QWw6l8PzfdTJ1F8AAhAGAALgnolE1xt36yqaUnY9BA",
-      "fileName": "Mortal Kombat (U,E).gg",
-      "mimeType": "application/octet-stream",
-      "fileSize": 524288
-    }
-  }
+  "items": {}
 }
