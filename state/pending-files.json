@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:147": {
-      "messageId": 147,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-11T00:36:17.440Z",
-      "kind": "سند",
-      "fileId": "BQACAgIAAxkBAAOTasraAWURMIB58qwL5ZkCD9OlQMcAAuOcAAKy-lBKNcw4RuTBUK49BA",
-      "fileName": "‎ByePhotos_v2.12.0_tg@Sa1y0miii.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 42101392
-    }
-  }
+  "items": {}
 }
