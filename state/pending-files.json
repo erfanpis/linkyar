@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:165": {
-      "messageId": 165,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-11T15:31:03.137Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAOlasurtq5Z4CACZoyqZsw2s3zgts0AAsEJAAJrQllGjzhlw0RQxBA9BA",
-      "fileName": "Simply_Piano_Learn_Piano_Fast_v9_10_96_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 165613872
-    }
-  }
+  "items": {}
 }
