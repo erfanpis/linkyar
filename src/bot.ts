@@ -108,15 +108,43 @@ async function editHtml(
   chatId: number,
   messageId: number,
   html: string,
+  keyboard?: InlineKeyboard,
 ) {
   try {
     await ctx.api.editMessageText(chatId, messageId, html, {
       parse_mode: "HTML",
       link_preview_options: { is_disabled: true },
+      reply_markup: keyboard,
     });
   } catch {
     /* ignore */
   }
+}
+
+async function deliverReadyLink(
+  ctx: Context,
+  statusChatId: number,
+  statusMessageId: number,
+  stored: { originalName: string; size: number; url: string; expiresAt?: string },
+) {
+  const openBtn = new InlineKeyboard().url("⬇️ باز کردن لینک دانلود", stored.url);
+  await editHtml(
+    ctx,
+    statusChatId,
+    statusMessageId,
+    msg.ready({
+      name: stored.originalName,
+      size: stored.size,
+      url: stored.url,
+      expiresAt: stored.expiresAt,
+    }),
+    openBtn,
+  );
+  // پیام جدا فقط لینک کپی‌شونده
+  await ctx.api.sendMessage(statusChatId, msg.copyLinkOnly(stored.url), {
+    parse_mode: "HTML",
+    link_preview_options: { is_disabled: true },
+  });
 }
 
 async function downloadViaHttpBotApi(bot: Bot, fileId: string): Promise<Buffer> {
@@ -174,17 +202,7 @@ async function processConfirmedFile(
         size,
       });
       await touch("نهایی‌سازی…", 96);
-      await editHtml(
-        ctx,
-        statusChatId,
-        statusMessageId,
-        msg.ready({
-          name: stored.originalName,
-          size: stored.size,
-          url: stored.url,
-          expiresAt: stored.expiresAt,
-        }),
-      );
+      await deliverReadyLink(ctx, statusChatId, statusMessageId, stored);
       return;
     } finally {
       await unlink(dest).catch(() => undefined);
@@ -200,17 +218,7 @@ async function processConfirmedFile(
     mimeType: media.mimeType,
     telegramUserId: media.userId,
   });
-  await editHtml(
-    ctx,
-    statusChatId,
-    statusMessageId,
-    msg.ready({
-      name: stored.originalName,
-      size: stored.size,
-      url: stored.url,
-      expiresAt: stored.expiresAt,
-    }),
-  );
+  await deliverReadyLink(ctx, statusChatId, statusMessageId, stored);
 }
 
 async function notifyAdminsNewUser(

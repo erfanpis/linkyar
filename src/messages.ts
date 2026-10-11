@@ -110,9 +110,12 @@ export const msg = {
         ? `⏱ انقضا: <b>${esc(formatExpiryFa(opts.expiresAt))}</b> (${config.fileTtlHours} ساعت)`
         : `⏱ انقضا: <b>${config.fileTtlHours} ساعت</b>`,
       "",
-      `<b>دانلود:</b>`,
-      opts.url,
+      "<b>لینک دانلود — بزن تا کپی بشه:</b>",
+      `<code>${esc(opts.url)}</code>`,
     ].join("\n"),
+
+  /** پیام جدا فقط برای کپی راحت‌تر لینک */
+  copyLinkOnly: (url: string) => `<code>${esc(url)}</code>`,
 
   failed: (error: string) =>
     ["<b>آپلود انجام نشد</b>", "", esc(error)].join("\n"),
