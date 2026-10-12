@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:179": {
-      "messageId": 179,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-12T09:49:12.016Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAOzasytFwX9kdzvDnpcO5mzfyWtafwAAjcHAALeXJlHFoMCucTin0U9BA",
-      "fileName": "Comix Zone.bin",
-      "mimeType": "application/x-genesis-rom",
-      "fileSize": 2097152
-    }
-  }
+  "items": {}
 }
