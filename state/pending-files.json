@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:182": {
-      "messageId": 182,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-12T10:05:49.020Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAO2asyw_KX2LJtnsjfHqSBQ6Hf_gkkAAhMGAALgnolE0Wpm48-bjJs9BA",
-      "fileName": "Mortal Kombat 3 (E).gg",
-      "mimeType": "application/octet-stream",
-      "fileSize": 524288
-    }
-  }
+  "items": {}
 }
