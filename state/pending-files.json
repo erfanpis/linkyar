@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:198": {
-      "messageId": 198,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-10-12T19:40:02.025Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAPGas03kVCzucEhc3j2gZx_xOuyvuAAAo8HAAKfNWhGCaBQx1ivLqY9BA",
-      "fileName": "SoundCloud 8.82.0 (NexaSC) [@ipavault].ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 227238033
-    }
-  }
+  "items": {}
 }
