@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:213": {
-      "messageId": 213,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-12T22:40:34.424Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAPVas1h4snRv5n09KXAVsz8uoXMamoAAr4HAAKsOnFGKOvax332bGs9BA",
-      "fileName": "Elevate_Brain_Training_Games_v5_261_0_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 434049906
-    }
-  }
+  "items": {}
 }
