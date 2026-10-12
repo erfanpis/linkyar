@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:207": {
-      "messageId": 207,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-12T22:30:45.577Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAPPas1flQGRsEULeIjWgjV9rfYYjy8AAjkIAAKsOmlGFyCLTQ-wwhs9BA",
-      "fileName": "Unfold_Reels_&_Story_Maker_v8_167_0_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 222655395
-    }
-  }
+  "items": {}
 }
