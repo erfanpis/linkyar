@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:235": {
-      "messageId": 235,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-10-13T19:58:17.501Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAPras6NRv0K99S-nCnYhHi9qlMkRLYAAjcJAAKz9XFGMAq9XyJnwT49BA",
-      "fileName": "Darkroom_Photo_&_Video_Editor_v7_4_1_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 220492371
-    }
-  }
+  "items": {}
 }
