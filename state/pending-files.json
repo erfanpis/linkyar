@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:218": {
-      "messageId": 218,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-13T06:23:33.780Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAPaas3OZbfYkypKw1o7gGjmcuIOo78AAosjAAKw0HFSfxmZGj-T3i89BA",
-      "fileName": "com.zeptolab.bulletecho-8.0.4.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 206739637
-    }
-  }
+  "items": {}
 }
