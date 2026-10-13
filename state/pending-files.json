@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:239": {
-      "messageId": 239,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-10-13T20:00:47.289Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAPvas6N77z6hK_VYqvlnpVZSFWtmbkAAg0JAAKz9XFGY7ZBr7wK83c9BA",
-      "fileName": "DaVinci_Image_Generator_AI_v5_0_10_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 124541237
-    }
-  }
+  "items": {}
 }
