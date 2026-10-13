@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:224": {
-      "messageId": 224,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-10-13T14:29:08.980Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAPgas5ANBY1p9r0uHOS38y7bJV-SdEAApUgAAK_1XFSkZy9k9Db1a09BA",
-      "fileName": "GTA V Port_1.3.1_1791901030.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 92800712
-    }
-  }
+  "items": {}
 }
