@@ -1,0 +1,21 @@
+{
+  "id": "mirror-rar-permanent",
+  "source": "https://gofile.io/d/pA901JJr",
+  "filename": "mirror.rar",
+  "size": 19908380705,
+  "parts": 10,
+  "permanent": true,
+  "createdAt": "2026-10-13T00:48:04Z",
+  "links": [
+    "https://github.com/erfanpis/linkyar/releases/download/keep-mirror-part01/mirror.rar.part00",
+    "https://github.com/erfanpis/linkyar/releases/download/keep-mirror-part02/mirror.rar.part01",
+    "https://github.com/erfanpis/linkyar/releases/download/keep-mirror-part03/mirror.rar.part02",
+    "https://github.com/erfanpis/linkyar/releases/download/keep-mirror-part04/mirror.rar.part03",
+    "https://github.com/erfanpis/linkyar/releases/download/keep-mirror-part05/mirror.rar.part04",
+    "https://github.com/erfanpis/linkyar/releases/download/keep-mirror-part06/mirror.rar.part05",
+    "https://github.com/erfanpis/linkyar/releases/download/keep-mirror-part07/mirror.rar.part06",
+    "https://github.com/erfanpis/linkyar/releases/download/keep-mirror-part08/mirror.rar.part07",
+    "https://github.com/erfanpis/linkyar/releases/download/keep-mirror-part09/mirror.rar.part08",
+    "https://github.com/erfanpis/linkyar/releases/download/keep-mirror-part10/mirror.rar.part09"
+  ]
+}
