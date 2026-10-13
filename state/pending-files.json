@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:221": {
-      "messageId": 221,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-10-13T11:33:28.247Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAPdas4XCKEUQ76Z77kopn61W09VMgMAAowdAAL1hHFSTV9M5dVZw-49BA",
-      "fileName": "Muguet_0.1_1791884582.ipa",
-      "mimeType": "application/binary",
-      "fileSize": 84172481
-    }
-  }
+  "items": {}
 }
