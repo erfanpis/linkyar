@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "6325075744:230": {
+      "messageId": 230,
+      "chatId": 6325075744,
+      "userId": 6325075744,
+      "createdAt": "2026-10-13T19:39:02.403Z",
+      "kind": "سند",
+      "fileId": "BQACAgEAAxkBAAPmas6I1ot9u7xqWzaSsgEzh16kzsUAArwHAAKfNXBGE33jWyqIfgQ9BA",
+      "fileName": "RyukGram 1.4.5 (IG 451.0.0) [@ipavault].ipa",
+      "mimeType": "application/octet-stream",
+      "fileSize": 345086224
+    }
+  }
 }
