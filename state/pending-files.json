@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:279": {
-      "messageId": 279,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-10-14T18:34:36.718Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIBF2rPyzwEhS98YIg7CBjF4IOK0FemAAIpBwACs_V5RobuMvG8gcrWPQQ",
-      "fileName": "SquareDude - Square Fit Photo v1.7 Free IAP blatant Patched.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 24037682
-    }
-  }
+  "items": {}
 }
