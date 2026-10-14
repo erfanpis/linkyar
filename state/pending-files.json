@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:268": {
-      "messageId": 268,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-14T17:44:39.604Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIBDGrPv1lDbjCtZVXZlHIfsiXczompAAJoBwAC7LuBRtw4oFDVDWF-PQQ",
-      "fileName": "Foodie_Filter_&_Film_Camera_v8_5_0_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 125557362
-    }
-  }
+  "items": {}
 }
