@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:252": {
-      "messageId": 252,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-10-14T17:11:33.068Z",
-      "kind": "سند",
-      "fileId": "BQACAgIAAxkBAAP8as-3xLYoy5PeFr9IxyMpU1MK2toAAi-pAAKFymhKgqDsb3AfxzI9BA",
-      "fileName": "‎Photo to Painti…_v3.23.37_tg@Sa1y0miii.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 43790878
-    }
-  }
+  "items": {}
 }
