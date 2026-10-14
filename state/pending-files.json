@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "110124351:245": {
+      "messageId": 245,
+      "chatId": 110124351,
+      "userId": 110124351,
+      "createdAt": "2026-10-14T04:55:54.245Z",
+      "kind": "سند",
+      "fileId": "BQACAgIAAxkBAAPyas6ygoXjSbIXMmH4d9Gjq7BNhUoAAkqpAAK6B3BK8V1qRLayYLM9BA",
+      "fileName": "Sifu_1.0.254260_全功能.ipa",
+      "mimeType": "application/zip",
+      "fileSize": 1170105844
+    }
+  }
 }
