@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:259": {
-      "messageId": 259,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-10-14T17:36:21.624Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIBA2rPvZXEwtqKwab_vWJ5grMk6dU0AAJnBwAC7LuBRsvo1Ab6Off1PQQ",
-      "fileName": "Fitia_Calorie_Counter_&_Diet_v25_1_4_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 129637705
-    }
-  }
+  "items": {}
 }
