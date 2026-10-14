@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:282": {
-      "messageId": 282,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-10-14T18:35:47.765Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIBEmrPyp-xMmbiis5nqpIHZTcfD6QZAAKNBwACs_V5RhnihhLxIVCiPQQ",
-      "fileName": "Device_Monitor²_v27_0_0_Subscription_Unlocked_blatant_Patched.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 98133014
-    }
-  }
+  "items": {}
 }
