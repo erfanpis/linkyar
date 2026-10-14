@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:297": {
-      "messageId": 297,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-14T21:46:50.575Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAIBKWrP-EpZlZMJOH3minJrvRuaDnCNAAIhGgACHb6AUnyNYJZ0jenJPQQ",
-      "fileName": "sibstar-unity-menu-source.zip",
-      "mimeType": "application/zip",
-      "fileSize": 1775071
-    }
-  }
+  "items": {}
 }
