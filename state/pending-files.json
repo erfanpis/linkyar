@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:309": {
-      "messageId": 309,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-15T12:57:39.268Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAIBNWrQzcNUygABGUL4OM9kcTJNZm2dlAACtx4AAsnciFKrn5-UX1SusT0E",
-      "fileName": "Facebook583.0.0iQFace.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 236422345
-    }
-  }
+  "items": {}
 }
