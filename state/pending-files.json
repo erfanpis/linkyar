@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:312": {
-      "messageId": 312,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-15T13:05:47.003Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAIBOGrQz6p0vjBZLcQojUaAhqCmLhR-AAK6HgACydyIUhphAwZVb6IxPQQ",
-      "fileName": "Nagram 13.0.1 TF iQTele.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 105208769
-    }
-  }
+  "items": {}
 }
