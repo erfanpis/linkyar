@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:306": {
-      "messageId": 306,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-15T11:46:55.938Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIBMmrQvS_6R28MrcWy-zwzK0DgpEsMAALrCAACUO55RgSptpFW_JHyPQQ",
-      "fileName": "Regram 6.4 (IG 451.0.0) [@ipavault].ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 330333364
-    }
-  }
+  "items": {}
 }
