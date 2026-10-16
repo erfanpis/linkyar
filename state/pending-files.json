@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:339": {
-      "messageId": 339,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-16T18:09:45.313Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIBU2rSaGm0uhpMJ7AexoDh_6vURzCLAAJ3CAACcjCQRrPFjP0jYqk2PQQ",
-      "fileName": "‎Bowmasters_v11.6.5-AppAssassin.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 217599144
-    }
-  }
+  "items": {}
 }
