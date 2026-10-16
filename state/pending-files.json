@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "6325075744:332": {
+      "messageId": 332,
+      "chatId": 6325075744,
+      "userId": 6325075744,
+      "createdAt": "2026-10-16T12:42:37.184Z",
+      "kind": "سند",
+      "fileId": "BQACAgIAAxkBAAIBTGrSG7Vun6LlvWKSJEYFLj-a3MaaAALwpAACRo-RSgxt7GqYWoiYPQQ",
+      "fileName": "‎ DuoShot_v1.6.1_tg@Sa1y0miii.ipa",
+      "mimeType": "application/octet-stream",
+      "fileSize": 17983796
+    }
+  }
 }
