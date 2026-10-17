@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:360": {
-      "messageId": 360,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-17T11:10:45.551Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIBaGrTV7Vjf4mU_jaD7XlWb5xkY7GBAAIFCwACnV6RRpHcWDKFuO3wPQQ",
-      "fileName": "Captions_AI_Edits_Your_Video_v13_39_0_Scale_Subscription_Unlocked.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 120549295
-    }
-  }
+  "items": {}
 }
