@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:381": {
-      "messageId": 381,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-17T12:00:56.668Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIBfWrTY3gTNtzyr17ACu8cIStlRaDsAAIHCgACnV6RRsyaL6ywC3miPQQ",
-      "fileName": "Videoleap_AI_Video_Editor_v2_87_2_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 402452137
-    }
-  }
+  "items": {}
 }
