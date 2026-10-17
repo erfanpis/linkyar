@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:387": {
-      "messageId": 387,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-17T15:43:46.554Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAIBg2rTl7IIJq2oQx5qI5lHbGZ5nCkaAALKHgACikSYUjJDW6nG57cHPQQ",
-      "fileName": "com.mfapp.storyFontEn-3.3.4.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 32302500
-    }
-  }
+  "items": {}
 }
