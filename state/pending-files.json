@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:435": {
-      "messageId": 435,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-10-18T16:02:20.474Z",
-      "kind": "سند",
-      "fileId": "BQACAgIAAxkBAAIBs2rU7YwdkXgISY2b_qPvj7ZabmCqAAJO3AACRo-ZSu-vrgEBAey-PQQ",
-      "fileName": "‎ Minipaper_v6.1_tg@Sa1y0miii.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 111038557
-    }
-  }
+  "items": {}
 }
