@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "6325075744:408": {
+      "messageId": 408,
+      "chatId": 6325075744,
+      "userId": 6325075744,
+      "createdAt": "2026-10-18T11:36:31.563Z",
+      "kind": "سند",
+      "fileId": "BQACAgEAAxkBAAIBmGrUrz9vGH_zl9IRJaqgsZ_7p7N4AAJUBwACUO5xRjQ4Xu-1m01qPQQ",
+      "fileName": "Swiftgram 13.0 (MxGram) [@ipavault].ipa",
+      "mimeType": "application/octet-stream",
+      "fileSize": 97568937
+    }
+  }
 }
