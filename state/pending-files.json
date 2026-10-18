@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:418": {
-      "messageId": 418,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-18T12:15:02.966Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAIBlWrUrZn0t9eJHbH9_hTWP7CAhQljAAIMHgAC6iqpUjZfQGVFwZvbPQQ",
-      "fileName": "Story Font_3.3.1_1792322780.ipa",
-      "mimeType": "application/binary",
-      "fileSize": 30928193
-    }
-  }
+  "items": {}
 }
