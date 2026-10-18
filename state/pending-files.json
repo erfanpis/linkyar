@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:421": {
-      "messageId": 421,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-18T12:19:58.733Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIBpWrUuW75zfWKkvs2VPe9ApcfmKDUAAILCAACy9Z4Rgu-wLEm64SkPQQ",
-      "fileName": "‎StoryFont for Ins…-v3.3.4_AppAssassin.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 32106486
-    }
-  }
+  "items": {}
 }
