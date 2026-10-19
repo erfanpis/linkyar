@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:568": {
-      "messageId": 568,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-19T21:57:48.753Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAICOGrWklzN3gUcu-UNff8LgZdro0GzAAKICQACZ5K5RssTHh1sstLrPQQ",
-      "fileName": "Call.Of.Duty.4.Modern.Warfare_YasDL.com.part2.rar",
-      "mimeType": "application/x-rar-compressed",
-      "fileSize": 1073741824
-    }
-  }
+  "items": {}
 }
