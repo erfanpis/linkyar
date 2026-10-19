@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:501": {
-      "messageId": 501,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-10-19T10:11:47.315Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIB9WrV7OO5Lq8kIOfLvjIajsotC9ZhAALzCAACvUSxRimJNVNMxirjPQQ",
-      "fileName": "VN_Photo_&_Video_Editor_v2_23_0_Subscription_Unlocked_blatant_Patched.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 497046544
-    }
-  }
+  "items": {}
 }
