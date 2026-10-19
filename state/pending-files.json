@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:553": {
-      "messageId": 553,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-19T15:11:19.847Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAICKWrWMxcw99eOAktThHUKeAxzW-N3AAKIJgACLwOxUj9l2pBq7ht4PQQ",
-      "fileName": "librdr_1.zip",
-      "mimeType": "application/zip",
-      "fileSize": 18853302
-    }
-  }
+  "items": {}
 }
