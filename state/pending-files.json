@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "6325075744:562": {
+      "messageId": 562,
+      "chatId": 6325075744,
+      "userId": 6325075744,
+      "createdAt": "2026-10-19T17:07:15.212Z",
+      "kind": "سند",
+      "fileId": "BQACAgEAAxkBAAICMmrWTkPgFMIaXuPvcUfY1JkPyz83AAJLCwACnV6RRhObN4Dwow-IPQQ",
+      "fileName": "WPS_Office_AI_Doc,_PDF,_Sheet_v26_10_0_PRO+AI_Unlocked_blatant_Patched.ipa",
+      "mimeType": "application/zip",
+      "fileSize": 327320961
+    }
+  }
 }
