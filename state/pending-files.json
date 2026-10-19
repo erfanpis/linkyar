@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "6325075744:495": {
+      "messageId": 495,
+      "chatId": 6325075744,
+      "userId": 6325075744,
+      "createdAt": "2026-10-19T10:05:18.153Z",
+      "kind": "سند",
+      "fileId": "BQACAgQAAxkBAAIB72rV614WV8AqG_BqS3XB4ScX2pzDAAIdHwACIaKoUrAwIUBmIQxBPQQ",
+      "fileName": "GTA5Port-v1.4.2.ipa",
+      "mimeType": "application/octet-stream",
+      "fileSize": 87929087
+    }
+  }
 }
