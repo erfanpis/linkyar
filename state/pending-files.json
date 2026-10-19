@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "6325075744:498": {
+      "messageId": 498,
+      "chatId": 6325075744,
+      "userId": 6325075744,
+      "createdAt": "2026-10-19T10:09:12.779Z",
+      "kind": "سند",
+      "fileId": "BQACAgEAAxkBAAIB8mrV7EhMfaL_qootCKjWEBgaMlzzAAJkCQACvUSxRqabpZ1Lbk6BPQQ",
+      "fileName": "Documents_File_Manager_v8_22_9_DocumentsPlus_Unlocked_blatant_Patched.ipa",
+      "mimeType": "application/zip",
+      "fileSize": 287235752
+    }
+  }
 }
