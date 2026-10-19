@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:490": {
-      "messageId": 490,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-19T01:10:38.191Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAIB6mrVbg6xGzqXjSntGsnKa28ejRy2AALEIwACLwOpUqH-pP9-u1YQPQQ",
-      "fileName": "app.zemu.zeta_3.0.4_und3fined.ipa",
-      "mimeType": "application/binary",
-      "fileSize": 342859010
-    }
-  }
+  "items": {}
 }
