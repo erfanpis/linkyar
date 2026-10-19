@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:550": {
-      "messageId": 550,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-10-19T13:23:24.382Z",
-      "kind": "سند",
-      "fileId": "BQACAgIAAxkBAAICJmrWGcyaImLTIJRZoUeNO6KdzhTjAAJtoQACsVGwSqTaaa1UlipfPQQ",
-      "fileName": "SCRL__Photo_Collage_Maker_9.60_1792399953.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 83590009
-    }
-  }
+  "items": {}
 }
