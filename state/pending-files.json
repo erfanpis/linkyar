@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "6325075744:507": {
+      "messageId": 507,
+      "chatId": 6325075744,
+      "userId": 6325075744,
+      "createdAt": "2026-10-19T10:29:47.976Z",
+      "kind": "سند",
+      "fileId": "BQACAgIAAxkBAAIB-2rV8Rtc8eKQVONO8Oh33pz7MoPkAAKtrgACmQigSvkRvqP_BTA4PQQ",
+      "fileName": "Instories__AI_Photo___Video_5.128.0_1792243620.ipa",
+      "mimeType": "application/octet-stream",
+      "fileSize": 195376384
+    }
+  }
 }
