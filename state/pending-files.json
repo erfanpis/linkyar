@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:513": {
-      "messageId": 513,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-10-19T10:42:32.522Z",
-      "kind": "سند",
-      "fileId": "BQACAgIAAxkBAAICAWrV9Bi4BAAB-W5QGAmUHX6lLvhNCAACOasAAm_GeEo-E9CzfPHKmD0E",
-      "fileName": "GoDaddy__Websites___Marketing_9.15.0_1791907437.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 102053291
-    }
-  }
+  "items": {}
 }
