@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:589": {
-      "messageId": 589,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-20T22:01:33.125Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAICTWrX5LxF4AP7-2VD71WoYJM9vsnQAAIRIgACpyp5UtDEWZslGBs5PQQ",
-      "fileName": "GL-CALL OF DUTY EL CHAPO v1.0.57.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 2741525958
-    }
-  }
+  "items": {}
 }
