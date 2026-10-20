@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "6325075744:580": {
+      "messageId": 580,
+      "chatId": 6325075744,
+      "userId": 6325075744,
+      "createdAt": "2026-10-20T14:06:46.998Z",
+      "kind": "سند",
+      "fileId": "BQACAgEAAxkBAAICRGrXdXaENFuDJxMDET_biEYcKSCTAAMHAAIqB7hGYH5OlAvEvY09BA",
+      "fileName": "Sparkle 1.5.1 (IG 452.0.0) [@ipavault].ipa",
+      "mimeType": "application/octet-stream",
+      "fileSize": 346554923
+    }
+  }
 }
