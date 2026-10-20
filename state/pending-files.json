@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "6325075744:574": {
+      "messageId": 574,
+      "chatId": 6325075744,
+      "userId": 6325075744,
+      "createdAt": "2026-10-20T13:30:14.108Z",
+      "kind": "سند",
+      "fileId": "BQACAgQAAxkBAAICPmrXbOX3I_AWqgueAryZg25HNJg5AALtIgACW8C4UmnclOrzeGgoPQQ",
+      "fileName": "COD4iOS-1.0.4-build13-files-folder-fix.ipa",
+      "mimeType": "application/octet-stream",
+      "fileSize": 9747068
+    }
+  }
 }
