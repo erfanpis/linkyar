@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:636": {
-      "messageId": 636,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-10-21T20:37:22.400Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAICfGrZIoKVGnrIUz1QvjTf6s8Fa-HjAAJlEAAC7jsxUM9W45znSQ5RPQQ",
-      "fileName": "Strava - KamoHacks [310.0.1].ipa",
-      "mimeType": "application/zip",
-      "fileSize": 79085529
-    }
-  }
+  "items": {}
 }
