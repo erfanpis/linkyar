@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:609": {
-      "messageId": 609,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-10-21T14:36:09.702Z",
-      "kind": "سند",
-      "fileId": "BQACAgIAAxkBAAICYWrYzdn8IO6ysatsYLYySx0cmI-_AALgrgACSe-pSuFjoOzHX1v8PQQ",
-      "fileName": "YouPlay__AdBlock_Video_Browser_1.3.6_1792356849.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 48735845
-    }
-  }
+  "items": {}
 }
