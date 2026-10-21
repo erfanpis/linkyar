@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:630": {
-      "messageId": 630,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-10-21T16:05:17.944Z",
-      "kind": "سند",
-      "fileId": "BQACAgIAAxkBAAICdmrY4r1PbxWVHhhNRmRqi9-tiNnxAAJ-iAAC16QgSGES6NKI1HaBPQQ",
-      "fileName": "Hollow Knight  (tg@ipaDuck).ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 1083604551
-    }
-  }
+  "items": {}
 }
