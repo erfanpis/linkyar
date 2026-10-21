@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:633": {
-      "messageId": 633,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-10-21T17:30:42.359Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAICeWrY9sLPVvzAWt5SNymyhpwCg__yAAJZIAACSy-4UrbJXgdYKcMFPQQ",
-      "fileName": "Teledark_13.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 87995375
-    }
-  }
+  "items": {}
 }
