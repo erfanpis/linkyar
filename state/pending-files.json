@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:591": {
-      "messageId": 591,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-10-21T14:16:05.524Z",
-      "kind": "سند",
-      "fileId": "BQACAgIAAxkBAAICT2rYySXkY86QvdjP6YAwCIjWwcupAALTqgAC-6LASqSPodsCmjaUPQQ",
-      "fileName": "TouchRetouch_5.9.2_1792527719.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 207762470
-    }
-  }
+  "items": {}
 }
