@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:594": {
-      "messageId": 594,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-10-21T14:22:26.185Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAICUmrYyqKbO1ryjmPAxwXNPVW2sey9AAJhCQACF1nBRpIN6BCXZYJYPQQ",
-      "fileName": "EPIK_AI_Photo_&_Video_Editor_v7_4_31_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 200630281
-    }
-  }
+  "items": {}
 }
