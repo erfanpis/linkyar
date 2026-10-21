@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:618": {
-      "messageId": 618,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-10-21T15:10:16.266Z",
-      "kind": "سند",
-      "fileId": "BQACAgIAAxkBAAICamrY1dibQAbTSDeMixZwv2KtXn_kAALqoAACsVGwSnthYZWI0RGYPQQ",
-      "fileName": "Flight_Tracker_+_8.8.1_1792396669.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 78838244
-    }
-  }
+  "items": {}
 }
