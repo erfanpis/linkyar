@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:597": {
-      "messageId": 597,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-10-21T14:25:35.248Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAICVWrYy1-cPr7iE5RCbwcz89pF0EI2AAKJCAACF1nBRnow5PPXMQABtD0E",
-      "fileName": "Home_Workout_No_Equipments_v1_54_0_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 191296412
-    }
-  }
+  "items": {}
 }
