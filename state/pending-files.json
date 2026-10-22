@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:651": {
-      "messageId": 651,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-22T06:14:33.675Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAICi2rZqcnY8G-4dVhdQiDqUcvkCoNIAAKGHAACnajQUhB-vpti2-vyPQQ",
-      "fileName": "Bowmasters_11.6.5_1792649008.ipa",
-      "mimeType": "application/binary",
-      "fileSize": 227944259
-    }
-  }
+  "items": {}
 }
