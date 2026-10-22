@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "6325075744:665": {
+      "messageId": 665,
+      "chatId": 6325075744,
+      "userId": 6325075744,
+      "createdAt": "2026-10-22T16:58:14.878Z",
+      "kind": "سند",
+      "fileId": "BQACAgIAAxkBAAIClGraNQgimP4TcG4wzCmfJ1h8eB4SAAJbqQACREHRSlxmWjoCEtlFPQQ",
+      "fileName": "Video_Star_15.3.1_1792683557.ipa",
+      "mimeType": "application/octet-stream",
+      "fileSize": 414822801
+    }
+  }
 }
