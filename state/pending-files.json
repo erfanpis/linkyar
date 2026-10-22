@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:711": {
-      "messageId": 711,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-22T21:06:23.754Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAICx2raes8EmVHLCEsMpssOG52RKaLBAAKvFgACIY9wUmNx-5n5tDyWPQQ",
-      "fileName": "SIR 1.5.3.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 190091753
-    }
-  }
+  "items": {}
 }
