@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "110124351:723": {
+      "messageId": 723,
+      "chatId": 110124351,
+      "userId": 110124351,
+      "createdAt": "2026-10-22T23:19:01.272Z",
+      "kind": "سند",
+      "fileId": "BQACAgIAAxkBAAIC0Gral7MD21J-lwrDjGicha5etxnWAALtogACA5rRSnIb_w-lLL4cPQQ",
+      "fileName": "模拟城市_1.83.3_无限资源.ipa",
+      "mimeType": "application/zip",
+      "fileSize": 271510246
+    }
+  }
 }
