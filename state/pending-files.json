@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:794": {
-      "messageId": 794,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-23T23:02:27.633Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAIDGmrb54OWnNjljovd9HNFVc5o1EWQAAJkIwACUGbgUvXePQAB30DbCT0E",
-      "fileName": "libloader",
-      "mimeType": "application/binary",
-      "fileSize": 6312384
-    }
-  }
+  "items": {}
 }
