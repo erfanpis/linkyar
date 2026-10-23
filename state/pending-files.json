@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "110124351:785": {
+      "messageId": 785,
+      "chatId": 110124351,
+      "userId": 110124351,
+      "createdAt": "2026-10-23T15:18:52.196Z",
+      "kind": "سند",
+      "fileId": "BQACAgQAAxkBAAIDEWrbetxoRs_BpH2DmmOPyUjijkAZAAKCJgACUGbYUnFBiTu_1rTnPQQ",
+      "fileName": "KAlert-en-internal.7z",
+      "mimeType": "application/binary",
+      "fileSize": 119434
+    }
+  }
 }
