@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:788": {
-      "messageId": 788,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-23T20:59:04.946Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAICjmrZvJWAdVOo10H7CgaHuVPCFVTpAALwBwACgVyZR1TpKj9OKE10PQQ",
-      "fileName": "NBA 2K26 Arcade Edition_v1.21-AppAssassin.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 1696138068
-    }
-  }
+  "items": {}
 }
