@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:782": {
-      "messageId": 782,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-23T13:09:28.466Z",
-      "kind": "سند",
-      "fileId": "BQACAgIAAxkBAAIDDmrbXIjw4QtRQ6c0d36wGvb6uJk-AAIIoQACA5rRSvN-SX0UFmEWPQQ",
-      "fileName": "CS2手游_1.3.0.1_全功能.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 1795490637
-    }
-  }
+  "items": {}
 }
