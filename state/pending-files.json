@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:827": {
-      "messageId": 827,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-10-24T14:45:26.019Z",
-      "kind": "سند",
-      "fileId": "BQACAgIAAxkBAAIDO2rcxIXF9lh6Yv_iUmzCG_P2GIN8AAKUpAACeZLhSo3hte10TDsgPQQ",
-      "fileName": "Varlens_-_DSLR_in_Phone_8.4_1792802877.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 313665581
-    }
-  }
+  "items": {}
 }
