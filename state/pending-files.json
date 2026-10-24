@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:836": {
-      "messageId": 836,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-10-24T14:53:47.819Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIDRGrcxnsFEQI6n7g3f51C4wsN10zWAAJYCQAC9qzhRk4pzZsdwJ9wPQQ",
-      "fileName": "Dictionary_&_Translator_v36_3_Subscription_Unlocked_blatant_Patched.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 13066940
-    }
-  }
+  "items": {}
 }
