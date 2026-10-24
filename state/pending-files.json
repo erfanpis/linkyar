@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:830": {
-      "messageId": 830,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-10-24T14:47:58.155Z",
-      "kind": "سند",
-      "fileId": "BQACAgIAAxkBAAIDPmrcxR61dhYEBk5CSPPDZJuhcLZcAALUowACeZLhShpCh2OrNM8_PQQ",
-      "fileName": "Facey__Face_Editor__Makeup_Cam_3.4.26_1792788398.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 146455523
-    }
-  }
+  "items": {}
 }
