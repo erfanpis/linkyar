@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:815": {
-      "messageId": 815,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-24T10:56:24.324Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAIDL2rcjtclyZefmZaEqEgM3IWm-gABmAACDh4AAtTw4FK0QVjikRx7xz0E",
-      "fileName": "CounterFlame_1.3.0.1_1792770682.ipa",
-      "mimeType": "application/binary",
-      "fileSize": 1837340374
-    }
-  }
+  "items": {}
 }
