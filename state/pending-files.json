@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:818": {
-      "messageId": 818,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-10-24T11:40:04.537Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAIDMmrcmRTzk9FmAy3CbItFff29XZBmAAMfAAIiC6FSwRRZsLCUovg9BA",
-      "fileName": "Oracle-ipa-ad-hoc.ipa",
-      "mimeType": "application/x-itunes-ipa",
-      "fileSize": 17769090
-    }
-  }
+  "items": {}
 }
