@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:803": {
-      "messageId": 803,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-24T00:31:20.434Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAIDI2rb_FiNFpWP1T9nPRsV3DNhWOKjAAJoIwACUGbgUllQnO_q7-wPPQQ",
-      "fileName": "dump&data.zip",
-      "mimeType": "application/zip",
-      "fileSize": 4871642
-    }
-  }
+  "items": {}
 }
