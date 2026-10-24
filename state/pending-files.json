@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:855": {
-      "messageId": 855,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-24T19:20:47.879Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAIDV2rdBQ-um1HqvKPp7qn8FExlPe-zAAIdHgACdOfoUoeytwyT06omPQQ",
-      "fileName": "shadowfight3Data.zip",
-      "mimeType": "application/zip",
-      "fileSize": 5009129
-    }
-  }
+  "items": {}
 }
