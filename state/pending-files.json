@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:858": {
-      "messageId": 858,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-24T19:31:54.818Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAIDWmrdB6oMh3ipkClOnxGUqgtHh-1bAAL9IQACcTfhUrSMpMIF06DTPQQ",
-      "fileName": "com.nekki.shadowfight3-1.46.1.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 195050308
-    }
-  }
+  "items": {}
 }
