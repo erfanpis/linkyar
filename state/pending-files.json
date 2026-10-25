@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "110124351:870": {
+      "messageId": 870,
+      "chatId": 110124351,
+      "userId": 110124351,
+      "createdAt": "2026-10-25T06:43:19.975Z",
+      "kind": "سند",
+      "fileId": "BQACAgQAAxkBAAIDZmrdpQe9aeBQ_spSRFrCfbGgun58AAI6IQACzXDpUmKSdGDjPK_ZPQQ",
+      "fileName": "Shadow Fight 3_1.46.1_1792880004.ipa",
+      "mimeType": "application/binary",
+      "fileSize": 202233907
+    }
+  }
 }
