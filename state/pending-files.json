@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "6325075744:934": {
+      "messageId": 934,
+      "chatId": 6325075744,
+      "userId": 6325075744,
+      "createdAt": "2026-10-25T16:49:43.180Z",
+      "kind": "سند",
+      "fileId": "BQACAgQAAxkBAAIDpmreMydPvhMZZKfr3EuJUAPt35H3AALwHQACL4vRUjhcIbvO080NPQQ",
+      "fileName": "Total files pro_Genius@ffipa.ipa",
+      "mimeType": "application/zip",
+      "fileSize": 28060195
+    }
+  }
 }
