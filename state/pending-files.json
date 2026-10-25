@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "6325075744:879": {
+      "messageId": 879,
+      "chatId": 6325075744,
+      "userId": 6325075744,
+      "createdAt": "2026-10-25T10:27:44.879Z",
+      "kind": "سند",
+      "fileId": "BQACAgEAAxkBAAIDb2rd2aCE0o_aIoAfWH5RNFjoDZCOAAK9CAACWQbwRnOzyXAuGzQbPQQ",
+      "fileName": "Bazaart_AI_Photo_Editor_Design_v27_0_6_Bazaart_Super_Unlocked_blatant.ipa",
+      "mimeType": "application/zip",
+      "fileSize": 122010545
+    }
+  }
 }
