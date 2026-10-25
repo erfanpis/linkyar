@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:881": {
-      "messageId": 881,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-25T10:28:04.288Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAIDcWrd2a8dUa40pBp9heC8YcxiaeBdAALiIgACskzoUjCGNTTctsG3PQQ",
-      "fileName": "head_soccer_ios_mod_ipa_h9k3EUCsdb.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 256914637
-    }
-  }
+  "items": {}
 }
