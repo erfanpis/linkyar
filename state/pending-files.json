@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:876": {
-      "messageId": 876,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-25T10:20:51.390Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAIDbGrd2AOLwv0UrQLqcKAclNsLydokAAKqIwACskzoUvwy-NM925YNPQQ",
-      "fileName": "dune_hack_uQH93Z8f9J.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 117446801
-    }
-  }
+  "items": {}
 }
