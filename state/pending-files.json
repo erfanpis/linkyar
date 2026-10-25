@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:873": {
-      "messageId": 873,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-25T07:33:26.768Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAIDaWrdsMbNskGYncVm-hYXXPe-oCQ1AALaIgACskzoUhQFQgLa0dztPQQ",
-      "fileName": "happy_clinic_hospital_game_GqLmru2CJa.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 252099847
-    }
-  }
+  "items": {}
 }
