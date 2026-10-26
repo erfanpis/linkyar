@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:955": {
-      "messageId": 955,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-26T10:51:56.404Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIDu2rfMMxFkxt79PzxKXurNtj2tRELAAK0CgACWQb4RvYk1-EujoMUPQQ",
-      "fileName": "Lightroom_Photo_Editor_&_Video_v11_6_20_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 222669708
-    }
-  }
+  "items": {}
 }
