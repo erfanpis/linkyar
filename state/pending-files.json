@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:1041": {
-      "messageId": 1041,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-10-26T21:13:25.757Z",
-      "kind": "سند",
-      "fileId": "BQACAgIAAxkBAAIEEWrfwnXUOqB1lUbqd-dzndrTF8a8AALsogACXiD4SlnkolxgU_O1PQQ",
-      "fileName": "LiDAR_Room_Scanner__Floor_Plan_2.21.0_1793040877.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 55551846
-    }
-  }
+  "items": {}
 }
