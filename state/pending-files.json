@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:1050": {
-      "messageId": 1050,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-10-26T21:23:13.506Z",
-      "kind": "سند",
-      "fileId": "BQACAgIAAxkBAAIEGmrfxMHSFjRSDToPiBVQoUva9ImeAAKqoQACXiD4Sv171k8GoZmjPQQ",
-      "fileName": "MD_Clock_-_Flip_Clock_2.74.2_1793034853.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 341893195
-    }
-  }
+  "items": {}
 }
