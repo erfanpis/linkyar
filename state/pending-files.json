@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "6325075744:1056": {
+      "messageId": 1056,
+      "chatId": 6325075744,
+      "userId": 6325075744,
+      "createdAt": "2026-10-26T21:31:33.873Z",
+      "kind": "سند",
+      "fileId": "BQACAgEAAxkBAAID5mrffArJIp-2ML4wXQPw-i3lAAHa3AACAQsAAlct-EY-QKB55qxvLD0E",
+      "fileName": "Spotify 9.1.90 (Vitrine+Pixie) [@ipavault].ipa",
+      "mimeType": "application/octet-stream",
+      "fileSize": 130499356
+    }
+  }
 }
