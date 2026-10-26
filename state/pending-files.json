@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:1044": {
-      "messageId": 1044,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-10-26T21:13:43.121Z",
-      "kind": "سند",
-      "fileId": "BQACAgIAAxkBAAIEFGrfwofE_3IGbI3V7iRnQ4OwxwzNAAIjogACXiD4SiV-Kh7Hyi7lPQQ",
-      "fileName": "bergfex__Weather___Rain_Radar_3.2.13_1793036890.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 398154360
-    }
-  }
+  "items": {}
 }
