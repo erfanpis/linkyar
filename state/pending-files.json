@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "6325075744:992": {
+      "messageId": 992,
+      "chatId": 6325075744,
+      "userId": 6325075744,
+      "createdAt": "2026-10-26T16:07:17.546Z",
+      "kind": "سند",
+      "fileId": "BQACAgIAAxkBAAID4GrferVGdNmqrrLeFO6ZRlcTu3JhAAISoAACXiD4SoKJjXlIbH_jPQQ",
+      "fileName": "PlateLens__AI_Calorie_Counter_1.14.17_1793028024.ipa",
+      "mimeType": "application/octet-stream",
+      "fileSize": 73965172
+    }
+  }
 }
