@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:967": {
-      "messageId": 967,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-26T11:42:08.991Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIDx2rfPJDEZAhklAWIV9jLoyCszHEEAAJ0CgACWQb4Rq3QdkLHJh9iPQQ",
-      "fileName": "Design_Lab_Logo_Graphic_Maker_v5_57_6_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 115948511
-    }
-  }
+  "items": {}
 }
