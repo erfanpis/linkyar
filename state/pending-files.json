@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "6325075744:1110": {
+      "messageId": 1110,
+      "chatId": 6325075744,
+      "userId": 6325075744,
+      "createdAt": "2026-10-27T17:39:48.495Z",
+      "kind": "سند",
+      "fileId": "BQACAgIAAxkBAAIEVmrg4eT1wvF2LPxvTWsRAAHuQ_qWTQACVqcAAsTJAAFLmloZhuEF7TU9BA",
+      "fileName": "Minecraft__Play_with_Friends_1.26.60_1793117364.ipa",
+      "mimeType": "application/octet-stream",
+      "fileSize": 700913669
+    }
+  }
 }
