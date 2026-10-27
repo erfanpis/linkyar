@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "6325075744:1119": {
+      "messageId": 1119,
+      "chatId": 6325075744,
+      "userId": 6325075744,
+      "createdAt": "2026-10-27T17:58:48.244Z",
+      "kind": "سند",
+      "fileId": "BQACAgQAAxkBAAIEX2rg5ljCRbdNVw6YVizTZt6n4moXAAKKHwACRvEIUwoXQi5TS4s5PQQ",
+      "fileName": "Hockey_All_Stars_24_iOS_Mod_IPA_No_Jailbreak_Cheats_2_3_0_Hacked.ipa",
+      "mimeType": "application/zip",
+      "fileSize": 356827797
+    }
+  }
 }
