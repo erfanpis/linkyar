@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "6325075744:1101": {
+      "messageId": 1101,
+      "chatId": 6325075744,
+      "userId": 6325075744,
+      "createdAt": "2026-10-27T17:33:50.736Z",
+      "kind": "سند",
+      "fileId": "BQACAgEAAxkBAAIETWrg4H6Xd9VIQX2x4XZZOziirWfdAALmBwACIOsJR1MNZv2bAAHNOT0E",
+      "fileName": "Presets_for_Lightroom_FLTR_v4_22_1_Subscription_Unlocked_blatant.ipa",
+      "mimeType": "application/zip",
+      "fileSize": 113962139
+    }
+  }
 }
