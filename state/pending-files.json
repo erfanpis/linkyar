@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:1113": {
-      "messageId": 1113,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-10-27T17:42:51.561Z",
-      "kind": "سند",
-      "fileId": "BQACAgIAAxkBAAIEWWrg4pvqtlolAAG13mSn0vsdSCaUAAM8ngACxMkAAUu7dCTfnswAAbA9BA",
-      "fileName": "FeelmCamera_-_Film_Camera_3.1.1_1793054932.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 84005623
-    }
-  }
+  "items": {}
 }
