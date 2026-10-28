@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1143": {
-      "messageId": 1143,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-28T09:18:34.665Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIEd2rhveqi27dJW1i6b0zEKqH78BT9AAJdCQACIOsJRwOVoIJUzw1KPQQ",
-      "fileName": "Scanner_Air_Scan_Documents_v2026_10_13_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 144901055
-    }
-  }
+  "items": {}
 }
