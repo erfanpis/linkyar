@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:1200": {
-      "messageId": 1200,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-10-28T20:23:33.679Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIEsGriWcWkWfPXJpPJMElZECKTWu47AAL8CAACe5oZR0Ftk01xvl8XPQQ",
-      "fileName": "X 12.38.1 NFB+TWI 7.3.0 [@ipavault].ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 273719545
-    }
-  }
+  "items": {}
 }
