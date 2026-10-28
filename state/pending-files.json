@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "110124351:1176": {
+      "messageId": 1176,
+      "chatId": 110124351,
+      "userId": 110124351,
+      "createdAt": "2026-10-28T14:27:25.022Z",
+      "kind": "سند",
+      "fileId": "BQACAgIAAxkBAAIEmGriBkzmCUFmUr67wrtdIjEAAS4GFwACuakAAvWx4EoPeMSe_LS5ej0E",
+      "fileName": "元气骑士_8.7.0_全功能.ipa",
+      "mimeType": "application/zip",
+      "fileSize": 817185409
+    }
+  }
 }
