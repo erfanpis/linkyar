@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:1206": {
-      "messageId": 1206,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-10-28T20:26:44.004Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIEtmriWoO-TJo-iUf8y4lhudY0Q6kdAAKNCQAC23oIR3z7tagqhtPGPQQ",
-      "fileName": "TikTok 47.5.0 (gtok 2.5) [@ipavault].ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 517921435
-    }
-  }
+  "items": {}
 }
