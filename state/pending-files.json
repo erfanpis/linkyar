@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "110124351:1170": {
+      "messageId": 1170,
+      "chatId": 110124351,
+      "userId": 110124351,
+      "createdAt": "2026-10-28T13:12:40.534Z",
+      "kind": "سند",
+      "fileId": "BQACAgQAAxkBAAIEkmrh9MgAAVJIO6ahIvb7I1noAAH9zr4AAuAfAAL0oRFTFxe-cUH4CYs9BA",
+      "fileName": "TanksALot_10.000_1793190142.ipa",
+      "mimeType": "application/binary",
+      "fileSize": 152911199
+    }
+  }
 }
