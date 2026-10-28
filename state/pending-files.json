@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1131": {
-      "messageId": 1131,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-28T00:27:29.186Z",
-      "kind": "سند",
-      "fileId": "BQACAgIAAxkBAAIEa2rhQXE4n4UWmc_u1ngoK-LiCa1MAAKNqAACuXkAAUvQIUz_gGPA1j0E",
-      "fileName": "塞尔达传说:旷野之息_3.1.4_ZeldaBOTW.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 42637710
-    }
-  }
+  "items": {}
 }
