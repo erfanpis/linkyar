@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:1188": {
-      "messageId": 1188,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-10-28T20:05:26.238Z",
-      "kind": "سند",
-      "fileId": "BQACAgIAAxkBAAIEpGriVYaVEKIFli9iwBpmbr2dlQS6AAK4qgACxMkIS4DtBWHkOA6vPQQ",
-      "fileName": "Leto__Font_for_Instagram_Story_9.0_1793168673.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 106917748
-    }
-  }
+  "items": {}
 }
