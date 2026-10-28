@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "6325075744:1182": {
+      "messageId": 1182,
+      "chatId": 6325075744,
+      "userId": 6325075744,
+      "createdAt": "2026-10-28T19:44:48.972Z",
+      "kind": "سند",
+      "fileId": "BQACAgIAAxkBAAIElWrh90UlK-7OC8eoXuYjBhY0ZKXIAAJFfgACwM2RSS-7Gh_Ft9a-PQQ",
+      "fileName": "Alien Isolation [v1.2.4](tg@ipa_dark).ipa",
+      "mimeType": "application/octet-stream",
+      "fileSize": 1477924055
+    }
+  }
 }
