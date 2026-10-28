@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1140": {
-      "messageId": 1140,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-28T09:12:44.694Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIEdGrhvIyNmD-cvp0k03sNTp8_WZjUAAJjCQACIOsJR0ERWyIJNkSNPQQ",
-      "fileName": "QR_Code_Reader，Barcode_Scanner_v2026_10_12_Subscription_Unlocked.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 60084643
-    }
-  }
+  "items": {}
 }
