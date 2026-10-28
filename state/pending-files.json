@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "110124351:1161": {
+      "messageId": 1161,
+      "chatId": 110124351,
+      "userId": 110124351,
+      "createdAt": "2026-10-28T09:59:52.507Z",
+      "kind": "سند",
+      "fileId": "BQACAgQAAxkBAAIEiWrhx5g8rUUSci5dMMXwE_C99Sc4AALqHAAC8QMQU_HDcPUcHJNuPQQ",
+      "fileName": "com.boombitgames.TanksALot-10.000.ipa",
+      "mimeType": "application/zip",
+      "fileSize": 146095506
+    }
+  }
 }
