@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:1269": {
-      "messageId": 1269,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-10-29T14:25:43.390Z",
-      "kind": "سند",
-      "fileId": "BQACAgIAAxkBAAIE9WrjV2fgglo9B-ZDExabrL_XifjbAAJxqQACS4cQS0_XfwVeifjhPQQ",
-      "fileName": "Oxford_Dictionary___Thesaurus_16.8_1793213893.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 57695798
-    }
-  }
+  "items": {}
 }
