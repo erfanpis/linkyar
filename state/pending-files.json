@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1255": {
-      "messageId": 1255,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-29T14:05:51.164Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAIE52rjUr5ASY00_DZEbs5ustfs7tErAALGHQAC9V8YUygvLVsJCXRCPQQ",
-      "fileName": "com.superking.ludo.star-1.375.1.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 181306514
-    }
-  }
+  "items": {}
 }
