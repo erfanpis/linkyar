@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:1258": {
-      "messageId": 1258,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-10-29T14:13:37.176Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIE6mrjVJFkyfoLjHAqfPqyGhx_b0DeAALsCQACwssQRwk9wI0H0HMMPQQ",
-      "fileName": "Flightradar24_Flight_Tracker_v11_14_1_Gold_Lifetime_blatant_Patched.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 233964092
-    }
-  }
+  "items": {}
 }
