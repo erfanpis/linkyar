@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1246": {
-      "messageId": 1246,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-29T11:30:24.567Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIE3mrjLlCEhPZgij1jH4yxiSJ_xPGmAAICCwACKXhQRu3nlhzGRztfPQQ",
-      "fileName": "‎ Remini_v2.10.221-AppAssassin.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 116761613
-    }
-  }
+  "items": {}
 }
