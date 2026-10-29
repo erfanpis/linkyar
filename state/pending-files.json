@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:1272": {
-      "messageId": 1272,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-10-29T14:29:09.517Z",
-      "kind": "سند",
-      "fileId": "BQACAgIAAxkBAAIE-GrjWDU7yUmEwBgwKh06KW8ioWPUAAJgogACS4cYS7m9sq8-LD3iPQQ",
-      "fileName": "Zoomerang_-_Ai_Video_Maker_3.4.19_1793223655.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 94958057
-    }
-  }
+  "items": {}
 }
