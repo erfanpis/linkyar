@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1252": {
-      "messageId": 1252,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-29T12:50:21.348Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAIE5GrjQQxPK3H6KDqyHGQ2b3H1M4hJAAJAHAACRqQZU_eTsbG4cFNEPQQ",
-      "fileName": "ReminiAIPhotoEnhancerPatch.zip",
-      "mimeType": "application/zip",
-      "fileSize": 4957316
-    }
-  }
+  "items": {}
 }
