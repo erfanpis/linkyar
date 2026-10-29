@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:1263": {
-      "messageId": 1263,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-10-29T14:14:48.369Z",
-      "kind": "سند",
-      "fileId": "BQACAgIAAxkBAAIE72rjVNgBATQflg4TAsG71_2ICwaYAAJwogACS4cYS4qlD5smJOq5PQQ",
-      "fileName": "AI_Logo_Maker-_Product_Video_5.4.2_1793223771.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 194955418
-    }
-  }
+  "items": {}
 }
