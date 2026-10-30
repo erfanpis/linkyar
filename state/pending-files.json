@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1334": {
-      "messageId": 1334,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-30T13:24:20.849Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAIFNmrkmoT2pkMFlp9dtmyw8Sfp7DvDAAJ4HwACRqQpU1GTj6gmdlk3PQQ",
-      "fileName": "NMSARC.globals.pak",
-      "mimeType": "application/binary",
-      "fileSize": 561424
-    }
-  }
+  "items": {}
 }
