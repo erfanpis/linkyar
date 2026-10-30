@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1316": {
-      "messageId": 1316,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-30T13:03:59.355Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAIFJGrklb_gd7fUQud8OFTvco8WyabMAAJ0HwACRqQpU8zprl5_NMncPQQ",
-      "fileName": "No Man's Sky.zip",
-      "mimeType": "application/zip",
-      "fileSize": 35937939
-    }
-  }
+  "items": {}
 }
