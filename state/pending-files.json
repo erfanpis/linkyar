@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1328": {
-      "messageId": 1328,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-30T13:21:52.926Z",
-      "kind": "عکس",
-      "fileId": "AgACAgQAAxkBAAIFMGrkmfBsIMt5Jb8W0bcAAfF-CZ_f-gACpxFrG0akKVPQwQxmeosxSAEAAwIAA3cAAz0E",
-      "fileName": "photo-AQADpxFrG0akKVN8.jpg",
-      "mimeType": "image/jpeg",
-      "fileSize": 65008
-    }
-  }
+  "items": {}
 }
