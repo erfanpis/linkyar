@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1305": {
-      "messageId": 1305,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-30T08:58:54.886Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIFGWrkXE5xruBE4OfPEcct-7KAvPcMAAIECAACwssYR7mjwZjKQ7xXPQQ",
-      "fileName": "KineMaster_AI_Video_Editor_v8_2_6_Pro_Unlocked_blatant_Patched.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 157372268
-    }
-  }
+  "items": {}
 }
