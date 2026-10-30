@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:1346": {
-      "messageId": 1346,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-10-30T18:42:03.028Z",
-      "kind": "سند",
-      "fileId": "BQACAgIAAxkBAAIFQmrk5PrWjdTdoZJTm6I0aZjOoIl4AALesAACGgghSyZQSgu4xHlpPQQ",
-      "fileName": "Pinterest_14.42_1793315728.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 191587578
-    }
-  }
+  "items": {}
 }
