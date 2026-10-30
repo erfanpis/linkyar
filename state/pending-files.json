@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1322": {
-      "messageId": 1322,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-30T13:16:48.492Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAIFKmrkmMCL71o-7BDGORcMF3H3re2pAAJ2HwACRqQpU1q4365kFkDDPQQ",
-      "fileName": "IMG_6215.PNG",
-      "mimeType": "image/png",
-      "fileSize": 126839
-    }
-  }
+  "items": {}
 }
