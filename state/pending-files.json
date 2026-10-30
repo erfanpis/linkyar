@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "6325075744:1343": {
+      "messageId": 1343,
+      "chatId": 6325075744,
+      "userId": 6325075744,
+      "createdAt": "2026-10-30T18:39:23.278Z",
+      "kind": "سند",
+      "fileId": "BQACAgEAAxkBAAIFP2rk5FuJSu3Osy_GO305u34Kfe2XAALxBwACd50oR8smZ6NjPsMJPQQ",
+      "fileName": "Photoshop_Express_Photo_Editor_v26_44_0_Subscription_Unlocked_blatant.ipa",
+      "mimeType": "application/zip",
+      "fileSize": 176203263
+    }
+  }
 }
