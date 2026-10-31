@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1364": {
-      "messageId": 1364,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-31T02:42:50.410Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAIFVGrlVapqFUBI2VJY6PyEJzMaeJ48AAKlHwAC7IcgUxyOnT7p5JB-PQQ",
-      "fileName": "WGold_3.7.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 179768559
-    }
-  }
+  "items": {}
 }
