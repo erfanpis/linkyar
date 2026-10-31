@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "6325075744:1377": {
+      "messageId": 1377,
+      "chatId": 6325075744,
+      "userId": 6325075744,
+      "createdAt": "2026-10-31T10:00:36.055Z",
+      "kind": "سند",
+      "fileId": "BQACAgQAAxkBAAIFYWrlvEPI7frlcJoyAs4uayIPXYArAAJHGQAC8uApU_LL35PeJXyQPQQ",
+      "fileName": "SibStar-1.2.4-b238.ipa",
+      "mimeType": "application/octet-stream",
+      "fileSize": 39728042
+    }
+  }
 }
