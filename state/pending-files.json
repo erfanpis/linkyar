@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1367": {
-      "messageId": 1367,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-31T02:49:46.438Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAIFV2rlV0qsRLll7yvlF3ZilLXOfrflAAJ2HQAC7IcoU64m4fzqFWUKPQQ",
-      "fileName": "Beegram_3.8.1.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 393295985
-    }
-  }
+  "items": {}
 }
