@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1374": {
-      "messageId": 1374,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-31T09:46:56.612Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAIFXmrluRC2PXxm9GLqGtwupZEcjg1hAAK_HgACoOIpUxx66ljUz07IPQQ",
-      "fileName": "Crash_Cat_Zombie_Survivor_iOS_Mod_IPA_No_Jailbreak_Cheats_1_0_34.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 178450696
-    }
-  }
+  "items": {}
 }
