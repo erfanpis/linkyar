@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:1380": {
-      "messageId": 1380,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-10-31T11:24:26.649Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAIFZGrlz-ofs33WGCJVeAY9m1RsGFZAAALLHAACyvgpUzbQ59wP7JKXPQQ",
-      "fileName": "resa-ios-1.1.2-b6ae0e54069d.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 45450123
-    }
-  }
+  "items": {}
 }
