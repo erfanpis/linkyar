@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1370": {
-      "messageId": 1370,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-10-31T02:57:14.771Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAIFWmrlWQpYDxPpKCcY2-XnsWm7hImlAAJOHgAC2jogUzGEc1RR3FifPQQ",
-      "fileName": "RyukGram_1.5.1_IG453.0.0.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 361338517
-    }
-  }
+  "items": {}
 }
