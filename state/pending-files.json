@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1425": {
-      "messageId": 1425,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-01T12:15:50.140Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIFkWrnLXa-xQvaeFIE52Ap16-deKCvAAJdCQACd50oRwtVxb3iLscSPQQ",
-      "fileName": "rPlayer_VR_&_3D_Video_Player_v8_0_0_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 62464700
-    }
-  }
+  "items": {}
 }
