@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1422": {
-      "messageId": 1422,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-01T12:10:21.867Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIFbWrmFstdzU0sWcg0yPXF5iCLVu3wAAKCCAACbSgxR-aTxk5mRJ7uPQQ",
-      "fileName": "TOR_Browser_Onion_VPN_&_Orbot_v12_4_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 177524833
-    }
-  }
+  "items": {}
 }
