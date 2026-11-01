@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "110124351:1434": {
+      "messageId": 1434,
+      "chatId": 110124351,
+      "userId": 110124351,
+      "createdAt": "2026-11-01T15:11:55.010Z",
+      "kind": "سند",
+      "fileId": "BQACAgQAAxkBAAIFmmrnVrrEPfpbrrg7uGI1PuVJZ9umAAINHQAC_rRBU68HLSogYJxdPQQ",
+      "fileName": "Bowmasters-internal-qa-skin-entitlement.zip",
+      "mimeType": "application/zip",
+      "fileSize": 67903890
+    }
+  }
 }
