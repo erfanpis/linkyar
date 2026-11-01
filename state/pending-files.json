@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "6325075744:1452": {
+      "messageId": 1452,
+      "chatId": 6325075744,
+      "userId": 6325075744,
+      "createdAt": "2026-11-01T22:41:22.882Z",
+      "kind": "سند",
+      "fileId": "BQACAgEAAxkBAAIFrGrnwBLq4KX8o5QtW1lSwlsgtm1rAAJaCAAClfc4R5r5IbyrryrxPQQ",
+      "fileName": "YTMUltimate+ 9.44.2 [@ipavault].ipa",
+      "mimeType": "application/octet-stream",
+      "fileSize": 112601953
+    }
+  }
 }
