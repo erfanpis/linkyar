@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1416": {
-      "messageId": 1416,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-01T11:01:30.321Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIFiGrnHAqIlVqt2pJV0-HEaBEhEY3uAAIDCQACbSg5R01drQqq0qcnPQQ",
-      "fileName": "JavaScript_Coding_Editor_&_IDE_v1_10_0_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 62594835
-    }
-  }
+  "items": {}
 }
