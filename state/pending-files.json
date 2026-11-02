@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "6325075744:1496": {
+      "messageId": 1496,
+      "chatId": 6325075744,
+      "userId": 6325075744,
+      "createdAt": "2026-11-02T09:56:56.039Z",
+      "kind": "سند",
+      "fileId": "BQACAgEAAxkBAAIF2GroXmdSICHsGDsWpDbl9z9xhCyYAAKqCgACtLFAR8Jj1XMo2Xe1PQQ",
+      "fileName": "Mojo_AI_Video_&_Reels_Editor_v1_282_0_Subscription_Unlocked_blatant.ipa",
+      "mimeType": "application/zip",
+      "fileSize": 181367273
+    }
+  }
 }
