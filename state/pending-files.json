@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1556": {
-      "messageId": 1556,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-02T23:12:09.083Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIGFGrpGMgokGd3k5Y20t93xvIXlHjhAAINBwACtLFIR1S7U9REDUAqPQQ",
-      "fileName": "Documents_File_Manager_v8_22_11_DocumentsPlus_Unlocked_blatant_Patched.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 297678238
-    }
-  }
+  "items": {}
 }
