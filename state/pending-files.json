@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1505": {
-      "messageId": 1505,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-02T12:04:31.103Z",
-      "kind": "سند",
-      "fileId": "BQACAgIAAxkBAAIF4WrofE7wV89ZMY_8rhUpLhrednEJAAIDqgAChjFBS3tUpqUYxPvWPQQ",
-      "fileName": "Fitify__Home_Workout__AI_Coach_1.137.0_1793617735.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 258484881
-    }
-  }
+  "items": {}
 }
