@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:1493": {
-      "messageId": 1493,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-11-02T09:52:54.371Z",
-      "kind": "سند",
-      "fileId": "BQACAgIAAxkBAAIF1WroXXYhPN4sygAB2CQBLMWcGeUweQACSaUAArCbSEu2jiEllz1UXD0E",
-      "fileName": "Null’s Royale 16.635.1 for iOS.ipa",
-      "mimeType": "application/x-itunes-ipa",
-      "fileSize": 813857793
-    }
-  }
+  "items": {}
 }
