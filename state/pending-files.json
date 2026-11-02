@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:1541": {
-      "messageId": 1541,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-11-02T16:09:26.348Z",
-      "kind": "سند",
-      "fileId": "BQACAgIAAxkBAAIGBWrotbaiSaiwrLDgjA7AWYtE7A5RAAKTrAAChjFBS9sI4Ud1Eq3JPQQ",
-      "fileName": "Moonly__Your_Spiritual_Guide_2.9.5_1793633843.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 122080511
-    }
-  }
+  "items": {}
 }
