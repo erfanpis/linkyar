@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "6325075744:1484": {
+      "messageId": 1484,
+      "chatId": 6325075744,
+      "userId": 6325075744,
+      "createdAt": "2026-11-02T09:22:48.439Z",
+      "kind": "سند",
+      "fileId": "BQACAgEAAxkBAAIFzGroVmj9MO-leVH0C3wCHRgmyesmAALpCQACtLFAR0IPlmO4N_myPQQ",
+      "fileName": "CamScanner_PDF_Scanner_App_v7_28_5_VIP_Unlocked_blatant_Patched.ipa",
+      "mimeType": "application/zip",
+      "fileSize": 214336750
+    }
+  }
 }
