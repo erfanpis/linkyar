@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1472": {
-      "messageId": 1472,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-02T03:47:18.005Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAIFwGroB8WK0iKBU2pIN-0D0v-4b62XAAILHgAC_rRBU4usE4Pl0vcpPQQ",
-      "fileName": "Bowmasters-11.7.3-ios-decrypted-persian-default-qa.ipa",
-      "mimeType": "application/binary",
-      "fileSize": 217225857
-    }
-  }
+  "items": {}
 }
