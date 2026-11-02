@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1562": {
-      "messageId": 1562,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-02T23:38:13.420Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIGGmrpHuU-suaAUDAz4aLB5S7LiLCRAAL_BgACtLFIR57TQ2xAd5ItPQQ",
-      "fileName": "Rest_Fix_Your_Sleep_For_Good_v3_209_0_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 135163701
-    }
-  }
+  "items": {}
 }
