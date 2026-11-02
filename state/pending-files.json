@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1467": {
-      "messageId": 1467,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-02T02:43:48.938Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAIFu2rn-OScZsjbJVmLA8v-b7mjdl0hAAL-HQAC_rRBUzX8SIeLrgd3PQQ",
-      "fileName": "Glory Ages - Vikings_0.1.057_1793587297.ipa",
-      "mimeType": "application/binary",
-      "fileSize": 152709524
-    }
-  }
+  "items": {}
 }
