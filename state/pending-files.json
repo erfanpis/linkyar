@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:1481": {
-      "messageId": 1481,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-11-02T09:21:34.706Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIFyWroVh6x9grLmXKYnAWR7ZobKFyiAAJjCQACtLFAR5RaIjx3twi-PQQ",
-      "fileName": "Sleep_Cycle_Tracker_&_Sounds_v6_26_430_Premium_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 194086499
-    }
-  }
+  "items": {}
 }
