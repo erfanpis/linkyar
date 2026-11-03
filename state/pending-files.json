@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1615": {
-      "messageId": 1615,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-03T23:56:59.619Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIGT2rqdMvE4vsVmpnRsomIKLsFIWldAAJHBgACvflYR3PnSqlmdmX0PQQ",
-      "fileName": "‎Ghosts 'n Guns_v1.0.2-AppAssassin.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 36804636
-    }
-  }
+  "items": {}
 }
