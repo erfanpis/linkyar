@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "6325075744:1592": {
+      "messageId": 1592,
+      "chatId": 6325075744,
+      "userId": 6325075744,
+      "createdAt": "2026-11-03T14:23:59.014Z",
+      "kind": "سند",
+      "fileId": "BQACAgIAAxkBAAIGOGrp7n7Ex9hlUcTJ4GG727CakXiCAAIvtAAChjFJS-Bg8rtlUPn4PQQ",
+      "fileName": "Scanner_App__Genius_Scan_8.16_1793693552.ipa",
+      "mimeType": "application/octet-stream",
+      "fileSize": 65448974
+    }
+  }
 }
