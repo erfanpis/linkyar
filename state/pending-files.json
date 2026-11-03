@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "110124351:1597": {
+      "messageId": 1597,
+      "chatId": 110124351,
+      "userId": 110124351,
+      "createdAt": "2026-11-03T17:36:24.972Z",
+      "kind": "سند",
+      "fileId": "BQACAgQAAxkBAAIGO2rqG3F6dwPLqYAH6WiZAS_33fVUAAJNHgAC7JVQU2Ip0LOSO6e2PQQ",
+      "fileName": "CounterFlameKAlert551.dylib",
+      "mimeType": "application/binary",
+      "fileSize": 529504
+    }
+  }
 }
