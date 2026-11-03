@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "110124351:1577": {
+      "messageId": 1577,
+      "chatId": 110124351,
+      "userId": 110124351,
+      "createdAt": "2026-11-03T10:06:27.612Z",
+      "kind": "سند",
+      "fileId": "BQACAgEAAxkBAAIGKWrpsiMj0hxqN3R4QQOvJTsDvQNIAALJBwACtLFIRxHunmOTAf6FPQQ",
+      "fileName": "Unzip_zip,rar,7z_file_opener_v6_3_Subscription_Unlocked_blatant.ipa",
+      "mimeType": "application/zip",
+      "fileSize": 54832963
+    }
+  }
 }
