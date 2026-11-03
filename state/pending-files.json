@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1580": {
-      "messageId": 1580,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-03T10:08:35.756Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIGLGrpsqPaPOAUfLvZ4H4XsiO6tNp0AAKXBwACtLFIR0PO96_SS7KSPQQ",
-      "fileName": "Dictionary_&_Translator_v36_5_Subscription_Unlocked_blatant_Patched.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 13621823
-    }
-  }
+  "items": {}
 }
