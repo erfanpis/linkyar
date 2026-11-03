@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1589": {
-      "messageId": 1589,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-03T13:08:42.589Z",
-      "kind": "سند",
-      "fileId": "BQACAgIAAxkBAAIF6mroigkEF_uFn1GfcnxaOnlITvkGAAINuAACjKlISwABF5ruadkOeD0E",
-      "fileName": "CounterFlame-1.4-unsigned-ios27fix.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 1755479860
-    }
-  }
+  "items": {}
 }
