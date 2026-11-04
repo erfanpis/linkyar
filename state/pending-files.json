@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1651": {
-      "messageId": 1651,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-04T11:26:54.596Z",
-      "kind": "سند",
-      "fileId": "BQACAgIAAxkBAAIGc2rrFn6JaLCvaRImD4tP4HT6YgcVAAK5pQAC4EtRSw9bbeuP-GyuPQQ",
-      "fileName": "‎Compress Photo_v2.0.1_tg@Sa1y0miii.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 71165193
-    }
-  }
+  "items": {}
 }
