@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "110124351:1654": {
+      "messageId": 1654,
+      "chatId": 110124351,
+      "userId": 110124351,
+      "createdAt": "2026-11-04T11:32:13.620Z",
+      "kind": "سند",
+      "fileId": "BQACAgIAAxkBAAIGdmrrF71MtBg67jCAUnl9RYxgHQnGAAILsQACOr9IS_6hGD-t4JvNPQQ",
+      "fileName": "CandlesUp_v1.17.0_tg@Sa1y0miii.ipa",
+      "mimeType": "application/octet-stream",
+      "fileSize": 56372218
+    }
+  }
 }
