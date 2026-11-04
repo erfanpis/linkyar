@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1686": {
-      "messageId": 1686,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-04T21:11:58.813Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIGlmrrn55Z6p6bo2JMpVIejWKuA-y0AAIpCgACKklQRzSLN1CxYcIPPQQ",
-      "fileName": "Water_Air_Water_Tracker_v2026_11_1_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 63602080
-    }
-  }
+  "items": {}
 }
