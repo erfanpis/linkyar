@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "6325075744:1620": {
+      "messageId": 1620,
+      "chatId": 6325075744,
+      "userId": 6325075744,
+      "createdAt": "2026-11-04T00:36:36.643Z",
+      "kind": "سند",
+      "fileId": "BQACAgIAAxkBAAIF22roYJXKxWL4l8U3MuCij1Jkkvr4AAO6AALiuChLrGGXe0wbcfk9BA",
+      "fileName": "8Ball Pool free atraheb.ipa",
+      "mimeType": "application/octet-stream",
+      "fileSize": 97741884
+    }
+  }
 }
