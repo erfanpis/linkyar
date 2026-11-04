@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1635": {
-      "messageId": 1635,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-04T10:46:15.391Z",
-      "kind": "سند",
-      "fileId": "BQACAgIAAxkBAAIGY2rrDPc7zJSdCld4F2SxHG5D-N9hAAKZrAAC4EtRS6AruPbEHOG_PQQ",
-      "fileName": "‎VinylStudio_v1.13.1_tg@Sa1y0miii.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 115395693
-    }
-  }
+  "items": {}
 }
