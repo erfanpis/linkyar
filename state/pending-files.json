@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1663": {
-      "messageId": 1663,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-04T12:11:28.973Z",
-      "kind": "سند",
-      "fileId": "BQACAgIAAxkBAAIGf2rrIPA873QBTDxCaJlCg9kNDZx5AAIVrgACOr9IS1oF7uNwMyoDPQQ",
-      "fileName": "‎ Finch_v3.73.234_tg@Sa1y0miii.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 179041073
-    }
-  }
+  "items": {}
 }
