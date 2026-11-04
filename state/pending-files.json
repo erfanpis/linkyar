@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1632": {
-      "messageId": 1632,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-04T10:36:26.651Z",
-      "kind": "سند",
-      "fileId": "BQACAgIAAxkBAAIGYGrrCqqe2cHsUxulUpjtDiILhegjAAJXrAAC4EtRS8GHYS4vNKxfPQQ",
-      "fileName": "‎Intermittent Fast…_v1.5.3_tg@Sa1y0miii.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 104574296
-    }
-  }
+  "items": {}
 }
