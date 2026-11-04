@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1683": {
-      "messageId": 1683,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-04T18:14:57.032Z",
-      "kind": "سند",
-      "fileId": "BQACAgIAAxkBAAIGk2rrdiDNQphAs6bqTMLVrjayXUS5AAKErwAC9LvAShYocVUVWbN6PQQ",
-      "fileName": "Gopeed_1.9.3[🅡星].ipa",
-      "mimeType": "application/binary",
-      "fileSize": 27488140
-    }
-  }
+  "items": {}
 }
