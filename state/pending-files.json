@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1629": {
-      "messageId": 1629,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-04T10:29:21.452Z",
-      "kind": "سند",
-      "fileId": "BQACAgIAAxkBAAIGXWrrCQH6NTXkGViF1UbwfrB1oFnEAAKXrQAC4EtRS8mXxS5YRWcaPQQ",
-      "fileName": "‎PUSH Workout & Gy…_v4.2.1_tg@Sa1y0miii.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 76474383
-    }
-  }
+  "items": {}
 }
