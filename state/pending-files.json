@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "6325075744:1773": {
+      "messageId": 1773,
+      "chatId": 6325075744,
+      "userId": 6325075744,
+      "createdAt": "2026-11-05T17:55:30.673Z",
+      "kind": "سند",
+      "fileId": "BQACAgEAAxkBAAIG7WrswxJxS3N-cuKjE-QCr1eYZ3kzAAJNBwACmUJhR7DVicqeYxXsPQQ",
+      "fileName": "1Blocker_Ad_Blocker_v6_7_1_Subscription_Unlocked_blatant_Patched.ipa",
+      "mimeType": "application/zip",
+      "fileSize": 66299481
+    }
+  }
 }
