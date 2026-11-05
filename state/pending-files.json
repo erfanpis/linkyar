@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "110124351:1714": {
+      "messageId": 1714,
+      "chatId": 110124351,
+      "userId": 110124351,
+      "createdAt": "2026-11-05T09:15:38.828Z",
+      "kind": "سند",
+      "fileId": "BQACAgQAAxkBAAIGsmrsSTrdELt5_wi7qYZWxHIER4u8AAJCHwACovVgU0CJMEnnovbpPQQ",
+      "fileName": "Tg_Sa1y0miii26.dylib",
+      "mimeType": "application/binary",
+      "fileSize": 176256
+    }
+  }
 }
