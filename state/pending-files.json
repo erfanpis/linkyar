@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1702": {
-      "messageId": 1702,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-05T08:07:05.171Z",
-      "kind": "سند",
-      "fileId": "BQACAgIAAxkBAAIGpmrsOSnekFNNvMF2i3qEdOHpcH66AALUtQACiKhAS97724V5WvjLPQQ",
-      "fileName": "‎ ThisDay_v3.0.1_tg@Sa1y0miii.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 36318816
-    }
-  }
+  "items": {}
 }
