@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:1768": {
-      "messageId": 1768,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-11-05T17:48:03.108Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIG6GrswVMFyX6E54RXToiKTHnMF6ovAAJJCAACmUJhR_esymhOLIdePQQ",
-      "fileName": "Captions_AI_Edits_Your_Video_v13_42_0_Scale_Subscription_Unlocked.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 124407698
-    }
-  }
+  "items": {}
 }
