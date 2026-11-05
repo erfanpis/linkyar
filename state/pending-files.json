@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "6325075744:1785": {
+      "messageId": 1785,
+      "chatId": 6325075744,
+      "userId": 6325075744,
+      "createdAt": "2026-11-05T18:17:09.349Z",
+      "kind": "سند",
+      "fileId": "BQACAgEAAxkBAAIG-WrsyCVxycI2DIXDc-JGm4q_NQouAALeCAAC09hhR4TUrkEpIE26PQQ",
+      "fileName": "Facebook 586.0.0 (iQFace) [@ipavault].ipa",
+      "mimeType": "application/octet-stream",
+      "fileSize": 250701701
+    }
+  }
 }
