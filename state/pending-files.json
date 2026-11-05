@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1797": {
-      "messageId": 1797,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-05T23:57:39.773Z",
-      "kind": "سند",
-      "fileId": "BQACAgIAAxkBAAIHBWrtF_MWHdzUpcWDagmbEuK_GY7ZAAL6ogAC1itgS1OGAQL8-2dgPQQ",
-      "fileName": "Verba__AI_Edits__Video_Reels_3.70.1_1793865677.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 393932362
-    }
-  }
+  "items": {}
 }
