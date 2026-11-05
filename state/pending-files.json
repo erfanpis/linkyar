@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:1739": {
-      "messageId": 1739,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-11-05T17:07:46.991Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIGy2rst-JyT6rH0kvdlLNdBfbKzleLAAKxCwACQzJRRwK1PILgnXBlPQQ",
-      "fileName": "YouTube 21.44.4 YTPlus 6.0 base [@ipavault].ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 161850092
-    }
-  }
+  "items": {}
 }
