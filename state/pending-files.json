@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1699": {
-      "messageId": 1699,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-05T07:10:52.239Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIGo2rsK_wQ_jsKF56nbbV7CmE2CRtkAAJdCQACKklQR4y_UwpW_pItPQQ",
-      "fileName": "Stemz_remover_vocal_audio_pro_v6_00_03_Pro_Unlocked_blatant_Patched.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 315370563
-    }
-  }
+  "items": {}
 }
