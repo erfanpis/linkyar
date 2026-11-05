@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:1779": {
-      "messageId": 1779,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-11-05T18:08:19.528Z",
-      "kind": "سند",
-      "fileId": "BQACAgIAAxkBAAIG82rsxhMS7eGQwqdQHzp2eGASkC6-AAJirAACpTxgS2S5IUZw9EJpPQQ",
-      "fileName": "Photo_Cleaner_Guru_Duplicates_1.3.29_1793805188.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 56778278
-    }
-  }
+  "items": {}
 }
