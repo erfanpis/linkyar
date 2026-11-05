@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:1729": {
-      "messageId": 1729,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-11-05T17:04:31.390Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIGwWrstx8l76mLqqwGJKNEdZVirT4AA7AJAALT2GFH3uE4kmCbXzQ9BA",
-      "fileName": "Turrit 1.5.8 (iQTele 1.5) [@ipavault].ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 102886079
-    }
-  }
+  "items": {}
 }
