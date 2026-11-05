@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "6325075744:1726": {
+      "messageId": 1726,
+      "chatId": 6325075744,
+      "userId": 6325075744,
+      "createdAt": "2026-11-05T17:03:39.830Z",
+      "kind": "سند",
+      "fileId": "BQACAgEAAxkBAAIGvmrstus__ZRm47O8ZPjCAAEBkDAeGgAClggAAplCYUcuE7zJo7_1Cj0E",
+      "fileName": "Wallpapers_Central_v2_8_1_Subscription_Unlocked_blatant_Patched.ipa",
+      "mimeType": "application/zip",
+      "fileSize": 36852051
+    }
+  }
 }
