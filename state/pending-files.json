@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1717": {
-      "messageId": 1717,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-05T13:09:09.534Z",
-      "kind": "سند",
-      "fileId": "BQACAgIAAxkBAAIGtWrsf_UWXCKpTS1eZZDNEpabjcK_AALNowAC1itgS-JJt2IeLEywPQQ",
-      "fileName": "Remini_-_AI_Photo_Enhancer_2.10.223_1793871302.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 119007994
-    }
-  }
+  "items": {}
 }
