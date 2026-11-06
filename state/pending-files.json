@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1864": {
-      "messageId": 1864,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-06T23:15:06.331Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIHSGruX3q-r7hU5jnujm4jGt3KWXAwAAKKBwACvXtxRzwf3pQBhbsPPQQ",
-      "fileName": "CARROT_Weather_Alerts_&_Radar_v6_9_3_Premium_Unlocked_blatant_Patched.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 310888998
-    }
-  }
+  "items": {}
 }
