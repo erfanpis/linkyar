@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1861": {
-      "messageId": 1861,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-06T23:10:25.433Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIHRWruXmEKv3_UNgEtgjBlUIgDhfLIAAKGBwACvXtxRxK7dnf_oO9yPQQ",
-      "fileName": "Boostcamp_Workout_Tracker_v268_Subscription_Unlocked_blatant_Patched.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 93607204
-    }
-  }
+  "items": {}
 }
