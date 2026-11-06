@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1800": {
-      "messageId": 1800,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-06T00:04:05.298Z",
-      "kind": "سند",
-      "fileId": "BQACAgIAAxkBAAIHCGrtGXUviM0zZXXoO6I2IwLuXiuxAALhogAC1itgS3wlXnwKkRXDPQQ",
-      "fileName": "Picnic__Clean_Up_Storage_4.1.16_1793865058.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 72322561
-    }
-  }
+  "items": {}
 }
