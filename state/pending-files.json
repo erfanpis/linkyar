@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1870": {
-      "messageId": 1870,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-06T23:23:05.810Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIHTmruYVmSK74n8T0XmPsVSzK-JxaOAALIBwACvXtxR3J2eMTOIGP4PQQ",
-      "fileName": "iLovePDF_PDF_Editor_&_Scan_v4_2_3_Premium_Unlocked_blatant_Patched.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 157104410
-    }
-  }
+  "items": {}
 }
