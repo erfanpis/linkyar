@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "110124351:1855": {
+      "messageId": 1855,
+      "chatId": 110124351,
+      "userId": 110124351,
+      "createdAt": "2026-11-06T22:46:07.195Z",
+      "kind": "سند",
+      "fileId": "BQACAgEAAxkBAAIHP2ruWK9U7tJrrHZfKIWz-LDmUVfhAAKCBwACvXtxR2ksgZC_jU0SPQQ",
+      "fileName": "Super_Agent_for_Safari_v4_7_4_Subscription_Unlocked_blatant_Patched.ipa",
+      "mimeType": "application/zip",
+      "fileSize": 32410208
+    }
+  }
 }
