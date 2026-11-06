@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1837": {
-      "messageId": 1837,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-06T14:43:11.873Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAIHLWrt539lWuhZVy5b94_t3IlPkbSDAALVIQACDsxxU_fFrKEHOMMfPQQ",
-      "fileName": "simcitysibstar.dylib",
-      "mimeType": "application/binary",
-      "fileSize": 575456
-    }
-  }
+  "items": {}
 }
