@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1846": {
-      "messageId": 1846,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-06T22:36:23.039Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIHNmruVmbP-WTPaokSWjD_BGwK5wHrAAJ3BwACvXtxR0Q2kEfIr_HNPQQ",
-      "fileName": "Hevy_Workout_Tracker_Gym_Log_v3_2_5_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 146854606
-    }
-  }
+  "items": {}
 }
