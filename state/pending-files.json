@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1817": {
-      "messageId": 1817,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-06T10:15:54.864Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAIHGWrtqNrLitqJW1OITlpu4iuZV3FyAAILEwACCBPxU-fVwPFz6OULPQQ",
-      "fileName": "UltimateNinja1.0.15[𝕚𝕡𝕒𝕗𝕚𝕝𝕖𝕕𝕝vip].ipa",
-      "mimeType": "application/binary",
-      "fileSize": 3240551259
-    }
-  }
+  "items": {}
 }
