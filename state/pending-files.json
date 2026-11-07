@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1933": {
-      "messageId": 1933,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-07T21:57:28.922Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAIHjWrvnsj7amYBOnIXynV6din1oE_fAAJoJAACmCx4U5fHsMEG7nj3PQQ",
-      "fileName": "KAlertBrotato.dylib",
-      "mimeType": "application/binary",
-      "fileSize": 211200
-    }
-  }
+  "items": {}
 }
