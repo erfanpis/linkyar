@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "6325075744:1944": {
+      "messageId": 1944,
+      "chatId": 6325075744,
+      "userId": 6325075744,
+      "createdAt": "2026-11-07T22:21:54.894Z",
+      "kind": "سند",
+      "fileId": "BQACAgQAAxkBAAIHmGrvpIJ47R0RyMu7Tb0sAkOkt6-DAALSIgACUOwoU7V6qgnyydhnPQQ",
+      "fileName": "VK Музыка+ [v8.44].ipa",
+      "mimeType": "application/zip",
+      "fileSize": 183974636
+    }
+  }
 }
