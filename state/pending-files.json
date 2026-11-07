@@ -1,16 +1,5 @@
 {
   "items": {
-    "110124351:1947": {
-      "messageId": 1947,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-07T22:44:39.871Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAIHm2rvqde3W57VeKQtYwGxEFU8KaV9AAJzJAACmCx4U63SjeZCkTXZPQQ",
-      "fileName": "KAlert_Terraria_1.4.58001_v10.dylib",
-      "mimeType": "application/binary",
-      "fileSize": 232384
-    },
     "110124351:1949": {
       "messageId": 1949,
       "chatId": 110124351,
