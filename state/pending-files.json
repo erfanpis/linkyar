@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1879": {
-      "messageId": 1879,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-07T00:26:29.176Z",
-      "kind": "سند",
-      "fileId": "BQACAgIAAxkBAAIHMGrt6ow6EBrxCKQsxgsYfobkPQ1oAAIOswACuytYSyQWLU_h1j5NPQQ",
-      "fileName": "模拟城市_1.84.1_无限资源.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 271688572
-    }
-  }
+  "items": {}
 }
