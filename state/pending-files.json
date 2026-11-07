@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "110124351:1941": {
+      "messageId": 1941,
+      "chatId": 110124351,
+      "userId": 110124351,
+      "createdAt": "2026-11-07T22:18:31.276Z",
+      "kind": "سند",
+      "fileId": "BQACAgIAAxkBAAIHlWrvo7dgccStNFUJkdujF2sd7FalAAKosAAC0rVpS48Yx5p2siRZPQQ",
+      "fileName": "土豆兄弟_1.3.410_全功能.ipa",
+      "mimeType": "application/zip",
+      "fileSize": 213535321
+    }
+  }
 }
