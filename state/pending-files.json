@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "110124351:1882": {
+      "messageId": 1882,
+      "chatId": 110124351,
+      "userId": 110124351,
+      "createdAt": "2026-11-07T00:40:33.353Z",
+      "kind": "سند",
+      "fileId": "BQACAgQAAxkBAAIHWmruc4FaUDwE5PLvQgvFSo8DwwgzAAIRIwACDsxxU-39iSaE1rJuPQQ",
+      "fileName": "SimCity_1.84.1_1794011399.ipa",
+      "mimeType": "application/binary",
+      "fileSize": 276690238
+    }
+  }
 }
