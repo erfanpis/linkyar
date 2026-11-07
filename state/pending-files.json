@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1924": {
-      "messageId": 1924,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-07T19:39:57.785Z",
-      "kind": "سند",
-      "fileId": "BQACAgIAAxkBAAIHhGrvfo04kVf1S0KySyPTpOEudTHyAALvtgAC9GZhS-JKJkN73Ez9PQQ",
-      "fileName": "‎ Shufl FM_v1.5.0_tg@Sa1y0miii.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 27886058
-    }
-  }
+  "items": {}
 }
