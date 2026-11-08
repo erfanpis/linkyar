@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:1980": {
-      "messageId": 1980,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-11-08T15:55:07.462Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIHs2rwdSJjKBt1_BdqDknDGQemC9AkAAKJCAACuJyAR14nqPcMvT3qPQQ",
-      "fileName": "Facetune_Photo_&_Video_Editor_v26_37_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 388905229
-    }
-  }
+  "items": {}
 }
