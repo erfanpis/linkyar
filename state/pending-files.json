@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:1992": {
-      "messageId": 1992,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-11-08T21:33:47.003Z",
-      "kind": "سند",
-      "fileId": "BQACAgIAAxkBAAIHxWrw58j69u8QI5WVL4wZHVDMS2zfAALrtQACME-ISzRhuhaS0RXBPQQ",
-      "fileName": "CounterFlame-1.4.1-unsigned.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 1848945908
-    }
-  }
+  "items": {}
 }
