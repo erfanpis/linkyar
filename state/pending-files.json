@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1949": {
-      "messageId": 1949,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-07T22:49:09.670Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAIHnWrvquVrdG0w4YwcQKlCGA4W8pvxAAJ0JAACmCx4UzLRsgwn78rdPQQ",
-      "fileName": "Brotato_1.3.410_1794091263.ipa",
-      "mimeType": "application/binary",
-      "fileSize": 226854308
-    }
-  }
+  "items": {}
 }
