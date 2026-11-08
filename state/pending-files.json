@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:1971": {
-      "messageId": 1971,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-08T13:12:02.896Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIHs2rwdSJjKBt1_BdqDknDGQemC9AkAAKJCAACuJyAR14nqPcMvT3qPQQ",
-      "fileName": "Facetune_Photo_&_Video_Editor_v26_37_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 388905229
-    }
-  }
+  "items": {}
 }
