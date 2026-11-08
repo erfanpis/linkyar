@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "6325075744:1974": {
+      "messageId": 1974,
+      "chatId": 6325075744,
+      "userId": 6325075744,
+      "createdAt": "2026-11-08T15:46:33.377Z",
+      "kind": "سند",
+      "fileId": "BQACAgEAAxkBAAIHtmrwmVmJK3QCp-NtJGA12HRbIfK-AAJwCgAClkOIRyc68ryaOb4vPQQ",
+      "fileName": "Spotify 9.1.92 (EeveeSpotify+Pixie) [@ipavault].ipa",
+      "mimeType": "application/octet-stream",
+      "fileSize": 145963307
+    }
+  }
 }
