@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "110124351:2050": {
+      "messageId": 2050,
+      "chatId": 110124351,
+      "userId": 110124351,
+      "createdAt": "2026-11-09T10:55:58.582Z",
+      "kind": "سند",
+      "fileId": "BQACAgIAAxkBAAIIAmrxpr454xFyPndURBMcQIWWGwMWAAKPpQACwLOAS3KdblfJ6IbaPQQ",
+      "fileName": "‎ B42_v7.15.0_tg@Sa1y0miii.ipa",
+      "mimeType": "application/octet-stream",
+      "fileSize": 82863891
+    }
+  }
 }
