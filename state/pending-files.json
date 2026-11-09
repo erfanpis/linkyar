@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:2059": {
-      "messageId": 2059,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-11-09T13:02:26.866Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIIC2rxxGI5Ju00G8rq53lU5vfuNIWMAAIoCwAClkOIR1lVomGpjyITPQQ",
-      "fileName": "YouTube 21.45.4 (YTKACE 1.1.5) [@ipavault].ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 145095799
-    }
-  }
+  "items": {}
 }
