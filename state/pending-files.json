@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:2003": {
-      "messageId": 2003,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-09T08:52:26.874Z",
-      "kind": "سند",
-      "fileId": "BQACAgIAAxkBAAIH02rxicrB5l5DaGFglr1prmkB2emzAAKJqAACfOKBS6cv_Hdm-vqqPQQ",
-      "fileName": "勇闯死人谷2_1.88.0_无敌无限货币等.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 1826091071
-    }
-  }
+  "items": {}
 }
