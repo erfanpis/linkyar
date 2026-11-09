@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:2018": {
-      "messageId": 2018,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-09T10:15:59.692Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIH4mrxnV8s36zPr-ZXkyciPTJYKc4uAAKhCAACuJyIRwIhl6Bqmy5ePQQ",
-      "fileName": "Luminar_Photo_Editor&Enhancer_v4_6_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 573528057
-    }
-  }
+  "items": {}
 }
