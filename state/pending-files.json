@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "6325075744:2077": {
+      "messageId": 2077,
+      "chatId": 6325075744,
+      "userId": 6325075744,
+      "createdAt": "2026-11-09T13:25:56.516Z",
+      "kind": "سند",
+      "fileId": "BQACAgIAAxkBAAIIHWrxyeSHyrpR7MxWoaXzmo5hqj3EAAK-kgACqM0oS5OPkAqzbKcsPQQ",
+      "fileName": "Samorost 3 [1.471.12] (tg@ipaDuck).ipa",
+      "mimeType": "application/octet-stream",
+      "fileSize": 1037980954
+    }
+  }
 }
