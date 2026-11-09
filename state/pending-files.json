@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:2024": {
-      "messageId": 2024,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-09T10:26:11.052Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIH6Grxn8IYVCrFPLN1kJispPGkN1VsAAK1CAACuJyIR8kxHEklLxfSPQQ",
-      "fileName": "GOWOD_–_Mobility_&_Stretching_v5_12_1_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 66537496
-    }
-  }
+  "items": {}
 }
