@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:2009": {
-      "messageId": 2009,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-09T09:55:58.798Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIH2WrxmK7Dw8ZjGmCrLB6q9ejFwzuCAAIFCAACuJyIR0N4MQweFH2-PQQ",
-      "fileName": "Mockup_UI_UX_Design_v4_6_2_Subscription_Unlocked_blatant_Patched.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 52252431
-    }
-  }
+  "items": {}
 }
