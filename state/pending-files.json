@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:2027": {
-      "messageId": 2027,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-09T10:28:36.916Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIH62rxoFQQ1fwSiBCkxg7a-odElmHwAAK2CAACuJyIRy4vnDo5H0YSPQQ",
-      "fileName": "Beat_Maker_Pro_Music_Game_v4_22_00_Pro_Unlocked_blatant_Patched.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 119937806
-    }
-  }
+  "items": {}
 }
