@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:2030": {
-      "messageId": 2030,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-09T10:31:13.896Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIH7mrxoPGzT8GBLK8oQBSg0Z1PodGmAAK4CAACuJyIR_H-lnwSmWgmPQQ",
-      "fileName": "PDF_Expert_Editor_&_Reader_v7_26_4_Premium_Unlocked_blatant_Patched.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 206988347
-    }
-  }
+  "items": {}
 }
