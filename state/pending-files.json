@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:2083": {
-      "messageId": 2083,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-09T14:41:57.029Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAIII2rx27QRoDoTn5L6GORlEmmHYAiqAAK0HwAC1FaRU4ZgbTW0rJuhPQQ",
-      "fileName": "AimAssist-v2.dylib",
-      "mimeType": "application/octet-stream",
-      "fileSize": 50596
-    }
-  }
+  "items": {}
 }
