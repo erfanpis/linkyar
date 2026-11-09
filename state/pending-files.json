@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:2041": {
-      "messageId": 2041,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-09T10:43:15.730Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIH-Wrxo8NaEl-ql-RvY55Q1MJkuGX2AAIvCAACqmqQR6i4Hp2qQ3_TPQQ",
-      "fileName": "Edjing_Mix_DJ_Music_Mixer_App_v9_4_5_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 215432286
-    }
-  }
+  "items": {}
 }
