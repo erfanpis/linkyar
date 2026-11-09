@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:2038": {
-      "messageId": 2038,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-09T10:39:50.752Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIH9mrxovZmct8ZxCf82_raoAtvZmAcAAIuCAACqmqQR5b2QYnEqZf2PQQ",
-      "fileName": "PUSH_Workout_&_Gym_Tracker_v4_2_2_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 83004421
-    }
-  }
+  "items": {}
 }
