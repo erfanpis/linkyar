@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:2109": {
-      "messageId": 2109,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-11-10T15:51:43.253Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIIPWrzPY8MVE5pICdsU1movpL0wtg-AAJvBgACqmqgRxGdOloUZG2ePQQ",
-      "fileName": "Picsart_AI_Photo_Editor,_Video_v30_9_6_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 119191274
-    }
-  }
+  "items": {}
 }
