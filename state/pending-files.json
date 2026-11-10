@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:2097": {
-      "messageId": 2097,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-11-10T11:55:15.275Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIIMWrzBiN2fjFH69pqy-xw7pnlnu4GAAI2BwACqmqYR9L8XVnG-fFQPQQ",
-      "fileName": "Flight_Tracker_+_v8_8_4_Subscription_Unlocked_blatant_Patched.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 108634561
-    }
-  }
+  "items": {}
 }
