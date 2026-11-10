@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:2100": {
-      "messageId": 2100,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-11-10T11:57:49.726Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIINGrzBr3GLYwvqHdNMlJX4lH767U5AAL8BgACqmqYRy6S9CeqM02IPQQ",
-      "fileName": "Detail_AI_Video_Editor_v6_0_7_Subscription_Unlocked_blatant_Patched.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 222664093
-    }
-  }
+  "items": {}
 }
