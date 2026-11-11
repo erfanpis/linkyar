@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:2176": {
-      "messageId": 2176,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-11-11T20:35:47.465Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIIgGr00aNBeicSaiPAhYAvW8XF_fp_AAJ8CAAC1negR2svdZ4AAUS9KT0E",
-      "fileName": "Reddit 2026.45.1 (RedditFilter) [@ipavault].ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 147778461
-    }
-  }
+  "items": {}
 }
