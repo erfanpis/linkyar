@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "110124351:2137": {
+      "messageId": 2137,
+      "chatId": 110124351,
+      "userId": 110124351,
+      "createdAt": "2026-11-11T13:36:18.097Z",
+      "kind": "سند",
+      "fileId": "BQACAgQAAxkBAAIISmrzzvDgwxq4HhGZHswaF6czu1yHAAJqGgAC6iqhUggXkxNvkEBRPQQ",
+      "fileName": "SibStarBanner.dylib",
+      "mimeType": "application/binary",
+      "fileSize": 1752048
+    }
+  }
 }
