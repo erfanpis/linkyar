@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:2167": {
-      "messageId": 2167,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-11-11T20:28:01.836Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIId2r0z9EPeqAWfaBSp8cWDgmtUikjAAIkCwACtHGYRxAb0sqEYswXPQQ",
-      "fileName": "Regram 7.0.1 (IG 454.1.0) [@ipavault].ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 367888952
-    }
-  }
+  "items": {}
 }
