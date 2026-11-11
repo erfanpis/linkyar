@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "6325075744:2185": {
+      "messageId": 2185,
+      "chatId": 6325075744,
+      "userId": 6325075744,
+      "createdAt": "2026-11-11T21:03:22.214Z",
+      "kind": "سند",
+      "fileId": "BQACAgEAAxkBAAIIiWr02BqY4AOtor__-DOPhKY6cHoiAAK5CAAC8JegR3uACZUZbbZSPQQ",
+      "fileName": "SODA_Natural_Beauty_Camera_v10_4_5_Subscription_Unlocked_blatant.ipa",
+      "mimeType": "application/zip",
+      "fileSize": 185016482
+    }
+  }
 }
