@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:2142": {
-      "messageId": 2142,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-11T16:26:24.229Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIIXmr0lyO9jCGYpsxhG5Pc7twHGWCSAALDBgACvflYR2oPe-VP65SvPQQ",
-      "fileName": "‎   ThisDay_v3.0.2-AppAssassin.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 36886994
-    }
-  }
+  "items": {}
 }
