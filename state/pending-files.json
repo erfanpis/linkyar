@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:2125": {
-      "messageId": 2125,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-11T03:26:38.550Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAIITWrz4G5RzlMhfaCnfmjkjCFYjf6EAALZHgACE-CgUxp4RZpfsFEsPQQ",
-      "fileName": "iPadn_1.8.5_1794365643.ipa",
-      "mimeType": "application/binary",
-      "fileSize": 47313846
-    }
-  }
+  "items": {}
 }
