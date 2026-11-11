@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "6325075744:2188": {
+      "messageId": 2188,
+      "chatId": 6325075744,
+      "userId": 6325075744,
+      "createdAt": "2026-11-11T21:22:19.267Z",
+      "kind": "سند",
+      "fileId": "BQACAgQAAxkBAAIIjGr03IoekW-8hvXg9rYwkWt2_G2SAAJVIAACM62QU_pERL5iksGMPQQ",
+      "fileName": "GTA5Port-iOS-v1.6.3.ipa",
+      "mimeType": "application/octet-stream",
+      "fileSize": 149245640
+    }
+  }
 }
