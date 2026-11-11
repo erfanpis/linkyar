@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "6325075744:2194": {
+      "messageId": 2194,
+      "chatId": 6325075744,
+      "userId": 6325075744,
+      "createdAt": "2026-11-11T22:06:30.119Z",
+      "kind": "سند",
+      "fileId": "BQACAgEAAxkBAAIIkmr05uY9AAFNXUdIwignGHa88kQ1lQACGQcAAtZ3qEdZZ4ZcB9au2T0E",
+      "fileName": "X 12.43 NFB 7.3.1 [@ipavault].ipa",
+      "mimeType": "application/octet-stream",
+      "fileSize": 282907531
+    }
+  }
 }
