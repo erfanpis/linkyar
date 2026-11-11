@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:2134": {
-      "messageId": 2134,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-11T13:16:00.166Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAIIVmr0apD0pEw7zuQOhdqhrc6aKBM-AAI9IQACleSgUzeBQ260C2bYPQQ",
-      "fileName": "DWG FastView-CAD Viewer&Editor.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 174642333
-    }
-  }
+  "items": {}
 }
