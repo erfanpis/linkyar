@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:2353": {
-      "messageId": 2353,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-12T23:16:34.156Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAIJMWr2SNLkGqssm7eKyrU55jdSbrKdAAIIHQACld64UwU7nubsua-3PQQ",
-      "fileName": "UnityFramework.zip",
-      "mimeType": "application/zip",
-      "fileSize": 48384613
-    }
-  }
+  "items": {}
 }
