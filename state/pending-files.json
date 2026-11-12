@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:2238": {
-      "messageId": 2238,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-11-12T11:48:42.079Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIIvmr1p5ntdes_vTF55msolhig_2_uAAL3DAAC8JeoR9HhQ-3Tsn1wPQQ",
-      "fileName": "FreeYourMusic_Move_Playlists_v11_2_0_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 25895321
-    }
-  }
+  "items": {}
 }
