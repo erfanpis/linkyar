@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "5821277029:2332": {
+      "messageId": 2332,
+      "chatId": 5821277029,
+      "userId": 5821277029,
+      "createdAt": "2026-11-12T22:49:53.540Z",
+      "kind": "سند",
+      "fileId": "BQACAgEAAxkBAAIJHGr2QpF3OyoXxNyteHF0JP9NQI3NAAK4CAAC8JegRzln_rMFb72OPQQ",
+      "fileName": "AI_Calorie_Tracker_by_Yazio_v26_45_0_Subscription_Unlocked_blatant.ipa",
+      "mimeType": "application/zip",
+      "fileSize": 215435948
+    }
+  }
 }
