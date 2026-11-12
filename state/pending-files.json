@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "5821277029:2295": {
+      "messageId": 2295,
+      "chatId": 5821277029,
+      "userId": 5821277029,
+      "createdAt": "2026-11-12T21:27:08.598Z",
+      "kind": "سند",
+      "fileId": "BQACAgEAAxkBAAII92r2LyyxBCQsEtVGMycjgCpqxHaUAAMIAAIOXrFHoUUaTBHfkes9BA",
+      "fileName": "Phocus_DSLR_Portrait_Camera_v3_6_0_Subscription_Unlocked_blatant.ipa",
+      "mimeType": "application/zip",
+      "fileSize": 250243828
+    }
+  }
 }
