@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:2247": {
-      "messageId": 2247,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-12T19:53:15.987Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIIx2r2GStS-TmdJDaLEnsfptAQhfEEAAJkCAACDl6xR5JDx4c8jY4QPQQ",
-      "fileName": "Lyfta_Gym_&_Workout_Tracker_v1_168_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 65046552
-    }
-  }
+  "items": {}
 }
