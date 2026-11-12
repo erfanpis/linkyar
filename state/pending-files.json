@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:2335": {
-      "messageId": 2335,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-12T22:51:25.518Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIJH2r2Qu3s6EJB4Lp5rxURx5TPiY12AAIcCQAC8JegR3Ao2bRvI57VPQQ",
-      "fileName": "ProFit_Workout_Planner_v8_6_0_Subscription_Unlocked_blatant_Patched.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 53444266
-    }
-  }
+  "items": {}
 }
