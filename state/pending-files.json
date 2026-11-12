@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:2283": {
-      "messageId": 2283,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-12T21:22:05.603Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAII62r2Lf004_CPr10DeYLkjkCgZX18AAKqBwACDl6xR5sV1vfHWm7-PQQ",
-      "fileName": "Habit_Tracker_HabitKit_v1_19_2_Pro_Unlocked_blatant_Patched.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 109014219
-    }
-  }
+  "items": {}
 }
