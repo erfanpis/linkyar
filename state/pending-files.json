@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:2226": {
-      "messageId": 2226,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-12T10:11:35.960Z",
-      "kind": "سند",
-      "fileId": "BQACAgIAAxkBAAIIsmr1kNfFeSFhT8sgbUOxhsuxccgfAALImAACu6s5SM66ozbH2a58PQQ",
-      "fileName": "GoldenHack.ipa",
-      "mimeType": "application/binary",
-      "fileSize": 100331702
-    }
-  }
+  "items": {}
 }
