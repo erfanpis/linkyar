@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:2271": {
-      "messageId": 2271,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-12T21:16:49.259Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAII32r2LMHgJNPM6D9uiVbju_UofBFZAAIiDQAC8JeoR8FIAAE4Inp6ED0E",
-      "fileName": "iScreen_Widgets_&_Wallpaper_v5_1_30_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 355149620
-    }
-  }
+  "items": {}
 }
