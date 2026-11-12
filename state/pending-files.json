@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:2312": {
-      "messageId": 2312,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-12T21:53:26.424Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIJCGr2NVaCP2q5btvoCh7atLO79S4UAAKWCAACDl6xRymsI723tQvrPQQ",
-      "fileName": "Prequel_Photo_&_Video_Editor_v2_104_2_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 239255172
-    }
-  }
+  "items": {}
 }
