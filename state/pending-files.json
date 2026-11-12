@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:2292": {
-      "messageId": 2292,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-12T21:25:43.817Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAII9Gr2LtdHYmMn7DsRbUqqwTGetsMLAALsBwACDl6xR1GXhYOOmenaPQQ",
-      "fileName": "Sleep_Cycle_Tracker_&_Sounds_v6_26_440_Premium_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 208976928
-    }
-  }
+  "items": {}
 }
