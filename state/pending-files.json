@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:2256": {
-      "messageId": 2256,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-12T20:12:13.632Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAII0Gr2HZ1z8clb8oFkXn_YVkXHXiNjAAJtCAACDl6xR5B5X0uWrdxrPQQ",
-      "fileName": "Buddy_Budget_Planner_App_v13_52_Premium_Unlocked_blatant_Patched.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 110908783
-    }
-  }
+  "items": {}
 }
