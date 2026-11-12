@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:2259": {
-      "messageId": 2259,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-12T20:49:24.660Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAII02r2JlT-Mbwa7AIMFHJGKe5G0vJkAAJ_CAACDl6xR-UyB6E1HAedPQQ",
-      "fileName": "Remove_Objects_AI_Retouch_v1_3_1_Subscription_Unlocked_blatant_Patched.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 41761137
-    }
-  }
+  "items": {}
 }
