@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "5821277029:2265": {
+      "messageId": 2265,
+      "chatId": 5821277029,
+      "userId": 5821277029,
+      "createdAt": "2026-11-12T21:15:28.084Z",
+      "kind": "سند",
+      "fileId": "BQACAgEAAxkBAAII2Wr2LG_mu-FyXXrxpNRuF7ryp0J0AALPDAAC8JeoR_jNxzqKUiqNPQQ",
+      "fileName": "Dropshare_File_Sharing_Tool_v3_68_Subscription_Unlocked_blatant.ipa",
+      "mimeType": "application/zip",
+      "fileSize": 74405731
+    }
+  }
 }
