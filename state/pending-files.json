@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:2268": {
-      "messageId": 2268,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-12T21:16:11.569Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAII3Gr2LJtfX4Z1DhL1Me78qe8Oe7rYAALtDAAC8JeoRzKPytcgxtzBPQQ",
-      "fileName": "Happy Scale v2026.9 Subscription Unlocked blatant Patched.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 42822161
-    }
-  }
+  "items": {}
 }
