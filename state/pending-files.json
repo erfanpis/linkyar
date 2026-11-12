@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:2280": {
-      "messageId": 2280,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-12T21:21:31.470Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAII6Gr2LdttUL6OvRbE_vFF6aHBdXWSAAKlBwACDl6xR3gEos8tZGXrPQQ",
-      "fileName": "AdGuard_Ad_Blocker_for_Safari_v4_5_25_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 49841128
-    }
-  }
+  "items": {}
 }
