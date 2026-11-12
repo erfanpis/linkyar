@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:2300": {
-      "messageId": 2300,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-12T21:28:58.208Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAII_Gr2L5oysdM8tX_NxT46-mKaXFdtAAIlCAACDl6xR8d2jjZ2g4TKPQQ",
-      "fileName": "Balance_Meditation_&_Sleep_v1_215_0_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 129943362
-    }
-  }
+  "items": {}
 }
