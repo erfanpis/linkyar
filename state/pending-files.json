@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:2384": {
-      "messageId": 2384,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-13T16:01:34.544Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAIJUGr3NF4y8Q_OXMfFi05Um27_W5pTAAKgEQACp0owUigHIVpgvdl1PQQ",
-      "fileName": "The Past Within.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 333079260
-    }
-  }
+  "items": {}
 }
