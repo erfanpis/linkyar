@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:2378": {
-      "messageId": 2378,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-13T07:45:49.608Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIJSmr2wC2eAfA-bMMPpnltaERnuYz2AAKwCAACeI6wR1lkh638evy0PQQ",
-      "fileName": "Compressor 2.0.2 (Pro) [@ipavault].ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 76026422
-    }
-  }
+  "items": {}
 }
