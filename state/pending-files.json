@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:2491": {
-      "messageId": 2491,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-14T21:58:37.020Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIJu2r42Ywp7v1XGzaum3SfJONg_qAeAALvBwACw3rIR9ItWN9d7cpLPQQ",
-      "fileName": "Luminar_Photo_Editor&Enhancer_v4_6_1_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 573527132
-    }
-  }
+  "items": {}
 }
