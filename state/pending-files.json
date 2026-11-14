@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "110124351:2417": {
+      "messageId": 2417,
+      "chatId": 110124351,
+      "userId": 110124351,
+      "createdAt": "2026-11-14T16:42:30.200Z",
+      "kind": "سند",
+      "fileId": "BQACAgQAAxkBAAIJcWr4j3YM4TfIw9hNBKaSaOxmLeCJAAIjHgAC1v3IUwG218-njIVMPQQ",
+      "fileName": "SoccerStars-37.3.0-18363919419.ipa",
+      "mimeType": "application/zip",
+      "fileSize": 86495052
+    }
+  }
 }
