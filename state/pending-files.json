@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:2499": {
-      "messageId": 2499,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-14T22:07:09.557Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIJw2r4243dAcrAxQcU0W3qVxYUxBuKAAL0BwACw3rIR74tORYtbaGdPQQ",
-      "fileName": "Not_Boring_Camera_v1_63_Subscription_Unlocked_blatant_Patched.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 187134096
-    }
-  }
+  "items": {}
 }
