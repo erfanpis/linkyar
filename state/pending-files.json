@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "110124351:2402": {
+      "messageId": 2402,
+      "chatId": 110124351,
+      "userId": 110124351,
+      "createdAt": "2026-11-14T12:54:47.955Z",
+      "kind": "سند",
+      "fileId": "BQACAgQAAxkBAAIJYmr4Whc0SQJQdPs4MaL2Nw2a3IHsAAIbHQAC1v3IU5ZPp8N_27LTPQQ",
+      "fileName": "com.gamegod.igg_0.8.9.5_iphoneos-arm.deb",
+      "mimeType": "application/x-debian-package",
+      "fileSize": 6607608
+    }
+  }
 }
