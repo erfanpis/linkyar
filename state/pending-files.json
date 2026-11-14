@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:2411": {
-      "messageId": 2411,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-14T16:16:40.568Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIJa2r4iWf0SfbHKTy2kWmQZgABSEvp_wAC8AYAAqpqmEdNVmPYMgqdGj0E",
-      "fileName": "Adobe_Premiere_AI_Video_Editor_v26_23_1_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 111669638
-    }
-  }
+  "items": {}
 }
