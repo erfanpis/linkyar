@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:2471": {
-      "messageId": 2471,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-14T21:50:08.537Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIJp2r415C0btKGvXzhEpEeOrZgtFzGAALkBwACw3rIR-lnl-4OFPA9PQQ",
-      "fileName": "Color_Pop_AI_Coloring_Book_v2_69_01_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 193224700
-    }
-  }
+  "items": {}
 }
