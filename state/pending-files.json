@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:2496": {
-      "messageId": 2496,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-14T22:04:17.848Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIJwGr42uF44XtZ775mijOD6mxXX9KIAALzBwACw3rIR03jEXfyFg6EPQQ",
-      "fileName": "MD_Widgets_Live_Wallpaper_v4_4_1_Pro_Unlocked_blatant_Patched.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 246956502
-    }
-  }
+  "items": {}
 }
