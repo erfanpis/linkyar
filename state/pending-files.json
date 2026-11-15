@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "6325075744:2599": {
+      "messageId": 2599,
+      "chatId": 6325075744,
+      "userId": 6325075744,
+      "createdAt": "2026-11-15T13:29:19.805Z",
+      "kind": "سند",
+      "fileId": "BQACAgQAAxkBAAIKJ2r5s6-Fy0O9CUZ1u8YsQwMAAlHaAAJDFgAC4HAQU9ehu6Blck_tPQQ",
+      "fileName": "Rusty Lake Hotel (3.0.0).ipa",
+      "mimeType": "application/zip",
+      "fileSize": 38594762
+    }
+  }
 }
