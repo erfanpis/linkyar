@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:2565": {
-      "messageId": 2565,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-15T07:43:26.603Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAIKBWr5Yp7-yjP_wnY1bpPqKXoak4qzAAIaIAAClgXIU_MdvlojAAFMpT0E",
-      "fileName": "com.gstarcad.xian.ocsclient-5.21.4.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 186117397
-    }
-  }
+  "items": {}
 }
