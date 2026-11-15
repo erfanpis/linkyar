@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "6325075744:2591": {
+      "messageId": 2591,
+      "chatId": 6325075744,
+      "userId": 6325075744,
+      "createdAt": "2026-11-15T11:06:45.859Z",
+      "kind": "سند",
+      "fileId": "BQACAgQAAxkBAAIKH2r5kkUhjzqynSxGRiJiMOCyFePvAAJbJQACW5GJU7Uv-Q3xVsnKPQQ",
+      "fileName": "zhir 4.1.1 .ipa",
+      "mimeType": "application/octet-stream",
+      "fileSize": 22710861
+    }
+  }
 }
