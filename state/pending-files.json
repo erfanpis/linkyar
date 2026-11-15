@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:2534": {
-      "messageId": 2534,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-15T02:44:41.865Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAIJ5mr5HJnnVnPQtcta-3wY8RGFrHy3AAJ7HgACi_XIUzrojGXkP76rPQQ",
-      "fileName": "Sky Missiles_1.0.8_1794708445.ipa",
-      "mimeType": "application/binary",
-      "fileSize": 179344957
-    }
-  }
+  "items": {}
 }
