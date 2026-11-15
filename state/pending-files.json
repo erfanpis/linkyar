@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:2525": {
-      "messageId": 2525,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-15T02:15:20.627Z",
-      "kind": "سند",
-      "fileId": "BQACAgIAAxkBAAIJ3Wr5FbiOaB48vZWkKI0p2ziiJurvAAI0lAACYEPISEEAAYYSAsRjKD0E",
-      "fileName": "com.kimura.battlegang-1.0.34-eeveedecrypter.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 163145461
-    }
-  }
+  "items": {}
 }
