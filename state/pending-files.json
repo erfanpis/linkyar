@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "110124351:2624": {
+      "messageId": 2624,
+      "chatId": 110124351,
+      "userId": 110124351,
+      "createdAt": "2026-11-15T18:00:30.790Z",
+      "kind": "سند",
+      "fileId": "BQACAgQAAxkBAAIKQGr58z6qeM7qEm4p_DtFU3ZNctmDAAKCHwAClgXQU_RizxIzP6MgPQQ",
+      "fileName": "Archive.zip",
+      "mimeType": "application/zip",
+      "fileSize": 14519777
+    }
+  }
 }
