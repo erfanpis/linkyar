@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:2648": {
-      "messageId": 2648,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-15T22:15:51.959Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAIKWGr6Lxdv_WpxoQOBp3JSZhyDKviFAAKzHwAClgXQUzZQUx7Z7uO4PQQ",
-      "fileName": "GOLIATH_1.1.531_ios_decrypted.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 474285347
-    }
-  }
+  "items": {}
 }
