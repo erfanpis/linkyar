@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "110124351:2732": {
+      "messageId": 2732,
+      "chatId": 110124351,
+      "userId": 110124351,
+      "createdAt": "2026-11-16T16:49:54.393Z",
+      "kind": "سند",
+      "fileId": "BQACAgQAAxkBAAIKrGr7NDJG4e6a-1bBOVX0peBH2xpaAALMHwACSczZU-0ESz-UQdv1PQQ",
+      "fileName": "StreetsOfRage3.ipa",
+      "mimeType": "application/octet-stream",
+      "fileSize": 2741259
+    }
+  }
 }
