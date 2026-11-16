@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:2711": {
-      "messageId": 2711,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-16T11:15:48.164Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIKl2r65ePmueijqEqWHSpKR4uFDS08AAIJCgACCQbZR62OrJlfcsjxPQQ",
-      "fileName": "Paste_–_Limitless_Clipboard_v7_1_0_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 128348415
-    }
-  }
+  "items": {}
 }
