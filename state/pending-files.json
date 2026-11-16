@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:2747": {
-      "messageId": 2747,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-16T17:52:34.254Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAIKu2r7QuLBvYaePi0h9xTchSf7N9YFAAL6HwACSczZU0a70pH7zbKDPQQ",
-      "fileName": "Tiny Toon Adventures - Buster's Hidden Treasure (USA).md",
-      "mimeType": "text/markdown",
-      "fileSize": 524288
-    }
-  }
+  "items": {}
 }
