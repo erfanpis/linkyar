@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "110124351:2714": {
+      "messageId": 2714,
+      "chatId": 110124351,
+      "userId": 110124351,
+      "createdAt": "2026-11-16T13:01:22.330Z",
+      "kind": "سند",
+      "fileId": "BQACAgQAAxkBAAIKmmr6_p9JqrZjmIY63A7LBYyk5dtnAAL9HgACSczZU_7E8wGmQlgUPQQ",
+      "fileName": "Streets of Rage 3 (Asia).zip",
+      "mimeType": "application/zip",
+      "fileSize": 1681436
+    }
+  }
 }
