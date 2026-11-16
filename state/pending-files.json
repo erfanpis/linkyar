@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:2717": {
-      "messageId": 2717,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-16T14:31:58.477Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIKnWr7E96y0FrtLy0gLXoZdwTdDwulAAJyCgACCQbZRyt5LMrJ_QQcPQQ",
-      "fileName": "Lifesum_AI_Calorie_Counter_v24_1_1_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 133772840
-    }
-  }
+  "items": {}
 }
