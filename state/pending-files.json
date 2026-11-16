@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:2690": {
-      "messageId": 2690,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-16T09:38:48.346Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIKgmr6zyjy5JypYScAAbIGTlNKhcucHgACzwkAAgkG2Uf6cnr0lwUB5D0E",
-      "fileName": "PUSH_Workout_&_Gym_Tracker_v4_2_3_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 83124838
-    }
-  }
+  "items": {}
 }
