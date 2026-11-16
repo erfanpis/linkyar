@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:2693": {
-      "messageId": 2693,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-16T10:16:05.364Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIKhWr61-VKHMo72kkubKyCcWp0NnezAALoCQACCQbZRz6PS9k_Vx-4PQQ",
-      "fileName": "SCRL_Photo_Collage_Maker_v9_65_Subscription_Unlocked_blatant_Patched.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 99764677
-    }
-  }
+  "items": {}
 }
