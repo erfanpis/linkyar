@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:2687": {
-      "messageId": 2687,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-16T09:02:14.503Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIKf2r6xpbNuw8uMRqzhQvM2MHDzP1GAAK6CQACCQbZR2Ux-Y9eeQkwPQQ",
-      "fileName": "Weather_Radar_NOAA_Channel_v6_4_3_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 133336280
-    }
-  }
+  "items": {}
 }
