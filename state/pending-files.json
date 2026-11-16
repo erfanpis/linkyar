@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "110124351:2723": {
+      "messageId": 2723,
+      "chatId": 110124351,
+      "userId": 110124351,
+      "createdAt": "2026-11-16T15:15:25.032Z",
+      "kind": "سند",
+      "fileId": "BQACAgQAAxkBAAIKo2r7HgwNpKxHEHmcjbHbIrz6CeN_AAKBHwACSczZUxxXKG_PvbQrPQQ",
+      "fileName": "Bare Knuckle III (Japan) 2.zip",
+      "mimeType": "application/zip",
+      "fileSize": 1765288
+    }
+  }
 }
