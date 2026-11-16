@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:2672": {
-      "messageId": 2672,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-16T08:02:41.477Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIKcGr6uKEPof-dbqbRnFlcC0RYOzTiAAKZCQACCQbZR_t6Dv5SRWfHPQQ",
-      "fileName": "LUT_Studio_Color_Grading_App_v4_1_4_Pro_Unlocked_blatant_Patched.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 152412566
-    }
-  }
+  "items": {}
 }
