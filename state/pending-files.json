@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:2696": {
-      "messageId": 2696,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-16T10:17:11.308Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIKiGr62CfsscsvtmOIIpyUYG9yrteVAALpCQACCQbZR1wxtRBPb_SQPQQ",
-      "fileName": "Cleanup_Phone_Storage_Cleaner_v6_27_0_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 84123677
-    }
-  }
+  "items": {}
 }
