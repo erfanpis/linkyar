@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "110124351:2744": {
+      "messageId": 2744,
+      "chatId": 110124351,
+      "userId": 110124351,
+      "createdAt": "2026-11-16T17:28:42.154Z",
+      "kind": "سند",
+      "fileId": "BQACAgQAAxkBAAIKuGr7PUnVTdNZNMDxgM4HSUIPelvkAALrHwACSczZU-e_x2RLEw8IPQQ",
+      "fileName": "Streets of Rage 3_1.0_1794849915.ipa",
+      "mimeType": "application/binary",
+      "fileSize": 3022769
+    }
+  }
 }
