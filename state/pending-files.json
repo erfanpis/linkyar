@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:2675": {
-      "messageId": 2675,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-16T08:21:12.615Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIKc2r6vPh3-FC76OdONEepr5W2uyW3AAKkCQACCQbZRzOakpa4oAdyPQQ",
-      "fileName": "Mimo_Learn_Python_Coding_&_AI_v12_36_0_Max_Subscription_Unlocked.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 160774307
-    }
-  }
+  "items": {}
 }
