@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:2780": {
-      "messageId": 2780,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-16T23:51:44.908Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAIK3Gr7lxAhgzK744PEMCKQeoRkE-e_AAJSJAACSczhU-Us2UmdW2lmPQQ",
-      "fileName": "Disney's Hercules_1.0_1794872671.ipa",
-      "mimeType": "application/binary",
-      "fileSize": 218710981
-    }
-  }
+  "items": {}
 }
