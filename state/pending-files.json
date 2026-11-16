@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:2729": {
-      "messageId": 2729,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-16T15:54:36.733Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIKqWr7JzwjynLcm8aJ4l_nyytOYrwzAAKhCgACCQbZR2X3cLrYNacmPQQ",
-      "fileName": "Elevate_Brain_Training_Games_v5_266_0_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 479322824
-    }
-  }
+  "items": {}
 }
