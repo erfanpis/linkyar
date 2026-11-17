@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:2783": {
-      "messageId": 2783,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-17T00:37:02.664Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIK32r7oa70GZm_NqbzGaeBXtctYjj9AAKBCgACl3jhRy092cvkfgtwPQQ",
-      "fileName": "ProCCD_Digital_Film_Camera_v7_1_1_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 263454716
-    }
-  }
+  "items": {}
 }
