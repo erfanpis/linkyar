@@ -10,6 +10,17 @@
       "fileName": "RyukGram 1.5.1 (IG 456.0.0) [@ipavault].ipa",
       "mimeType": "application/octet-stream",
       "fileSize": 394940363
+    },
+    "6325075744:2806": {
+      "messageId": 2806,
+      "chatId": 6325075744,
+      "userId": 6325075744,
+      "createdAt": "2026-11-17T05:39:37.788Z",
+      "kind": "سند",
+      "fileId": "BQACAgIAAxkBAAIK9mr76JkyqlqWK476AesHfvqIDdNrAALOrwACiDMJS-1qlX5mUAEBPQQ",
+      "fileName": "BHTikTokPlus 47.5.0.ipa",
+      "mimeType": "application/zip",
+      "fileSize": 509773776
     }
   }
 }
