@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:2890": {
-      "messageId": 2890,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-17T23:55:49.631Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAILSmr86YVFUFHiDGl8jEyJ_AU-3S55AAJ3DAACl3jpR4lrIKbZyZ9-PQQ",
-      "fileName": "QR_Code_Reader，Barcode_Scanner_v2026_11_5_Subscription_Unlocked.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 60929997
-    }
-  }
+  "items": {}
 }
