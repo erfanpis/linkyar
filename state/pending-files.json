@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:2818": {
-      "messageId": 2818,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-17T07:38:46.487Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAILAmr8BIaeW5syvBnOrAflPM7sPBfUAAJlIgACN7bhU6_nFUntpSS4PQQ",
-      "fileName": "uq24sj.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 468521463
-    }
-  }
+  "items": {}
 }
