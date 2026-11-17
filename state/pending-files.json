@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:2853": {
-      "messageId": 2853,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-17T15:55:32.459Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAILJWr8ePMEs2dpBCgFpCml9VoldPmGAAI7CwACl3jpRzir6EUJ3BrJPQQ",
-      "fileName": "Calm v7.5.1 Lifetime Unlocked blatant Patched.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 126765273
-    }
-  }
+  "items": {}
 }
