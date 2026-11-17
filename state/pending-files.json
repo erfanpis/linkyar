@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:2821": {
-      "messageId": 2821,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-17T08:22:45.155Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAILBWr8DtR3cnapoqv32L63WeD8dL69AAKoJAACSczhU1GufEqEtVYXPQQ",
-      "fileName": "SegaEmuKit.zip",
-      "mimeType": "application/zip",
-      "fileSize": 3405104
-    }
-  }
+  "items": {}
 }
