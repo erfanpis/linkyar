@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "6325075744:2864": {
+      "messageId": 2864,
+      "chatId": 6325075744,
+      "userId": 6325075744,
+      "createdAt": "2026-11-17T20:26:19.230Z",
+      "kind": "سند",
+      "fileId": "BQACAgQAAxkBAAILMGr8uGuGad61tYH3X3nRHn_pXzqhAAIyHAAC0lqxUfQEjooYSU5KPQQ",
+      "fileName": "Dopamine_2.4.8.tipa",
+      "mimeType": "application/zip",
+      "fileSize": 53695473
+    }
+  }
 }
