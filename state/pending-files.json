@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:2844": {
-      "messageId": 2844,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-17T10:36:07.222Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAILGmr8Lgo_0vTwsh9Cjl3Cjzs2sK0_AALpJAACSczhU4OI6WT2NrCpPQQ",
-      "fileName": "MultiGameKit.zip",
-      "mimeType": "application/zip",
-      "fileSize": 17564928
-    }
-  }
+  "items": {}
 }
