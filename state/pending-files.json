@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:2850": {
-      "messageId": 2850,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-17T11:26:57.036Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAILImr8OgABuDHefK4LT4r06xtMoFGyJwACjAoAApd46UfFE6RnPUhvmD0E",
-      "fileName": "Picsart_AI_Photo_Editor,_Video_v31_1_1_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 127614932
-    }
-  }
+  "items": {}
 }
