@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:2887": {
-      "messageId": 2887,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-17T23:21:49.470Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAILR2r84Y25SNF0fucmE0EuejXB4E_SAAJdDAACl3jpR4uO5ns9SA08PQQ",
-      "fileName": "Busuu_Language_Learning_App_v30_34_1_PremiumPlus_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 194873383
-    }
-  }
+  "items": {}
 }
