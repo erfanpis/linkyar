@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:2991": {
-      "messageId": 2991,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-18T20:38:50.689Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAILr2r-DNo18VwrOMEiRjssTQABEKx-jAACbggAAhvH8UeQZu1J3mLhfz0E",
-      "fileName": "Threads 456.0.0 (ThreadSaver) [@ipavault].ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 122953868
-    }
-  }
+  "items": {}
 }
