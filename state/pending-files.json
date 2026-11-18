@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:2908": {
-      "messageId": 2908,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-18T01:48:21.433Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAILXGr9A-XpSHvwfE8ZiHkKJzs_ih7MAAJAJgACoHcQUZqmFGQmmXuyPQQ",
-      "fileName": "Fightback_1.8.0_ios_5.0.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 236323271
-    }
-  }
+  "items": {}
 }
