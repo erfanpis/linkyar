@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:3000": {
-      "messageId": 3000,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-18T21:46:51.823Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAILuGr-HMsZ4qrbUU20b9Ycdq2jLTaHAALdCwACwaDxRwABUJyZIJCEWD0E",
-      "fileName": "Clime_NOAA_Weather_Radar_Live_v5_13_73_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 182116251
-    }
-  }
+  "items": {}
 }
