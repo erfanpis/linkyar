@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:2927": {
-      "messageId": 2927,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-11-18T06:46:18.050Z",
-      "kind": "سند",
-      "fileId": "BQACAgUAAxkBAAILMmr8uGuu2AlAX3rdqhX6KtBGjQjMAAI1HQACYnfYVbcbiIT1SLNrPQQ",
-      "fileName": "Company of Heroes_1.8.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 3664935679
-    }
-  }
+  "items": {}
 }
