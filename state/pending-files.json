@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:2917": {
-      "messageId": 2917,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-18T04:06:16.231Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAILZWr9JDgVUAmWIfa2STa5LYhaOzS0AAJVDAACl3jxR2zPXgp5wuPEPQQ",
-      "fileName": "Sketchar_AR_Drawing_App_v11_0_1_Subscription_Unlocked_blatant_Patched.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 160156233
-    }
-  }
+  "items": {}
 }
