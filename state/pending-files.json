@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:2902": {
-      "messageId": 2902,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-18T01:20:50.034Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAILVmr8_XGntr1FcMBfodcpnlZYZyJVAAKhDAACl3jpR_BQCJohPFWNPQQ",
-      "fileName": "StressWatch_AI_Stress_Monitor_v3_4_7_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 359586915
-    }
-  }
+  "items": {}
 }
