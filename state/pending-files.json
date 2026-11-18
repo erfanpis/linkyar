@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:2985": {
-      "messageId": 2985,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-18T18:18:32.420Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAILqWr96_gXToG_m-gnWDTlGIVnjJp5AAJ1CwACwaDxR0FjJCX_fMoTPQQ",
-      "fileName": "Duolingo_Learn_Languages_v7_149_1_Duolingo_MAX_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 212477615
-    }
-  }
+  "items": {}
 }
