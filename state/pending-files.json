@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:3014": {
-      "messageId": 3014,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-18T23:42:33.998Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAILxmr-N-kyhzWzPw8e_kMGScJJWlXSAAKQJAACi_npU9hX-6pdK39uPQQ",
-      "fileName": "Pou_3D_v1_0_99_Univ_FW_LP_64bit_os150_ok27_user_hidden_bfi2.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 74066705
-    }
-  }
+  "items": {}
 }
