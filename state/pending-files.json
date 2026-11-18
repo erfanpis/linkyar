@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:2929": {
-      "messageId": 2929,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-18T07:38:46.347Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAILcWr9VgbMKAZwk9zfdtscurCMWDs7AALaDAACl3jxRxLv8RZHldD4PQQ",
-      "fileName": "SNOW_AI_Profile_v15_5_1_Subscription_Unlocked_blatant_Patched.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 186610373
-    }
-  }
+  "items": {}
 }
