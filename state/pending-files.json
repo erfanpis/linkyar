@@ -10,17 +10,6 @@
       "fileName": "Archive.zip",
       "mimeType": "application/zip",
       "fileSize": 33372117
-    },
-    "110124351:2968": {
-      "messageId": 2968,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-18T15:46:30.016Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAILmGr9yFSP5xEe9vtlu-E41L6_esIbAAJfIwACJ0PxU9wuPrAdJTdpPQQ",
-      "fileName": "UnityFramework.zip",
-      "mimeType": "application/zip",
-      "fileSize": 37974885
     }
   }
 }
