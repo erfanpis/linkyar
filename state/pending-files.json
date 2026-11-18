@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:2941": {
-      "messageId": 2941,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-18T09:32:28.343Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAILfWr9cKyG2dhoRCf9JKbqk_LhzbUzAAITDQACl3jxR2WhDrs7aeacPQQ",
-      "fileName": "3D_Modeling_Blender_Shapeyard_v5_34_2_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 86547539
-    }
-  }
+  "items": {}
 }
