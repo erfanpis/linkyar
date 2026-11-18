@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:2938": {
-      "messageId": 2938,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-18T09:31:22.107Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAILemr9cGmFYlFZgb5yGdk-Ufu7-AIaAAIRDQACl3jxR_YmEosavXeWPQQ",
-      "fileName": "Alight Motion v6.2.61 Subscription Unlocked blatant Patched.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 132159164
-    }
-  }
+  "items": {}
 }
