@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:3005": {
-      "messageId": 3005,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-18T21:49:51.313Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAILvWr-HX-a5bfOgQa-V_47jbaM774sAAJ8CAACG8fxR4ehXEnJ5bM1PQQ",
-      "fileName": "YTMUltimate+ 9.46.5 [@ipavault].ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 124510678
-    }
-  }
+  "items": {}
 }
