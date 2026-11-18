@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:2947": {
-      "messageId": 2947,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-18T10:11:47.998Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAILg2r9eeMv4LBDL_IUqJkquKsB7lKrAAIlDQACl3jxR3pZ2dN326FPPQQ",
-      "fileName": "Water_Air_Water_Tracker_v2026_11_3_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 67974408
-    }
-  }
+  "items": {}
 }
