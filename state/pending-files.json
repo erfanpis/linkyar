@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:3034": {
-      "messageId": 3034,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-19T00:27:08.832Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAIL2mr-Qlx1B3znav8omkYqqPX0T_XoAAKhIwACELTwU0NfPlnzj9xIPQQ",
-      "fileName": "com.time.trigger-1.12.62.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 136337177
-    }
-  }
+  "items": {}
 }
