@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:3057": {
-      "messageId": 3057,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-19T09:22:57.550Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIL8Wr-v_FduET_dHJaqndhBbykklbLAAKrCQACwaD5R2nSwYcP6b1TPQQ",
-      "fileName": "Origami_Fold_&_Learn_v5_4_Subscription_Unlocked_blatant_Patched.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 207695791
-    }
-  }
+  "items": {}
 }
