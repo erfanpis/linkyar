@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:3063": {
-      "messageId": 3063,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-19T09:49:55.117Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIL92r-xkKnIsG3BrUiN4T0-5XvC33aAAK4CQACwaD5R4RtAzLyazXDPQQ",
-      "fileName": "Pillow_Sleep_Tracker_v6_7_4_Subscription_Unlocked_blatant_Patched.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 576972331
-    }
-  }
+  "items": {}
 }
