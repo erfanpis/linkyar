@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:3140": {
-      "messageId": 3140,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-19T23:04:06.599Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIMRGr_gGYYrd8BXGJ_ckQB2Ij2IZWEAAImCAACwaABRDY1_daSzsU-PQQ",
-      "fileName": "Simply_Draw_Learn_to_Draw_v1_24_0_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 55984871
-    }
-  }
+  "items": {}
 }
