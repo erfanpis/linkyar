@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:3075": {
-      "messageId": 3075,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-19T10:38:04.477Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIMA2r-0YxofgiTDqdO_N6AlVdabNAmAALPCQACwaD5RyyDXsgcO8YYPQQ",
-      "fileName": "Bearable_Symptom_Tracker_v1_0_616_Subscription_Unlocked_blatant.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 68104619
-    }
-  }
+  "items": {}
 }
