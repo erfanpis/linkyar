@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:3084": {
-      "messageId": 3084,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-19T11:11:27.503Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAIMDGr-2V_3XXGEJHKF4X4PYbrB1j7YAAJhIwACTrb4U2M-vwr6Ky7CPQQ",
-      "fileName": "SportMasters_2.17.2_menu_t27.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 160182677
-    }
-  }
+  "items": {}
 }
