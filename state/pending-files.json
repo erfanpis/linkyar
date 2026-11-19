@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "6325075744:3078": {
+      "messageId": 3078,
+      "chatId": 6325075744,
+      "userId": 6325075744,
+      "createdAt": "2026-11-19T11:05:53.020Z",
+      "kind": "سند",
+      "fileId": "BQACAgEAAxkBAAIMBmr-2BCi0hk_xKyaRkKiGyad8_3dAAL2CAACwaD5R6CaSbFWeNkmPQQ",
+      "fileName": "Kapi_Cam_Y2K_&_CCD_Camera_v4_46_0_Subscription_Unlocked_blatant.ipa",
+      "mimeType": "application/zip",
+      "fileSize": 168652191
+    }
+  }
 }
