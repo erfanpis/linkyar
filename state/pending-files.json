@@ -1,15 +1,3 @@
 {
-  "items": {
-    "6325075744:3102": {
-      "messageId": 3102,
-      "chatId": 6325075744,
-      "userId": 6325075744,
-      "createdAt": "2026-11-19T11:30:17.632Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIMHmr-3clrwFLZLxj81ID7BC5q0Fw6AAL5CwACwaDxR05yYWGJxcTFPQQ",
-      "fileName": "Drafts v55.0 Subscription Unlocked blatant Patched.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 51609505
-    }
-  }
+  "items": {}
 }
