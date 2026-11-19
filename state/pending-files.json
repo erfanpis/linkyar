@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "110124351:3046": {
+      "messageId": 3046,
+      "chatId": 110124351,
+      "userId": 110124351,
+      "createdAt": "2026-11-19T07:16:58.983Z",
+      "kind": "سند",
+      "fileId": "BQACAgQAAxkBAAIL5mr-omprRB_9ZCd-egSitZRd1oLkAAKiIwACELTwU-eIDsNqu6C3PQQ",
+      "fileName": "com.fungames.sniper3d-7.16.0.ipa",
+      "mimeType": "application/zip",
+      "fileSize": 202933900
+    }
+  }
 }
