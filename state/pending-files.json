@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "110124351:3081": {
+      "messageId": 3081,
+      "chatId": 110124351,
+      "userId": 110124351,
+      "createdAt": "2026-11-19T11:08:55.902Z",
+      "kind": "سند",
+      "fileId": "BQACAgQAAxkBAAIMCWr-2MdQCvlJHF2kC_ZTd89B_JNBAAJcIwACTrb4U5r4A0m7oz0oPQQ",
+      "fileName": "JohnnyTrigger_1.12.62_menu_t27.ipa",
+      "mimeType": "application/octet-stream",
+      "fileSize": 134535992
+    }
+  }
 }
