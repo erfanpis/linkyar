@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:3093": {
-      "messageId": 3093,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-19T11:19:46.206Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAIMFWr-21LyG1WzmnY9cOflvs3jkHasAAJpIwACTrb4U5Di7a-Obwo8PQQ",
-      "fileName": "MyTalkingAngela_26.6.1_menu_t27.ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 203325743
-    }
-  }
+  "items": {}
 }
