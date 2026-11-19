@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:3066": {
-      "messageId": 3066,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-19T10:21:50.632Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIL-mr-zb4RHL4IeWdHnOP83S4rbo8NAALHCQACwaD5R23QpuRRD_qoPQQ",
-      "fileName": "Scanner_Pro_Scan_to_PDF_v9_0_5_Subscription_Unlocked_blatant_Patched.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 203386536
-    }
-  }
+  "items": {}
 }
