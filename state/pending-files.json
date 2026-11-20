@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "110124351:3210": {
+      "messageId": 3210,
+      "chatId": 110124351,
+      "userId": 110124351,
+      "createdAt": "2026-11-20T23:33:12.460Z",
+      "kind": "سند",
+      "fileId": "BQACAgQAAxkBAAIMimsAAdi4zb_EitmXwOrh7Fd5qlPKhQAChyUAAmDACVBoKZy-JkC6mD0E",
+      "fileName": "SkyForceReloaded-2.02-mod-v1.ipa",
+      "mimeType": "application/zip",
+      "fileSize": 382104590
+    }
+  }
 }
