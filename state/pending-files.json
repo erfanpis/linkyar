@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:3195": {
-      "messageId": 3195,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-20T22:25:07.151Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIMe2sAAcjDGV0JUJI2AZ1x0O6onOGXMQACfwoAAnrsAAFEX9zYxtyyw9I9BA",
-      "fileName": "Piano ٞ v2.26.7 Subscription Unlocked blatant Patched.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 109327361
-    }
-  }
+  "items": {}
 }
