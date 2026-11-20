@@ -1,3 +1,15 @@
 {
-  "items": {}
+  "items": {
+    "110124351:3192": {
+      "messageId": 3192,
+      "chatId": 110124351,
+      "userId": 110124351,
+      "createdAt": "2026-11-20T22:01:55.651Z",
+      "kind": "سند",
+      "fileId": "BQACAgQAAxkBAAIMeGsAAcNTHPjggdGAkU9DcDcK9NwntgAClSEAAmqpCFACyJgJGUa8Qz0E",
+      "fileName": "IMG_7370.MP4",
+      "mimeType": "video/mp4",
+      "fileSize": 249602621
+    }
+  }
 }
