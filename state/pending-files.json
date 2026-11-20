@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:3166": {
-      "messageId": 3166,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-20T08:36:13.909Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAIMXmsAAQZ9PLe0lLDvgVkuSlwYRWw_ugAC1B8AAmqpAAFQQ4rh6_ZI7Vk9BA",
-      "fileName": "SibStarMenuTemplate_v8fixed.zip",
-      "mimeType": "application/zip",
-      "fileSize": 965230
-    }
-  }
+  "items": {}
 }
