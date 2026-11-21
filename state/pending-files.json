@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:3228": {
-      "messageId": 3228,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-21T05:40:29.720Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIMnGsBLs16HlWF0JvhlSG_pprnSlLzAAJ_CAAC3z0JRM6-TqJZbB99PQQ",
-      "fileName": "X 12.45.1 NFB+TWI 7.3.1 [@ipavault].ipa",
-      "mimeType": "application/octet-stream",
-      "fileSize": 289060693
-    }
-  }
+  "items": {}
 }
