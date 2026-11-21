@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:3213": {
-      "messageId": 3213,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-21T00:22:33.082Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIMjWsAAeRInyC-vPIf5jAT6odzBoybFgACxggAAnrsCERBeOYqCOnltT0E",
-      "fileName": "Crsel_Carousel,_Collage_Maker_v1_6_7_Pro_Unlocked_blatant_Patched.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 116742791
-    }
-  }
+  "items": {}
 }
