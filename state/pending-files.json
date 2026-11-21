@@ -1,15 +1,3 @@
 {
-  "items": {
-    "5821277029:3225": {
-      "messageId": 3225,
-      "chatId": 5821277029,
-      "userId": 5821277029,
-      "createdAt": "2026-11-21T02:51:00.501Z",
-      "kind": "سند",
-      "fileId": "BQACAgEAAxkBAAIMmWsBBxRVgGXPG-2mq_IQJc6NlmeXAAIUCQACeuwIRPVpq-gY-38sPQQ",
-      "fileName": "WPS_Office_AI_Doc,_PDF,_Sheet_v26_11_1_PRO+AI_Unlocked_blatant_Patched.ipa",
-      "mimeType": "application/zip",
-      "fileSize": 329449314
-    }
-  }
+  "items": {}
 }
