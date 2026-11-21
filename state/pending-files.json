@@ -1,15 +1,3 @@
 {
-  "items": {
-    "110124351:3233": {
-      "messageId": 3233,
-      "chatId": 110124351,
-      "userId": 110124351,
-      "createdAt": "2026-11-21T08:00:30.608Z",
-      "kind": "سند",
-      "fileId": "BQACAgQAAxkBAAIMoWsBT56vMHHZ3QK4GgyyAdsfQKnqAALfIQACmP-4UGKKL4bNzzkjPQQ",
-      "fileName": "libswiftrest.dylib",
-      "mimeType": "application/binary",
-      "fileSize": 1641296
-    }
-  }
+  "items": {}
 }
